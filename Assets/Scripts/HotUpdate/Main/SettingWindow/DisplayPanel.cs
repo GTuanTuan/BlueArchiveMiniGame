@@ -109,8 +109,8 @@ public class DisplayPanel : MonoBehaviour
     {
         if (resolutions == null) return;
         var settings = SettingsManager.Instance.CurrentSettings;
-        Resolution res = resolutions[resolutions.Length];
-        if (settings.resolutionIndex< resolutions.Length)
+        Resolution res = resolutions[resolutions.Length-1];
+        if (settings.resolutionIndex < resolutions.Length && settings.resolutionIndex>=0)
         {
             res = resolutions[settings.resolutionIndex];
         }

@@ -1,23 +1,23 @@
 {
     "FileVersion": "1.0.0",
     "PackageName": "Preload",
-    "PackageVersion": "2025-09-16-921",
+    "PackageVersion": "2025-09-18-573",
     "Wrappers": [
         {
-            "BundleGUID": "c9c66be1895c9420aa9b707648d068b7",
-            "FileName": "preload_assets_res_preload_hotupdatedll_c9c66be1895c9420aa9b707648d068b7.bundle"
+            "BundleGUID": "7458991c460107e3f8309942997e4ef8",
+            "FileName": "preload_assets_res_preload_hotupdatedll_7458991c460107e3f8309942997e4ef8.bundle"
         },
         {
-            "BundleGUID": "9b7555e356336c15571f80a9ee6d1636",
-            "FileName": "preload_assets_res_preload_uipanel_9b7555e356336c15571f80a9ee6d1636.bundle"
+            "BundleGUID": "098cfc3731c86052bf69752c79b0edc3",
+            "FileName": "preload_assets_res_preload_uipanel_098cfc3731c86052bf69752c79b0edc3.bundle"
         },
         {
-            "BundleGUID": "4c4c0accbcb822c3866f82b81fac7328",
-            "FileName": "preload_share_assets_res_preload_uipanelart_4c4c0accbcb822c3866f82b81fac7328.bundle"
+            "BundleGUID": "a949001533c8edf614b0fb29668819e8",
+            "FileName": "preload_share_assets_res_preload_uipanelart_a949001533c8edf614b0fb29668819e8.bundle"
         },
         {
-            "BundleGUID": "e142006a171890f235fe2fd7c7bc42e2",
-            "FileName": "preload_unityshaders_e142006a171890f235fe2fd7c7bc42e2.bundle"
+            "BundleGUID": "b22bd6f259bb5385af8d77c440fab2fa",
+            "FileName": "preload_unityshaders_b22bd6f259bb5385af8d77c440fab2fa.bundle"
         }
     ]
 }

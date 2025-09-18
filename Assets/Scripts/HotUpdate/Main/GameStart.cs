@@ -8,8 +8,8 @@ public class GameStart : MonoBehaviour
     SceneHandle sceneHandle;
     void Start()
     {
+        DontDestroyOnLoad(gameObject);
         StartCoroutine(LoadScene());
-        //StartCoroutine(LoadNetWorkManager());
         StartCoroutine(LoadUIManager());
     }
     IEnumerator LoadScene()
@@ -19,6 +19,7 @@ public class GameStart : MonoBehaviour
         sceneHandle.Completed += (handle) =>
         {
             handle.ActivateScene();
+            StartCoroutine(LoadNetWorkHUD());
         };
         yield return sceneHandle;
     }
@@ -33,13 +34,12 @@ public class GameStart : MonoBehaviour
         };
         yield return _handle;
     }
-    IEnumerator LoadNetWorkManager()
+    IEnumerator LoadNetWorkHUD()
     {
-        AssetHandle _handle = YooAssets.LoadAssetAsync<GameObject>("MyRoomManager");
+        AssetHandle _handle = YooAssets.LoadAssetAsync<GameObject>("MyNetWorkHUD");
         _handle.Completed += (handle) =>
         {
-            GameObject go = Instantiate((GameObject)_handle.AssetObject);
-            DontDestroyOnLoad(go);
+            GameObject go = Instantiate((GameObject)_handle.AssetObject,GameManager.Inst.MainUICanvas.transform);
             Debug.Log(_handle.AssetObject);
         };
         yield return _handle;
@@ -47,7 +47,7 @@ public class GameStart : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(sceneHandle!=null && !sceneHandle.IsDone)
+        if(sceneHandle!=null && sceneHandle.IsValid)
         {
             Debug.Log(sceneHandle.Progress);
         }
