@@ -371,7 +371,7 @@ MonoBehaviour:
   - {fileID: 1281760859}
   - {fileID: 1557817561}
   - {fileID: 997852734}
-  PlayMode: 0
+  PlayMode: 2
 --- !u!4 &1281760861
 Transform:
   m_ObjectHideFlags: 0
