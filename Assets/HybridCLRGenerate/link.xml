@@ -23,6 +23,7 @@
     <type fullname="Mirror.EntityStateMessageUnreliableDelta" preserve="all" />
     <type fullname="Mirror.NetworkBehaviour" preserve="all" />
     <type fullname="Mirror.NetworkBehaviourSyncVar" preserve="all" />
+    <type fullname="Mirror.NetworkClient" preserve="all" />
     <type fullname="Mirror.NetworkConnectionToClient" preserve="all" />
     <type fullname="Mirror.NetworkIdentity" preserve="all" />
     <type fullname="Mirror.NetworkManager" preserve="all" />
@@ -40,6 +41,7 @@
     <type fullname="Mirror.ObjectHideMessage" preserve="all" />
     <type fullname="Mirror.ObjectSpawnFinishedMessage" preserve="all" />
     <type fullname="Mirror.ObjectSpawnStartedMessage" preserve="all" />
+    <type fullname="Mirror.PortTransport" preserve="all" />
     <type fullname="Mirror.Reader`1" preserve="all" />
     <type fullname="Mirror.ReadyMessage" preserve="all" />
     <type fullname="Mirror.RemoteCalls.RemoteCallDelegate" preserve="all" />
@@ -51,6 +53,7 @@
     <type fullname="Mirror.SpawnMessage" preserve="all" />
     <type fullname="Mirror.SyncVarAttribute" preserve="all" />
     <type fullname="Mirror.TimeSnapshotMessage" preserve="all" />
+    <type fullname="Mirror.Transport" preserve="all" />
     <type fullname="Mirror.Utils" preserve="all" />
     <type fullname="Mirror.Writer`1" preserve="all" />
     <type fullname="System.Half" preserve="all" />
@@ -120,7 +123,9 @@
     <type fullname="UnityEngine.Debug" preserve="all" />
     <type fullname="UnityEngine.Display" preserve="all" />
     <type fullname="UnityEngine.Events.UnityAction" preserve="all" />
+    <type fullname="UnityEngine.Events.UnityAction`1" preserve="all" />
     <type fullname="UnityEngine.Events.UnityEvent" preserve="all" />
+    <type fullname="UnityEngine.Events.UnityEvent`1" preserve="all" />
     <type fullname="UnityEngine.FullScreenMode" preserve="all" />
     <type fullname="UnityEngine.GameObject" preserve="all" />
     <type fullname="UnityEngine.HeaderAttribute" preserve="all" />
@@ -140,6 +145,7 @@
     <type fullname="UnityEngine.Resolution" preserve="all" />
     <type fullname="UnityEngine.RuntimeInitializeLoadType" preserve="all" />
     <type fullname="UnityEngine.RuntimeInitializeOnLoadMethodAttribute" preserve="all" />
+    <type fullname="UnityEngine.RuntimePlatform" preserve="all" />
     <type fullname="UnityEngine.SceneManagement.LoadSceneMode" preserve="all" />
     <type fullname="UnityEngine.SceneManagement.LocalPhysicsMode" preserve="all" />
     <type fullname="UnityEngine.Screen" preserve="all" />
@@ -169,6 +175,8 @@
   <assembly fullname="UnityEngine.UI">
     <type fullname="UnityEngine.UI.Button" preserve="all" />
     <type fullname="UnityEngine.UI.Button/ButtonClickedEvent" preserve="all" />
+    <type fullname="UnityEngine.UI.InputField" preserve="all" />
+    <type fullname="UnityEngine.UI.InputField/OnChangeEvent" preserve="all" />
     <type fullname="UnityEngine.UI.Selectable" preserve="all" />
     <type fullname="UnityEngine.UI.Slider" preserve="all" />
     <type fullname="UnityEngine.UI.Text" preserve="all" />
@@ -186,7 +194,6 @@
     <type fullname="YooAsset.EOperationStatus" preserve="all" />
     <type fullname="YooAsset.EPlayMode" preserve="all" />
     <type fullname="YooAsset.GameAsyncOperation" preserve="all" />
-    <type fullname="YooAsset.HandleBase" preserve="all" />
     <type fullname="YooAsset.InstantiateOperation" preserve="all" />
     <type fullname="YooAsset.ResourcePackage" preserve="all" />
     <type fullname="YooAsset.SceneHandle" preserve="all" />
@@ -208,6 +215,8 @@
     <type fullname="System.Decimal" preserve="all" />
     <type fullname="System.Diagnostics.DebuggableAttribute" preserve="all" />
     <type fullname="System.Diagnostics.DebuggableAttribute/DebuggingModes" preserve="all" />
+    <type fullname="System.Diagnostics.DebuggerBrowsableAttribute" preserve="all" />
+    <type fullname="System.Diagnostics.DebuggerBrowsableState" preserve="all" />
     <type fullname="System.Diagnostics.DebuggerHiddenAttribute" preserve="all" />
     <type fullname="System.Func`2" preserve="all" />
     <type fullname="System.Guid" preserve="all" />
@@ -228,6 +237,7 @@
     <type fullname="System.Single" preserve="all" />
     <type fullname="System.String" preserve="all" />
     <type fullname="System.Type" preserve="all" />
+    <type fullname="System.UInt16" preserve="all" />
     <type fullname="System.ValueType" preserve="all" />
   </assembly>
 </linker>

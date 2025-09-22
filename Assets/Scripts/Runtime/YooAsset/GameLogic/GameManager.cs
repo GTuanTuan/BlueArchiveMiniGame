@@ -6,7 +6,6 @@ using System.Linq;
 using System.Reflection;
 using UnityEngine;
 using YooAsset;
-using static UnityEngine.Rendering.VirtualTexturing.Debugging;
 
 public class GameManager
 {

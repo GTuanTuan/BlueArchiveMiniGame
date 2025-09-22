@@ -350,6 +350,9 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	// System.Func<object,ulong>
 	// System.Func<object,ushort>
 	// System.Predicate<object>
+	// UnityEngine.Events.InvokableCall<object>
+	// UnityEngine.Events.UnityAction<object>
+	// UnityEngine.Events.UnityEvent<object>
 	// UnityEngine.InputSystem.InputBindingComposite<UnityEngine.Vector2>
 	// UnityEngine.InputSystem.InputBindingComposite<float>
 	// UnityEngine.InputSystem.InputControl<UnityEngine.Vector2>

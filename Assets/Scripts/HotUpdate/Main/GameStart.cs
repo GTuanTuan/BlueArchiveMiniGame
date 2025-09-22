@@ -47,9 +47,9 @@ public class GameStart : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(sceneHandle!=null && sceneHandle.IsValid)
-        {
-            Debug.Log(sceneHandle.Progress);
-        }
+        //if(sceneHandle!=null && sceneHandle.IsValid)
+        //{
+        //    Debug.Log(sceneHandle.Progress);
+        //}
     }
 }

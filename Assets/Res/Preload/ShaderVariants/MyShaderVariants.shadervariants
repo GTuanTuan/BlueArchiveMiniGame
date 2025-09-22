@@ -18,11 +18,6 @@ ShaderVariantCollection:
       variants:
       - keywords: _SUNDISK_SIMPLE
         passType: 0
-  - first: {fileID: 10490, guid: 0000000000000000f000000000000000, type: 0}
-    second:
-      variants:
-      - keywords: 
-        passType: 13
   - first: {fileID: 9000, guid: 0000000000000000f000000000000000, type: 0}
     second:
       variants:
@@ -81,9 +76,4 @@ ShaderVariantCollection:
       - keywords: _INTERLEAVED_GRADIENT _ORTHOGRAPHIC _SAMPLE_COUNT_HIGH _SOURCE_DEPTH_NORMALS
         passType: 0
       - keywords: _INTERLEAVED_GRADIENT _SAMPLE_COUNT_HIGH _SOURCE_DEPTH_NORMALS
-        passType: 0
-  - first: {fileID: 4800000, guid: 36e335017ad71d54fbb10842863188ae, type: 3}
-    second:
-      variants:
-      - keywords: 
         passType: 0
