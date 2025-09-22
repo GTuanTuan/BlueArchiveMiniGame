@@ -113,7 +113,7 @@ internal class FsmInitializePackage : IStateNode
     /// </summary>
     public string GetHostServerURL(string packageName)
     {
-        string hostServerIP = $"http://localhost:8080/{Application.productName}";
+        string hostServerIP = $"http://47.107.55.108:8080/{Application.productName}";
         if (GameManager.Inst.ServerAddress != "" && GameManager.Inst.ServerAddress != null)
             hostServerIP = $"{GameManager.Inst.ServerAddress}/{Application.productName}";
         string appVersion = "v1";
