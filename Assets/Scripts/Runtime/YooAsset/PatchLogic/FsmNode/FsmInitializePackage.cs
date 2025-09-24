@@ -119,7 +119,8 @@ internal class FsmInitializePackage : IStateNode
         string appVersion = "v1";
 #if UNITY_EDITOR
         if (UnityEditor.EditorUserBuildSettings.activeBuildTarget == UnityEditor.BuildTarget.Android)
-            return $"{hostServerIP}/CDN/Android/{packageName}/{appVersion}";
+            // return $"{hostServerIP}/CDN/Android/{packageName}/{appVersion}";
+            return $"{hostServerIP}/CDN/PC/{packageName}/{appVersion}";
         else if (UnityEditor.EditorUserBuildSettings.activeBuildTarget == UnityEditor.BuildTarget.iOS)
             return $"{hostServerIP}/CDN/IPhone/{packageName}/{appVersion}";
         else if (UnityEditor.EditorUserBuildSettings.activeBuildTarget == UnityEditor.BuildTarget.WebGL)
