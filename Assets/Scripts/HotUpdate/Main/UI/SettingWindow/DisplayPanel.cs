@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using System.Collections;
 
-public class DisplayPanel : MonoBehaviour
+public class DisplayPanel : UIBasePanel, ISettingsPanel
 {
     [Header("UI References")]
     [SerializeField] private TMP_Dropdown resolutionDropdown;
@@ -27,7 +27,7 @@ public class DisplayPanel : MonoBehaviour
     IEnumerator InitializeDelayed()
     {
         yield return null;
-        var settings = SettingsManager.Instance.CurrentSettings;
+        var settings = SettingsManager.Inst.CurrentSettings;
 
         resolutionDropdown.SetValueWithoutNotify(settings.resolutionIndex);
         fullscreenToggle.SetIsOnWithoutNotify(settings.fullscreen);
@@ -45,7 +45,6 @@ public class DisplayPanel : MonoBehaviour
         var options = new List<string>();
         for (int i = 0; i < resolutions.Length; i++)
         {
-            // 使用refreshRateRatio代替过时的refreshRate
             int refreshRate = Mathf.RoundToInt((float)resolutions[i].refreshRateRatio.value);
             options.Add($"{resolutions[i].width}x{resolutions[i].height} {refreshRate}Hz");
         }
@@ -68,26 +67,26 @@ public class DisplayPanel : MonoBehaviour
 
     public void OnResolutionChanged(int index)
     {
-        SettingsManager.Instance.CurrentSettings.resolutionIndex = index;
+        SettingsManager.Inst.CurrentSettings.resolutionIndex = index;
         ApplySetResolution();
     }
 
     public void OnFullscreenChanged(bool value)
     {
-        SettingsManager.Instance.CurrentSettings.fullscreen = value;
+        SettingsManager.Inst.CurrentSettings.fullscreen = value;
         UpdateBorderlessToggleState();
         ApplySetResolution();
     }
 
     public void OnBorderlessChanged(bool value)
     {
-        SettingsManager.Instance.CurrentSettings.borderless = value;
+        SettingsManager.Inst.CurrentSettings.borderless = value;
         ApplySetResolution();
     }
 
     public void OnDisplayChanged(int index)
     {
-        SettingsManager.Instance.CurrentSettings.displayIndex = index;
+        SettingsManager.Inst.CurrentSettings.displayIndex = index;
         ApplySetDisplay();
     }
 
@@ -108,7 +107,7 @@ public class DisplayPanel : MonoBehaviour
     void ApplySetResolution()
     {
         if (resolutions == null) return;
-        var settings = SettingsManager.Instance.CurrentSettings;
+        var settings = SettingsManager.Inst.CurrentSettings;
         Resolution res = resolutions[resolutions.Length-1];
         if (settings.resolutionIndex < resolutions.Length && settings.resolutionIndex>=0)
         {
@@ -119,7 +118,6 @@ public class DisplayPanel : MonoBehaviour
             FullScreenMode.FullScreenWindow :
             (settings.fullscreen ? FullScreenMode.ExclusiveFullScreen : FullScreenMode.Windowed);
 
-        // 使用refreshRateRatio代替过时的refreshRate
         Screen.SetResolution(
             res.width,
             res.height,
@@ -129,10 +127,15 @@ public class DisplayPanel : MonoBehaviour
     }
     void ApplySetDisplay()
     {
-        var settings = SettingsManager.Instance.CurrentSettings;
+        var settings = SettingsManager.Inst.CurrentSettings;
         if (settings.displayIndex > 0 && settings.displayIndex < Display.displays.Length)
         {
             Display.displays[settings.displayIndex].Activate();
         }
+    }
+
+    public void ResetToDefault()
+    {
+        throw new System.NotImplementedException();
     }
 }

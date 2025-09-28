@@ -5,7 +5,7 @@ using UnityEngine.Rendering.Universal;
 using TMPro;
 using System.Collections;
 
-public class GraphicsPanel : MonoBehaviour
+public class GraphicsPanel : UIBasePanel, ISettingsPanel
 {
     [Header("UI References")]
     [SerializeField] private TMP_Dropdown qualityDropdown;
@@ -61,26 +61,23 @@ public class GraphicsPanel : MonoBehaviour
 
     private IEnumerator InitializeDelayed()
     {
-        yield return null; // µÈ´ıÒ»Ö¡È·±£URP³õÊ¼»¯
+        yield return null; 
 
-        // »ñÈ¡URP Asset
         _urpAsset = GraphicsSettings.currentRenderPipeline as UniversalRenderPipelineAsset;
 
         if (_urpAsset == null)
         {
-            Debug.LogError("ÎŞ·¨»ñÈ¡URP Asset£¬ÇëÈ·±£ÏîÄ¿Ê¹ÓÃURP");
+            Debug.LogError("URP Asset null");
             yield break;
         }
 
-        // »ñÈ¡BloomĞ§¹û
         if (urpVolumeProfile != null && !urpVolumeProfile.TryGet(out _bloom))
         {
-            Debug.LogWarning("Volume ProfileÖĞÎ´ÕÒµ½BloomĞ§¹û");
+            Debug.LogWarning("Volume Profile Bloom null");
         }
 
-        // ³õÊ¼»¯UI
         //InitializeQualityDropdown();
-        var settings = SettingsManager.Instance.CurrentSettings;
+        var settings = SettingsManager.Inst.CurrentSettings;
         qualityDropdown.SetValueWithoutNotify(settings.qualityLevel);
         vsyncToggle.SetIsOnWithoutNotify(settings.vsyncEnabled);
         shadowDistanceSlider.SetValueWithoutNotify(settings.shadowDistance);
@@ -102,13 +99,13 @@ public class GraphicsPanel : MonoBehaviour
     public void OnQualityChanged(int index)
     {
 
-        SettingsManager.Instance.CurrentSettings.qualityLevel = index;
-        var settings = SettingsManager.Instance.CurrentSettings;
+        SettingsManager.Inst.CurrentSettings.qualityLevel = index;
+        var settings = SettingsManager.Inst.CurrentSettings;
 
         if (index >= 0 && index < qualityPresets.Length)
         {
             var preset = qualityPresets[index];
-            // Ó¦ÓÃÔ¤ÉèµÄËùÓĞÉèÖÃ
+            // Ó¦ï¿½ï¿½Ô¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
             vsyncToggle.SetIsOnWithoutNotify(preset.vsyncEnabled);
             shadowDistanceSlider.SetValueWithoutNotify(preset.shadowDistance);
             antiAliasingDropdown.SetValueWithoutNotify(preset.antiAliasing);
@@ -116,7 +113,7 @@ public class GraphicsPanel : MonoBehaviour
             renderScaleSlider.SetValueWithoutNotify(preset.renderScale);
         }
 
-        // Á¢¼´Ó¦ÓÃÉèÖÃ
+        // ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         OnVSyncChanged(settings.vsyncEnabled);
         OnShadowDistanceChanged(settings.shadowDistance);
         OnAntiAliasingChanged(settings.antiAliasing);
@@ -126,34 +123,34 @@ public class GraphicsPanel : MonoBehaviour
 
     public void OnVSyncChanged(bool value)
     {
-        SettingsManager.Instance.CurrentSettings.vsyncEnabled = value;
+        SettingsManager.Inst.CurrentSettings.vsyncEnabled = value;
         QualitySettings.vSyncCount = value ? 1 : 0;
     }
 
     public void OnShadowDistanceChanged(float value)
     {
-        SettingsManager.Instance.CurrentSettings.shadowDistance = value;
+        SettingsManager.Inst.CurrentSettings.shadowDistance = value;
         if (_urpAsset != null)
             _urpAsset.shadowDistance = value;
     }
 
     public void OnAntiAliasingChanged(int index)
     {
-        SettingsManager.Instance.CurrentSettings.antiAliasing = index;
+        SettingsManager.Inst.CurrentSettings.antiAliasing = index;
         if (_urpAsset != null)
             _urpAsset.msaaSampleCount = (int)Mathf.Pow(2, index);
     }
 
     public void OnBloomChanged(bool value)
     {
-        SettingsManager.Instance.CurrentSettings.bloomEnabled = value;
+        SettingsManager.Inst.CurrentSettings.bloomEnabled = value;
         if (_bloom != null)
             _bloom.active = value;
     }
 
     public void OnRenderScaleChanged(float value)
     {
-        SettingsManager.Instance.CurrentSettings.renderScale = value;
+        SettingsManager.Inst.CurrentSettings.renderScale = value;
         if (_urpAsset != null)
             _urpAsset.renderScale = value;
     }
@@ -162,7 +159,7 @@ public class GraphicsPanel : MonoBehaviour
     {
         if (_urpAsset == null) return;
 
-        var settings = SettingsManager.Instance.CurrentSettings;
+        var settings = SettingsManager.Inst.CurrentSettings;
         if (settings.qualityLevel != 4)
             QualitySettings.SetQualityLevel(settings.qualityLevel);
         QualitySettings.vSyncCount = settings.vsyncEnabled ? 1 : 0;
@@ -172,5 +169,10 @@ public class GraphicsPanel : MonoBehaviour
         _urpAsset.renderScale = settings.renderScale;
 
         if (_bloom != null) _bloom.active = settings.bloomEnabled;
+    }
+
+    public void ResetToDefault()
+    {
+        throw new System.NotImplementedException();
     }
 }

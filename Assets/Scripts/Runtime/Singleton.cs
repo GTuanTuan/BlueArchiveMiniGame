@@ -1,24 +1,23 @@
+
 using UnityEngine;
 
-public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
+public class Singleton<T> where T:class,new()
 {
-    private static T _instance;
-
+    static T _inst;
+    static readonly object _lock = new object();
     public static T Inst
     {
         get
         {
-            if (_instance == null)
+            lock (_lock)
             {
-                _instance = FindAnyObjectByType<T>();
-
-                if (_instance == null)
+                if(_inst == null)
                 {
-                    GameObject singletonObject = new GameObject(typeof(T).Name);
-                    _instance = singletonObject.AddComponent<T>();
+                    _inst = new T();
+                    Debug.Log($"[Singleton] 创建 {typeof(T).Name} 实例");
                 }
+                return _inst;
             }
-            return _instance;
         }
     }
 }

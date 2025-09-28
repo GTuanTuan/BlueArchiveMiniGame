@@ -10,7 +10,7 @@ public class GameStart : MonoBehaviour
     {
         DontDestroyOnLoad(gameObject);
         StartCoroutine(LoadScene());
-        StartCoroutine(LoadUIManager());
+        //StartCoroutine(LoadUIManager());
     }
     IEnumerator LoadScene()
     {
@@ -23,17 +23,17 @@ public class GameStart : MonoBehaviour
         };
         yield return sceneHandle;
     }
-    IEnumerator LoadUIManager()
-    {
-        AssetHandle _handle = YooAssets.LoadAssetAsync<GameObject>("UIManager");
-        _handle.Completed += (handle) =>
-        {
-            GameObject go = Instantiate((GameObject)_handle.AssetObject);
-            DontDestroyOnLoad(go);
-            Debug.Log(_handle.AssetObject);
-        };
-        yield return _handle;
-    }
+    //IEnumerator LoadUIManager()
+    //{
+    //    AssetHandle _handle = YooAssets.LoadAssetAsync<GameObject>("UIManager");
+    //    _handle.Completed += (handle) =>
+    //    {
+    //        GameObject go = Instantiate((GameObject)_handle.AssetObject);
+    //        DontDestroyOnLoad(go);
+    //        Debug.Log(_handle.AssetObject);
+    //    };
+    //    yield return _handle;
+    //}
     IEnumerator LoadNetWorkHUD()
     {
         AssetHandle _handle = YooAssets.LoadAssetAsync<GameObject>("MyNetWorkHUD");

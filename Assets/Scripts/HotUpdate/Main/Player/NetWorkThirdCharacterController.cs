@@ -36,7 +36,6 @@ public class NetWorkThirdCharacterController : NetworkBehaviour
         //if (!isLocalPlayer) return;
         framingTransposer = vCam.GetCinemachineComponent<CinemachineFramingTransposer>();
         pov = vCam.GetCinemachineComponent<CinemachinePOV>();
-        UpdateCursorState();
     }
     void Update()
     {
@@ -120,16 +119,16 @@ public class NetWorkThirdCharacterController : NetworkBehaviour
         if (!isLocalPlayer) return;
         if (context.performed)
         {
-            isCursorLocked = !isCursorLocked;
-            UpdateCursorState();
-            if (isCursorLocked)
-            {
-                SettingsManager.Instance.CloseSettingWindow();
-            }
-            else
-            {
-                SettingsManager.Instance.OpenSettingWindow();
-            }
+            //isCursorLocked = SettingsManager.Inst.isShow();
+            //UpdateCursorState();
+            //if (SettingsManager.Inst.isShow())
+            //{
+            //    SettingsManager.Inst.CloseSettingWindow();
+            //}
+            //else
+            //{
+            //    SettingsManager.Inst.OpenSettingWindow();
+            //}
         }
     }
     public void OnAlt(InputAction.CallbackContext context)
@@ -197,6 +196,7 @@ public class NetWorkThirdCharacterController : NetworkBehaviour
     {
         Debug.Log("OnStartLocalPlayer");
         vCam.Priority = 15;
+        UpdateCursorState();
     }
 
     /// <summary>

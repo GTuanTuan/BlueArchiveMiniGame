@@ -177,7 +177,7 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	// Mirror.Writer<uint>
 	// Mirror.Writer<ulong>
 	// Mirror.Writer<ushort>
-	// Singleton<object>
+	// SingletonMono<object>
 	// System.Action<object,Mirror.AddPlayerMessage>
 	// System.Action<object,Mirror.ChangeOwnerMessage>
 	// System.Action<object,Mirror.CommandMessage>

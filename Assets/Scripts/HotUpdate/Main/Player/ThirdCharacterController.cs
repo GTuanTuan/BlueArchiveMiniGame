@@ -115,14 +115,14 @@ public class ThirdCharacterController : MonoBehaviour
         {
             isCursorLocked = !isCursorLocked;
             UpdateCursorState();
-            if (isCursorLocked)
-            {
-                SettingsManager.Instance.CloseSettingWindow();
-            }
-            else
-            {
-                SettingsManager.Instance.OpenSettingWindow();
-            }
+            //if (SettingsManager.Inst.isShow())
+            //{
+            //    SettingsManager.Inst.CloseSettingWindow();
+            //}
+            //else
+            //{
+            //    SettingsManager.Inst.OpenSettingWindow();
+            //}
         }
     }
     public void OnFire(InputAction.CallbackContext context)

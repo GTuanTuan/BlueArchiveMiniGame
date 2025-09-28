@@ -3,28 +3,16 @@ using System.IO;
 using YooAsset;
 using System;
 
-public class SettingsManager : MonoBehaviour
+public class SettingsManager: Singleton<SettingsManager>
 {
-    public static SettingsManager Instance { get; private set; }
-
     private GameSettings _currentSettings;
-    private SettingsWindow settingsWindow;
     public GameSettings CurrentSettings => _currentSettings;
     private string settingsPath;
-
-    private void Awake()
+    public SettingsManager()
     {
-        if (Instance != null && Instance != this)
-        {
-            Destroy(gameObject);
-            return;
-        }
-
-        Instance = this;
-        DontDestroyOnLoad(gameObject);
-
         settingsPath = Path.Combine(Application.persistentDataPath, "settings.json");
         LoadSettings();
+        Debug.Log("SettingsManager 初始化完成");
     }
 
     public void LoadSettings()
@@ -50,27 +38,6 @@ public class SettingsManager : MonoBehaviour
         _currentSettings = new GameSettings();
         SaveSettings();
     }
-    public void OpenSettingWindow()
-    {
-        if (settingsWindow != null)
-        {
-            settingsWindow.gameObject.SetActive(true);
-        }
-        else
-        {
-            YooAssets.LoadAssetAsync<GameObject>("SettingsWindow").Completed += (handle) =>
-            {
-                settingsWindow = GameObject.Instantiate((GameObject)handle.AssetObject, GameManager.Inst.MainUICanvas.transform).GetComponent<SettingsWindow>();
-            };
-        }
-    }
-    public void CloseSettingWindow()
-    {
-        if (settingsWindow != null)
-        {
-            settingsWindow.gameObject.SetActive(false);
-        }
-    }
 }
 
 [System.Serializable]
@@ -91,4 +58,9 @@ public class GameSettings
     public bool fullscreen = true;
     public bool borderless = false;
     public int displayIndex = 0;
+}
+public interface ISettingsPanel
+{
+    void ApplySettings();
+    void ResetToDefault();
 }

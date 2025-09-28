@@ -5,7 +5,7 @@ using UnityEngine;
 using UniFramework.Event;
 using YooAsset;
 
-public class Boot : Singleton<Boot>
+public class Boot : SingletonMono<Boot>
 {
     public GameObject MainUICanvas;
     public Camera UICamera;
