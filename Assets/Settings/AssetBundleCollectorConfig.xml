@@ -28,5 +28,8 @@
     <Group GroupActiveRule="EnableGroup" GroupName="ShaderVariants" GroupDesc="" AssetTags="">
       <Collector CollectPath="Assets/Res/Main/ShaderVariants" CollectGUID="00781758c26692e40a9634ddeac838be" CollectType="MainAssetCollector" AddressRule="AddressByFileName" PackRule="PackDirectory" FilterRule="CollectShaderVariants" UserData="" AssetTags="" />
     </Group>
+    <Group GroupActiveRule="EnableGroup" GroupName="Setting" GroupDesc="" AssetTags="">
+      <Collector CollectPath="Assets/Settings/SampleSceneProfile.asset" CollectGUID="a6560a915ef98420e9faacc1c7438823" CollectType="MainAssetCollector" AddressRule="AddressByFileName" PackRule="PackDirectory" FilterRule="CollectAll" UserData="" AssetTags="" />
+    </Group>
   </Package>
 </root>

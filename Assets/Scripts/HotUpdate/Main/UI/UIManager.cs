@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using YooAsset;
 
-public class UIManager : SingletonMono<UIManager>
+public class UIManager : Singleton<UIManager>
 {
     Transform uiRoot;
     Dictionary<string, UIBaseWindow> openedWindows = new Dictionary<string, UIBaseWindow>();
@@ -20,9 +20,10 @@ public class UIManager : SingletonMono<UIManager>
         {
             YooAssets.LoadAssetAsync<GameObject>(windowName).Completed += handle =>
             {
-                GameObject go = Instantiate((GameObject)handle.AssetObject, GameManager.Inst.MainUICanvas.transform);
+                GameObject go = GameObject.Instantiate((GameObject)handle.AssetObject, GameManager.Inst.MainUICanvas.transform);
                 var window = go.GetComponent<T>();
                 window.Show();
+                openedWindows[windowName] = window;
                 onShow?.Invoke(window);
             };
         }
@@ -32,6 +33,21 @@ public class UIManager : SingletonMono<UIManager>
         if (openedWindows.ContainsKey(windowName))
         {
             openedWindows[windowName].Hide();
+        }
+        else
+        {
+            Debug.Log("未找到该名字窗口，使用窗口类名试试");
+        }
+    }
+    public bool CheckShow(string windowName)
+    {
+        if (openedWindows.ContainsKey(windowName))
+        {
+            return openedWindows[windowName].gameObject.activeSelf;
+        }
+        else
+        {
+            return false;
         }
     }
 }

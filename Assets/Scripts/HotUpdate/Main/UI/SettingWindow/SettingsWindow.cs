@@ -34,7 +34,7 @@ public class SettingsWindow : UIBaseWindow
             displayTab.onClick.AddListener(() => SwitchPanel(displayPanel));
 
             applyButton.onClick.AddListener(ApplyAllSettings);
-            cancelButton.onClick.AddListener(() => { UIManager.Inst.HideWindow(gameObject.name); });
+            cancelButton.onClick.AddListener(() => { UIManager.Inst.HideWindow(nameof(SettingsWindow)); });
             defaultsButton.onClick.AddListener(ResetToDefaults);
             quitButton.onClick.AddListener(() => { Application.Quit(); });
         }
@@ -72,7 +72,7 @@ public class SettingsWindow : UIBaseWindow
 
         SettingsManager.Inst.SaveSettings();
 
-        UIManager.Inst.HideWindow(gameObject.name);
+        UIManager.Inst.HideWindow(nameof(SettingsWindow));
     }
 
     public void ResetToDefaults()

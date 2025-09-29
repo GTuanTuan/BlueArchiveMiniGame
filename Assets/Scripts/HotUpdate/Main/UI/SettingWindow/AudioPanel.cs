@@ -6,22 +6,22 @@ public class AudioPanel : UIBasePanel, ISettingsPanel
 {
     [SerializeField] private Slider masterVolumeSlider;
     [SerializeField] private AudioMixer audioMixer;
-
-    private void OnEnable()
+    float masterVolume;
+    public override void OnShow()
     {
-        masterVolumeSlider.value = SettingsManager.Inst.CurrentSettings.masterVolume;
+        masterVolume = masterVolumeSlider.value = SettingsManager.Inst.CurrentSettings.masterVolume;
         if (audioMixer == null) audioMixer = FindAnyObjectByType<AudioMixer>();
     }
 
     public void OnMasterVolumeChanged(float value)
     {
-        SettingsManager.Inst.CurrentSettings.masterVolume = value;
+        masterVolume = value;
         SetVolume(value);
     }
 
     public void ApplySettings()
     {
-        SetVolume(SettingsManager.Inst.CurrentSettings.masterVolume);
+        SettingsManager.Inst.CurrentSettings.masterVolume = masterVolume;
     }
 
     private void SetVolume(float volume)
@@ -32,6 +32,6 @@ public class AudioPanel : UIBasePanel, ISettingsPanel
 
     public void ResetToDefault()
     {
-        throw new System.NotImplementedException();
+        SettingsManager.Inst.CurrentSettings.masterVolume = masterVolume = SettingsManager.Inst.DefSetting.masterVolume;
     }
 }

@@ -5,29 +5,22 @@ using UnityEngine.UI;
 public class GeneralPanel : UIBasePanel,ISettingsPanel
 {
     [SerializeField] private TMP_InputField serverAddressInput;
-
+    string serverAddress;
     public override void OnShow()
     {
         serverAddressInput.text = SettingsManager.Inst.CurrentSettings.serverAddress;
-        base.Refresh();
     }
-    public override void Refresh()
-    {
-        base.Refresh();
-    }
-
     public void OnServerAddressChanged(string value)
     {
-        SettingsManager.Inst.CurrentSettings.serverAddress = value;
+        serverAddress = value;
     }
-
     public void ApplySettings()
     {
-       // SettingsManager.Inst.CurrentSettings.serverAddress = value;
+        SettingsManager.Inst.CurrentSettings.serverAddress = serverAddress;
     }
 
     public void ResetToDefault()
     {
-        
+        SettingsManager.Inst.CurrentSettings.serverAddress = serverAddress = SettingsManager.Inst.DefSetting.serverAddress;
     }
 }

@@ -119,16 +119,16 @@ public class NetWorkThirdCharacterController : NetworkBehaviour
         if (!isLocalPlayer) return;
         if (context.performed)
         {
-            //isCursorLocked = SettingsManager.Inst.isShow();
-            //UpdateCursorState();
-            //if (SettingsManager.Inst.isShow())
-            //{
-            //    SettingsManager.Inst.CloseSettingWindow();
-            //}
-            //else
-            //{
-            //    SettingsManager.Inst.OpenSettingWindow();
-            //}
+            isCursorLocked = !isCursorLocked;
+            UpdateCursorState();
+            if (GameSystem.Inst.UI.CheckShow(nameof(SettingsWindow)))
+            {
+                GameSystem.Inst.UI.HideWindow(nameof(SettingsWindow));
+            }
+            else
+            {
+                GameSystem.Inst.UI.ShowWindow<SettingsWindow>(nameof(SettingsWindow));
+            }
         }
     }
     public void OnAlt(InputAction.CallbackContext context)

@@ -5371,10 +5371,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d6ce7fe9c8bcb144bfed87170589a6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  generalPanel: {fileID: 4929832501435178744}
-  audioPanel: {fileID: 2478601437905449858}
-  graphicsPanel: {fileID: 7082806397231928786}
-  displayPanel: {fileID: 6551384662084563704}
+  generalPanel: {fileID: 4535673477861328621}
+  audioPanel: {fileID: 3733547730907787236}
+  graphicsPanel: {fileID: 41461428167766573}
+  displayPanel: {fileID: 561068071673071071}
   generalTab: {fileID: 2750116641401440055}
   audioTab: {fileID: 1661438359137702215}
   graphicsTab: {fileID: 5210410202606032641}

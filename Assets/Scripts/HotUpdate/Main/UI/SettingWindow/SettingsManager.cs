@@ -7,6 +7,7 @@ public class SettingsManager: Singleton<SettingsManager>
 {
     private GameSettings _currentSettings;
     public GameSettings CurrentSettings => _currentSettings;
+    public GameSettings DefSetting = new GameSettings();
     private string settingsPath;
     public SettingsManager()
     {
@@ -33,9 +34,14 @@ public class SettingsManager: Singleton<SettingsManager>
         string json = JsonUtility.ToJson(_currentSettings, true);
         File.WriteAllText(settingsPath, json);
     }
+    #region 图像
+    #endregion 图像
+
+    #region 其他
+    #endregion 其他
     public void ResetToDefaultSettings()
     {
-        _currentSettings = new GameSettings();
+        _currentSettings = DefSetting;
         SaveSettings();
     }
 }
@@ -43,16 +49,17 @@ public class SettingsManager: Singleton<SettingsManager>
 [System.Serializable]
 public class GameSettings
 {
-    public string serverAddress = "http://127.0.0.1:8080";
+    public string serverAddress ;
 
     public float masterVolume = 0.75f;
 
-    public int qualityLevel = 2;
-    public bool vsyncEnabled = true;
-    public float shadowDistance = 50f;
-    public int antiAliasing = 2;
-    public bool bloomEnabled = true;
-    public float renderScale = 1.0f;
+    //public int qualityLevel = 2;
+    //public bool vsyncEnabled = true;
+    //public float shadowDistance = 50f;
+    //public int antiAliasing = 2;
+    //public bool bloomEnabled = true;
+    //public float renderScale = 1.0f;
+    public GraphicsSetting graphicsSettings;
 
     public int resolutionIndex = 0;
     public bool fullscreen = true;

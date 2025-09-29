@@ -11,7 +11,7 @@ public abstract class UIBaseWindow : MonoBehaviour
     }
     public virtual void Hide()
     {
-        gameObject.SetActive(true);
+        gameObject.SetActive(false);
         OnHide();
     }
     protected virtual void OnShow() { }

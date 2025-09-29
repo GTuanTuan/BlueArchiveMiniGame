@@ -6,13 +6,32 @@ using YooAsset;
 public class GameStart : MonoBehaviour
 {
     SceneHandle sceneHandle;
+
     void Start()
     {
         DontDestroyOnLoad(gameObject);
-        StartCoroutine(LoadScene());
-        //StartCoroutine(LoadUIManager());
+        StartCoroutine(StartupSequence());
     }
-    IEnumerator LoadScene()
+
+    IEnumerator StartupSequence()
+    {
+        Debug.Log("开始游戏启动流程...");
+
+        yield return StartCoroutine(InitializeGameSystems());
+
+        yield return StartCoroutine(LoadMainScene());
+
+        Debug.Log("游戏启动流程完成");
+    }
+
+    IEnumerator InitializeGameSystems()
+    {
+        Debug.Log("初始化游戏系统...");
+        GameSystem.Inst.Init();
+        Debug.Log("游戏系统初始化完成");
+        yield return null;
+    }
+    IEnumerator LoadMainScene()
     {
         sceneHandle = YooAssets.LoadSceneAsync("MirrorRoomOffline");
         //sceneHandle = YooAssets.LoadSceneAsync("Game");
@@ -23,17 +42,6 @@ public class GameStart : MonoBehaviour
         };
         yield return sceneHandle;
     }
-    //IEnumerator LoadUIManager()
-    //{
-    //    AssetHandle _handle = YooAssets.LoadAssetAsync<GameObject>("UIManager");
-    //    _handle.Completed += (handle) =>
-    //    {
-    //        GameObject go = Instantiate((GameObject)_handle.AssetObject);
-    //        DontDestroyOnLoad(go);
-    //        Debug.Log(_handle.AssetObject);
-    //    };
-    //    yield return _handle;
-    //}
     IEnumerator LoadNetWorkHUD()
     {
         AssetHandle _handle = YooAssets.LoadAssetAsync<GameObject>("MyNetWorkHUD");
@@ -43,13 +51,5 @@ public class GameStart : MonoBehaviour
             Debug.Log(_handle.AssetObject);
         };
         yield return _handle;
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        //if(sceneHandle!=null && sceneHandle.IsValid)
-        //{
-        //    Debug.Log(sceneHandle.Progress);
-        //}
     }
 }

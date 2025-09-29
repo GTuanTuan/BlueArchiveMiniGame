@@ -136,3 +136,16 @@ MonoBehaviour:
         FilterRuleName: CollectShaderVariants
         AssetTags: 
         UserData: 
+    - GroupName: Setting
+      GroupDesc: 
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/Settings/SampleSceneProfile.asset
+        CollectorGUID: a6560a915ef98420e9faacc1c7438823
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 

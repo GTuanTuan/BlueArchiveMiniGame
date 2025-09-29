@@ -15,14 +15,14 @@ public class ScreenTest : MonoBehaviour
         startPos = ParentObj.anchoredPosition;
         inputAction.action.Enable();
         inputAction.action.performed += ScreenTouchTest;
-        onScreenStick.onPointerDown += () =>
-        {
-            ParentObj.anchoredPosition = onScreenStick.PointerDownPos;
-        };
-        onScreenStick.onPointerUp += () =>
-        {
-            ParentObj.anchoredPosition = startPos;
-        };
+        //onScreenStick.onPointerDown += () =>
+        //{
+        //    ParentObj.anchoredPosition = onScreenStick.PointerDownPos;
+        //};
+        //onScreenStick.onPointerUp += () =>
+        //{
+        //    ParentObj.anchoredPosition = startPos;
+        //};
     }
 
     private void ScreenTouchTest(InputAction.CallbackContext obj)
