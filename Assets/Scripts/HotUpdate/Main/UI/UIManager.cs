@@ -6,8 +6,11 @@ using YooAsset;
 
 public class UIManager : Singleton<UIManager>
 {
-    Transform uiRoot;
     Dictionary<string, UIBaseWindow> openedWindows = new Dictionary<string, UIBaseWindow>();
+    public void Init()
+    {
+
+    }
     public void ShowWindow<T>(string windowName,Action<T> onShow = null) where T : UIBaseWindow
     {
         if (openedWindows.ContainsKey(windowName))
@@ -36,7 +39,7 @@ public class UIManager : Singleton<UIManager>
         }
         else
         {
-            Debug.Log("Î´ÕÒµ½¸ÃÃû×Ö´°¿Ú£¬Ê¹ÓÃ´°¿ÚÀàÃûÊÔÊÔ");
+            Debug.Log("æœªæ‰¾åˆ°è¯¥åå­—çª—å£ï¼Œä½¿ç”¨çª—å£ç±»åè¯•è¯•");
         }
     }
     public bool CheckShow(string windowName)

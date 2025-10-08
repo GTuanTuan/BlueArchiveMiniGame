@@ -115,13 +115,13 @@ public class ThirdCharacterController : MonoBehaviour
         {
             isCursorLocked = !isCursorLocked;
             UpdateCursorState();
-            if (GameSystem.Inst.UI.CheckShow(nameof(SettingsWindow)))
+            if (UIManager.Inst.CheckShow(nameof(SettingsWindow)))
             {
-                GameSystem.Inst.UI.HideWindow(nameof(SettingsWindow));
+                UIManager.Inst.HideWindow(nameof(SettingsWindow));
             }
             else
             {
-                GameSystem.Inst.UI.ShowWindow<SettingsWindow>(nameof(SettingsWindow));
+                UIManager.Inst.ShowWindow<SettingsWindow>(nameof(SettingsWindow));
             }
         }
     }

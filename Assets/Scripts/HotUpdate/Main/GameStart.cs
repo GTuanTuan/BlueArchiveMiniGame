@@ -15,20 +15,20 @@ public class GameStart : MonoBehaviour
 
     IEnumerator StartupSequence()
     {
-        Debug.Log("¿ªÊ¼ÓÎÏ·Æô¶¯Á÷³Ì...");
+        Debug.Log("å¼€å§‹æ¸¸æˆå¯åŠ¨æµç¨‹...");
 
         yield return StartCoroutine(InitializeGameSystems());
 
         yield return StartCoroutine(LoadMainScene());
 
-        Debug.Log("ÓÎÏ·Æô¶¯Á÷³ÌÍê³É");
+        Debug.Log("æ¸¸æˆå¯åŠ¨æµç¨‹å®Œæˆ");
     }
 
     IEnumerator InitializeGameSystems()
     {
-        Debug.Log("³õÊ¼»¯ÓÎÏ·ÏµÍ³...");
+        Debug.Log("åˆå§‹åŒ–æ¸¸æˆç³»ç»Ÿ...");
         GameSystem.Inst.Init();
-        Debug.Log("ÓÎÏ·ÏµÍ³³õÊ¼»¯Íê³É");
+        Debug.Log("æ¸¸æˆç³»ç»Ÿåˆå§‹åŒ–å®Œæˆ");
         yield return null;
     }
     IEnumerator LoadMainScene()

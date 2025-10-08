@@ -7,13 +7,11 @@ public class SettingsWindow : UIBaseWindow
     public GeneralPanel generalPanel;
     public AudioPanel audioPanel;
     public GraphicsPanel graphicsPanel;
-    public DisplayPanel displayPanel;
 
     [Header("Tab Buttons")]
     public Button generalTab;
     public Button audioTab;
     public Button graphicsTab;
-    public Button displayTab;
 
     [Header("Action Buttons")]
     public Button applyButton;
@@ -31,7 +29,6 @@ public class SettingsWindow : UIBaseWindow
             generalTab.onClick.AddListener(() => SwitchPanel(generalPanel));
             audioTab.onClick.AddListener(() => SwitchPanel(audioPanel));
             graphicsTab.onClick.AddListener(() => SwitchPanel(graphicsPanel));
-            displayTab.onClick.AddListener(() => SwitchPanel(displayPanel));
 
             applyButton.onClick.AddListener(ApplyAllSettings);
             cancelButton.onClick.AddListener(() => { UIManager.Inst.HideWindow(nameof(SettingsWindow)); });
@@ -45,9 +42,10 @@ public class SettingsWindow : UIBaseWindow
     private void SwitchPanel(UIBasePanel newPanel)
     {
         if (currentPanel != null)
-            currentPanel.gameObject.SetActive(false);
-
-        newPanel.gameObject.SetActive(true);
+        {
+            currentPanel.Hide();
+        }
+        newPanel.Show();
         currentPanel = newPanel;
         UpdateTabButtons();
     }
@@ -57,21 +55,11 @@ public class SettingsWindow : UIBaseWindow
         generalTab.interactable = currentPanel != generalPanel;
         audioTab.interactable = currentPanel != audioPanel;
         graphicsTab.interactable = currentPanel != graphicsPanel;
-        displayTab.interactable = currentPanel != displayPanel;
     }
 
     public void ApplyAllSettings()
     {
-        generalPanel.ApplySettings();
-
-        displayPanel.ApplySettings();
-
-        graphicsPanel.ApplySettings();
-
-        audioPanel.ApplySettings();
-
-        SettingsManager.Inst.SaveSettings();
-
+        SettingsManager.Inst.ApplyAllSettings();
         UIManager.Inst.HideWindow(nameof(SettingsWindow));
     }
 

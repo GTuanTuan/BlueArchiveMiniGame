@@ -2,6 +2,7 @@ using UnityEngine;
 using System.IO;
 using YooAsset;
 using System;
+using System.Drawing.Printing;
 
 public class SettingsManager: Singleton<SettingsManager>
 {
@@ -9,7 +10,7 @@ public class SettingsManager: Singleton<SettingsManager>
     public GameSettings CurrentSettings => _currentSettings;
     public GameSettings DefSetting = new GameSettings();
     private string settingsPath;
-    public SettingsManager()
+    public void Init()
     {
         settingsPath = Path.Combine(Application.persistentDataPath, "settings.json");
         LoadSettings();
@@ -34,14 +35,14 @@ public class SettingsManager: Singleton<SettingsManager>
         string json = JsonUtility.ToJson(_currentSettings, true);
         File.WriteAllText(settingsPath, json);
     }
-    #region 图像
-    #endregion 图像
-
-    #region 其他
-    #endregion 其他
     public void ResetToDefaultSettings()
     {
         _currentSettings = DefSetting;
+        SaveSettings();
+    }
+    public void ApplyAllSettings()
+    {
+        GraphicsManager.Inst.ApplySettings();
         SaveSettings();
     }
 }
@@ -53,18 +54,7 @@ public class GameSettings
 
     public float masterVolume = 0.75f;
 
-    //public int qualityLevel = 2;
-    //public bool vsyncEnabled = true;
-    //public float shadowDistance = 50f;
-    //public int antiAliasing = 2;
-    //public bool bloomEnabled = true;
-    //public float renderScale = 1.0f;
     public GraphicsSetting graphicsSettings;
-
-    public int resolutionIndex = 0;
-    public bool fullscreen = true;
-    public bool borderless = false;
-    public int displayIndex = 0;
 }
 public interface ISettingsPanel
 {
