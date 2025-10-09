@@ -37,8 +37,12 @@ public class SettingsWindow : UIBaseWindow
         }
         SwitchPanel(generalPanel);
         base.OnShow();
+        GameSystem.Inst.UpdateCursorState(false);
     }
-
+    protected override void OnHide()
+    {
+        GameSystem.Inst.UpdateCursorState(true);
+    }
     private void SwitchPanel(UIBasePanel newPanel)
     {
         if (currentPanel != null)

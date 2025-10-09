@@ -48,6 +48,12 @@ public class ThirdCharacterController : MonoBehaviour
         RotateModel();
         UpdateAnimator();
     }
+    public void UpdateCursorState(bool value)
+    {
+        if (!isLocalPlayer) return;
+        isCursorLocked = value;
+        UpdateCursorState();
+    }
     private void UpdateCursorState()
     {
         if (!isLocalPlayer) return;
@@ -113,8 +119,6 @@ public class ThirdCharacterController : MonoBehaviour
         if (!isLocalPlayer) return;
         if (context.performed)
         {
-            isCursorLocked = !isCursorLocked;
-            UpdateCursorState();
             if (UIManager.Inst.CheckShow(nameof(SettingsWindow)))
             {
                 UIManager.Inst.HideWindow(nameof(SettingsWindow));

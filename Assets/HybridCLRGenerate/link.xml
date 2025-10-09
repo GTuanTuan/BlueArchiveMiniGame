@@ -75,6 +75,7 @@
     <type fullname="PatchManager" preserve="all" />
     <type fullname="PatchOperation" preserve="all" />
     <type fullname="PatchOperationData" preserve="all" />
+    <type fullname="SingletonMono`1" preserve="all" />
     <type fullname="Singleton`1" preserve="all" />
   </assembly>
   <assembly fullname="System">
@@ -94,11 +95,9 @@
     <type fullname="UnityEngine.InputSystem.InputControl" preserve="all" />
   </assembly>
   <assembly fullname="Unity.RenderPipelines.Core.Runtime">
-    <type fullname="UnityEngine.Rendering.VolumeComponent" preserve="all" />
     <type fullname="UnityEngine.Rendering.VolumeProfile" preserve="all" />
   </assembly>
   <assembly fullname="Unity.RenderPipelines.Universal.Runtime">
-    <type fullname="UnityEngine.Rendering.Universal.Bloom" preserve="all" />
     <type fullname="UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset" preserve="all" />
   </assembly>
   <assembly fullname="Unity.TextMeshPro">
@@ -206,6 +205,7 @@
     <type fullname="System.ArraySegment`1" preserve="all" />
     <type fullname="System.Boolean" preserve="all" />
     <type fullname="System.Byte" preserve="all" />
+    <type fullname="System.Collections.Generic.Dictionary`2" preserve="all" />
     <type fullname="System.Collections.Generic.IEnumerable`1" preserve="all" />
     <type fullname="System.Collections.Generic.IEnumerator`1" preserve="all" />
     <type fullname="System.Collections.Generic.List`1" preserve="all" />

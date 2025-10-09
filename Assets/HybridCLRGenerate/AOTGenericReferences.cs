@@ -10,7 +10,6 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 		"MyScripts.Runtime.dll",
 		"System.Core.dll",
 		"Unity.InputSystem.dll",
-		"Unity.RenderPipelines.Core.Runtime.dll",
 		"UnityEngine.CoreModule.dll",
 		"UnityEngine.JSONSerializeModule.dll",
 		"YooAsset.dll",
@@ -258,13 +257,23 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	// System.Action<object>
 	// System.Collections.Generic.ArraySortHelper<object>
 	// System.Collections.Generic.Comparer<object>
+	// System.Collections.Generic.Dictionary.Enumerator<object,object>
+	// System.Collections.Generic.Dictionary.KeyCollection.Enumerator<object,object>
+	// System.Collections.Generic.Dictionary.KeyCollection<object,object>
+	// System.Collections.Generic.Dictionary.ValueCollection.Enumerator<object,object>
+	// System.Collections.Generic.Dictionary.ValueCollection<object,object>
+	// System.Collections.Generic.Dictionary<object,object>
 	// System.Collections.Generic.EqualityComparer<object>
+	// System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<object,object>>
 	// System.Collections.Generic.ICollection<object>
 	// System.Collections.Generic.IComparer<object>
+	// System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<object,object>>
 	// System.Collections.Generic.IEnumerable<object>
+	// System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<object,object>>
 	// System.Collections.Generic.IEnumerator<object>
 	// System.Collections.Generic.IEqualityComparer<object>
 	// System.Collections.Generic.IList<object>
+	// System.Collections.Generic.KeyValuePair<object,object>
 	// System.Collections.Generic.List.Enumerator<object>
 	// System.Collections.Generic.List<object>
 	// System.Collections.Generic.ObjectComparer<object>
@@ -389,8 +398,6 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 		// object UnityEngine.Object.Instantiate<object>(object)
 		// object UnityEngine.Object.Instantiate<object>(object,UnityEngine.Transform)
 		// object UnityEngine.Object.Instantiate<object>(object,UnityEngine.Transform,bool)
-		// bool UnityEngine.Rendering.VolumeProfile.TryGet<object>(System.Type,object&)
-		// bool UnityEngine.Rendering.VolumeProfile.TryGet<object>(object&)
 		// YooAsset.AssetHandle YooAsset.ResourcePackage.LoadAssetAsync<object>(string,uint)
 		// YooAsset.AssetHandle YooAsset.YooAssets.LoadAssetAsync<object>(string,uint)
 	}

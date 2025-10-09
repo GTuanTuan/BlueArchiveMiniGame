@@ -79,7 +79,7 @@ public class GraphicsSetting
     public float renderScale = 1.0f;
     public bool isCustom = false;
 
-    public int resolutionIndex = 0;
+    public int resolutionIndex = Screen.resolutions.Length - 1;
     public bool fullscreen = true;
     public bool borderless = false;
     public int displayIndex = 0;

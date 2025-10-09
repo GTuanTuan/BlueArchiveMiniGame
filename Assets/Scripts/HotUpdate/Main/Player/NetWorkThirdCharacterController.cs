@@ -29,6 +29,7 @@ public class NetWorkThirdCharacterController : NetworkBehaviour
     private Vector3 verticalVelocity;
     private Vector2 moveInput;
     private bool isGrounded;
+    [SerializeField]
     private bool isCursorLocked = true;
 
     void Awake()
@@ -44,6 +45,12 @@ public class NetWorkThirdCharacterController : NetworkBehaviour
         Move();
         RotateModel();
         UpdateAnimator();
+    }
+    public void UpdateCursorState(bool value)
+    {
+        if (!isLocalPlayer) return;
+        isCursorLocked = value;
+        UpdateCursorState();
     }
     private void UpdateCursorState()
     {
@@ -119,8 +126,6 @@ public class NetWorkThirdCharacterController : NetworkBehaviour
         if (!isLocalPlayer) return;
         if (context.performed)
         {
-            isCursorLocked = !isCursorLocked;
-            UpdateCursorState();
             if (UIManager.Inst.CheckShow(nameof(SettingsWindow)))
             {
                 UIManager.Inst.HideWindow(nameof(SettingsWindow));
@@ -195,6 +200,7 @@ public class NetWorkThirdCharacterController : NetworkBehaviour
     public override void OnStartLocalPlayer()
     {
         Debug.Log("OnStartLocalPlayer");
+        GameSystem.Inst.localPlayer = this;
         vCam.Priority = 15;
         UpdateCursorState();
     }
