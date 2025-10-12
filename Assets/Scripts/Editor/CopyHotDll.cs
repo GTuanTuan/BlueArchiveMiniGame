@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
@@ -9,7 +9,7 @@ using System.Text;
 
 public class CopyHotDll
 {
-    [MenuItem("Tools/¸üĞÂÉú³ÉPreloadDll")]
+    [MenuItem("Tools/æ›´æ–°ç”ŸæˆPreloadDll")]
     public static void CopyPreloadDll2Byte()
     {
         HybridCLR.Editor.Commands.CompileDllCommand.CompileDllActiveBuildTarget();
@@ -23,7 +23,7 @@ public class CopyHotDll
         AssetDatabase.Refresh();
         Debug.Log($"copy {sourceDir} to {destDir}");
     }
-    [MenuItem("Tools/¸üĞÂÉú³ÉMainDll")]
+    [MenuItem("Tools/æ›´æ–°ç”ŸæˆMainDll")]
     public static void CopyMainDll2Byte()
     {
         HybridCLR.Editor.Commands.CompileDllCommand.CompileDllActiveBuildTarget();
@@ -37,7 +37,7 @@ public class CopyHotDll
         AssetDatabase.Refresh();
         Debug.Log($"copy {sourceDir} to {destDir}");
     }
-    [MenuItem("Tools/¸üĞÂÉú³É²¹³äÊı¾İÔ´")]
+    [MenuItem("Tools/æ›´æ–°ç”Ÿæˆè¡¥å……æ•°æ®æº")]
     public static void CopyDepDll2Byte()
     {
         HybridCLR.Editor.Commands.CompileDllCommand.CompileDllActiveBuildTarget();

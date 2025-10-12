@@ -1,4 +1,4 @@
-using UnityEditor;
+ï»¿using UnityEditor;
 using UnityEngine;
 using YooAsset.Editor;
 using YooAsset;
@@ -8,21 +8,21 @@ using UnityEditor.Build.Pipeline;
 
 public class BuildTool
 {
-    [MenuItem("Tools/´ò°üPreload")]
+    [MenuItem("Tools/æ‰“åŒ…Preload")]
     public static void BuildPreload()
     {
         CopyHotDll.CopyPreloadDll2Byte();
         ExecuteBuild("Preload",EBuildPipeline.ScriptableBuildPipeline, EditorUserBuildSettings.activeBuildTarget,EFileNameStyle.BundleName_HashName,EBuildinFileCopyOption.ClearAndCopyAll);
-        Debug.Log($"´ò°üPreload½áÊø");
+        Debug.Log($"æ‰“åŒ…Preloadç»“æŸ");
     }
-    [MenuItem("Tools/´ò°üMain %G")]
+    [MenuItem("Tools/æ‰“åŒ…Main %G")]
     public static void BuildMain()
     {
         CopyHotDll.CopyMainDll2Byte();
         ExecuteBuild("Main", EBuildPipeline.ScriptableBuildPipeline, EditorUserBuildSettings.activeBuildTarget, EFileNameStyle.BundleName_HashName, EBuildinFileCopyOption.None);
-        Debug.Log($"´ò°üMain½áÊø");
+        Debug.Log($"æ‰“åŒ…Mainç»“æŸ");
     }
-    [MenuItem("Tools/È«²¿´ò°ü")]
+    [MenuItem("Tools/å…¨éƒ¨æ‰“åŒ…")]
     public static void BuildAll()
     {
         BuildPreload();
@@ -68,8 +68,8 @@ public class BuildTool
         return DateTime.Now.ToString("yyyy-MM-dd") + "-" + totalMinutes;
     }
     /// <summary>
-    /// ÄÚÖÃ×ÅÉ«Æ÷×ÊÔ´°üÃû³Æ
-    /// ×¢Òâ£ººÍ×Ô¶¯ÊÕ¼¯µÄ×ÅÉ«Æ÷×ÊÔ´°üÃû±£³ÖÒ»ÖÂ£¡
+    /// å†…ç½®ç€è‰²å™¨èµ„æºåŒ…åç§°
+    /// æ³¨æ„ï¼šå’Œè‡ªåŠ¨æ”¶é›†çš„ç€è‰²å™¨èµ„æºåŒ…åä¿æŒä¸€è‡´ï¼
     /// </summary>
     public static string GetBuiltinShaderBundleName(string PackageName)
     {
