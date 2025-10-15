@@ -1,124 +1,288 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System.Linq;
 
 public class ShadowColliderGenerator : MonoBehaviour
 {
-    public Camera shadowCamera;      // ×¨ÃÅäÖÈ¾ÒõÓ°µÄÏà»ú
-    public RenderTexture shadowRT;   // äÖÈ¾ÎÆÀí
-    public LayerMask shadowCasterLayer; // Í¶ÉäÒõÓ°µÄÎïÌå²ã
-    public float colliderPrecision = 0.1f; // Åö×²Ìå¾«¶È
+    [Header("References")]
+    public Camera shadowCamera;
+    public RenderTexture shadowRT;
+    public PolygonCollider2D polygonCollider;
+
+    [Header("Settings")]
+    [Range(0f, 1f)]
+    public float shadowThreshold = 0.3f;
+    public int gridSize = 2; // ç½‘æ ¼å¤§å°ï¼Œè¶Šå°è¶Šç²¾ç¡®
+    public float simplifyTolerance = 1f;
 
     private Texture2D processedTexture;
-    private PolygonCollider2D polygonCollider;
 
     void Start()
     {
-        // ³õÊ¼»¯äÖÈ¾ÎÆÀí
-        shadowRT = new RenderTexture(512, 512, 24);
-        shadowCamera.targetTexture = shadowRT;
-
-        // ´´½¨´¦ÀíÓÃµÄÎÆÀí
-        processedTexture = new Texture2D(512, 512, TextureFormat.RGB24, false);
-
-        polygonCollider = GetComponent<PolygonCollider2D>();
         if (polygonCollider == null)
-            polygonCollider = gameObject.AddComponent<PolygonCollider2D>();
+            polygonCollider = GetComponent<PolygonCollider2D>();
+
+        processedTexture = new Texture2D(shadowRT.width, shadowRT.height, TextureFormat.R8, false);
+        GenerateCollider();
     }
 
     void Update()
     {
-        GenerateShadowCollider();
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            GenerateCollider();
+        }
     }
 
-    void GenerateShadowCollider()
+    [ContextMenu("Generate Collider")]
+    public void GenerateCollider()
     {
-        // 1. äÖÈ¾ÒõÓ°µ½ÎÆÀí
+        if (shadowCamera == null || shadowRT == null) return;
+
+        // æ¸²æŸ“é˜´å½±
         shadowCamera.Render();
 
-        // 2. ´ÓGPU¶ÁÈ¡ÎÆÀíµ½CPU
+        // è¯»å–çº¹ç†
         RenderTexture.active = shadowRT;
         processedTexture.ReadPixels(new Rect(0, 0, shadowRT.width, shadowRT.height), 0, 0);
         processedTexture.Apply();
         RenderTexture.active = null;
 
-        // 3. ¼ì²âÒõÓ°±ßÔµ
-        List<Vector2> edgePoints = DetectEdges(processedTexture);
+        // ç”Ÿæˆè½®å»“
+        List<Vector2> contour = GenerateContourFromTexture();
 
-        // 4. ×ª»»ÎªÊÀ½ç×ø±ê²¢ÉèÖÃÅö×²Ìå
-        if (edgePoints.Count > 2)
+        if (contour.Count > 2)
         {
-            List<Vector2> worldPoints = ConvertToWorldCoordinates(edgePoints);
+            List<Vector2> worldPoints = ConvertToWorldCoordinates(contour);
             polygonCollider.SetPath(0, worldPoints);
+            Debug.Log($"Collider generated with {worldPoints.Count} points");
+        }
+        else
+        {
+            polygonCollider.pathCount = 0;
+            Debug.Log("No contour generated");
         }
     }
 
-    List<Vector2> DetectEdges(Texture2D texture)
+    List<Vector2> GenerateContourFromTexture()
     {
-        List<Vector2> edges = new List<Vector2>();
-        Color[] pixels = texture.GetPixels();
+        int width = processedTexture.width;
+        int height = processedTexture.height;
 
-        int width = texture.width;
-        int height = texture.height;
+        // åˆ›å»ºäºŒå€¼åŒ–ç½‘æ ¼
+        bool[,] grid = CreateBinaryGrid(width, height);
 
-        // ¼òµ¥µÄ±ßÔµ¼ì²âËã·¨
-        for (int y = 1; y < height - 1; y += (int)(1f / colliderPrecision))
+        // æ‰¾åˆ°æ‰€æœ‰è¾¹ç•Œç‚¹
+        List<Vector2> boundaryPoints = FindBoundaryPoints(grid);
+
+        // è¿æ¥è¾¹ç•Œç‚¹å½¢æˆè½®å»“
+        List<Vector2> contour = ConnectBoundaryPoints(boundaryPoints);
+
+        return contour;
+    }
+
+    bool[,] CreateBinaryGrid(int width, int height)
+    {
+        bool[,] grid = new bool[width / gridSize, height / gridSize];
+
+        for (int x = 0; x < grid.GetLength(0); x++)
         {
-            for (int x = 1; x < width - 1; x += (int)(1f / colliderPrecision))
+            for (int y = 0; y < grid.GetLength(1); y++)
             {
-                int index = y * width + x;
+                int texX = x * gridSize;
+                int texY = y * gridSize;
+                Color pixel = processedTexture.GetPixel(texX, texY);
+                grid[x, y] = pixel.grayscale < shadowThreshold;
+            }
+        }
 
-                // ¼ì²éµ±Ç°ÏñËØÓëÖÜÎ§ÏñËØµÄ²îÒì
-                if (IsEdgePixel(pixels, index, width))
+        return grid;
+    }
+
+    List<Vector2> FindBoundaryPoints(bool[,] grid)
+    {
+        List<Vector2> boundaryPoints = new List<Vector2>();
+        int width = grid.GetLength(0);
+        int height = grid.GetLength(1);
+
+        for (int x = 0; x < width; x++)
+        {
+            for (int y = 0; y < height; y++)
+            {
+                if (grid[x, y])
                 {
-                    edges.Add(new Vector2(x, y));
+                    // æ£€æŸ¥æ˜¯å¦æ˜¯è¾¹ç•Œï¼ˆæœ‰éé˜´å½±åƒç´ é‚»å±…ï¼‰
+                    bool isBoundary = false;
+
+                    // æ£€æŸ¥4é‚»åŸŸ
+                    if (x == 0 || !grid[x - 1, y]) isBoundary = true;
+                    else if (x == width - 1 || !grid[x + 1, y]) isBoundary = true;
+                    else if (y == 0 || !grid[x, y - 1]) isBoundary = true;
+                    else if (y == height - 1 || !grid[x, y + 1]) isBoundary = true;
+
+                    if (isBoundary)
+                    {
+                        boundaryPoints.Add(new Vector2(x * gridSize, y * gridSize));
+                    }
                 }
             }
         }
 
-        return edges;
+        Debug.Log($"Found {boundaryPoints.Count} boundary points");
+        return boundaryPoints;
     }
 
-    bool IsEdgePixel(Color[] pixels, int index, int width)
+    List<Vector2> ConnectBoundaryPoints(List<Vector2> points)
     {
-        Color current = pixels[index];
-        float currentBrightness = current.r + current.g + current.b;
+        if (points.Count < 3) return points;
 
-        // ¼ì²éÉÏÏÂ×óÓÒÏñËØ
-        float[] neighborBrightness = new float[4]
-        {
-            pixels[index - 1].r + pixels[index - 1].g + pixels[index - 1].b,    // ×ó
-            pixels[index + 1].r + pixels[index + 1].g + pixels[index + 1].b,    // ÓÒ
-            pixels[index - width].r + pixels[index - width].g + pixels[index - width].b, // ÏÂ
-            pixels[index + width].r + pixels[index + width].g + pixels[index + width].b  // ÉÏ
-        };
+        List<Vector2> contour = new List<Vector2>();
+        List<Vector2> remaining = new List<Vector2>(points);
 
-        // Èç¹ûµ±Ç°ÏñËØÓëÁÚ¾Ó²îÒì½Ï´ó£¬ÈÏÎªÊÇ±ßÔµ
-        float threshold = 0.3f;
-        for (int i = 0; i < 4; i++)
+        // æ‰¾åˆ°æœ€å·¦è¾¹çš„ç‚¹ä½œä¸ºèµ·ç‚¹
+        Vector2 start = remaining.OrderBy(p => p.x).First();
+        contour.Add(start);
+        remaining.Remove(start);
+
+        Vector2 current = start;
+        Vector2 previousDirection = Vector2.right;
+
+        int maxIterations = points.Count * 2;
+        int iterations = 0;
+
+        while (remaining.Count > 0 && iterations < maxIterations)
         {
-            if (Mathf.Abs(currentBrightness - neighborBrightness[i]) > threshold)
-                return true;
+            iterations++;
+
+            // æ‰¾åˆ°ä¸å½“å‰æ–¹å‘æœ€ä¸€è‡´çš„ä¸‹ä¸€ä¸ªç‚¹
+            float bestScore = float.MinValue;
+            Vector2 bestPoint = Vector2.zero;
+            int bestIndex = -1;
+
+            for (int i = 0; i < remaining.Count; i++)
+            {
+                Vector2 toPoint = (remaining[i] - current).normalized;
+                float distance = Vector2.Distance(current, remaining[i]);
+
+                // è¯„åˆ†ï¼šæ–¹å‘ä¸€è‡´æ€§ + è·ç¦»æƒé‡
+                float directionScore = Vector2.Dot(previousDirection, toPoint);
+                float distanceScore = 1f / (distance + 0.1f);
+                float totalScore = directionScore + distanceScore * 0.1f;
+
+                if (totalScore > bestScore && distance < 50f) // è·ç¦»é™åˆ¶
+                {
+                    bestScore = totalScore;
+                    bestPoint = remaining[i];
+                    bestIndex = i;
+                }
+            }
+
+            if (bestIndex >= 0)
+            {
+                previousDirection = (bestPoint - current).normalized;
+                contour.Add(bestPoint);
+                remaining.RemoveAt(bestIndex);
+                current = bestPoint;
+            }
+            else
+            {
+                break;
+            }
         }
 
-        return false;
+        // ç¡®ä¿è½®å»“é—­åˆ
+        if (contour.Count > 2 && Vector2.Distance(contour[0], contour[contour.Count - 1]) > 30f)
+        {
+            contour.Add(contour[0]);
+        }
+
+        // ç®€åŒ–è½®å»“
+        contour = SimplifyContour(contour);
+
+        Debug.Log($"Connected {contour.Count} points into contour");
+        return contour;
+    }
+
+    List<Vector2> SimplifyContour(List<Vector2> contour)
+    {
+        if (contour.Count <= 3) return contour;
+
+        List<Vector2> simplified = new List<Vector2>();
+        simplified.Add(contour[0]);
+
+        for (int i = 1; i < contour.Count - 1; i++)
+        {
+            // å¦‚æœè§’åº¦å˜åŒ–å¤ªå¤§ï¼Œä¿ç•™è¿™ä¸ªç‚¹
+            if (i > 1)
+            {
+                Vector2 prevDir = (contour[i] - contour[i - 1]).normalized;
+                Vector2 nextDir = (contour[i + 1] - contour[i]).normalized;
+                float angle = Vector2.Angle(prevDir, nextDir);
+
+                if (angle > 30f) // è§’åº¦é˜ˆå€¼
+                {
+                    simplified.Add(contour[i]);
+                }
+            }
+        }
+
+        simplified.Add(contour[contour.Count - 1]);
+
+        return simplified;
     }
 
     List<Vector2> ConvertToWorldCoordinates(List<Vector2> texturePoints)
     {
         List<Vector2> worldPoints = new List<Vector2>();
-        Bounds wallBounds = GetComponent<Collider2D>().bounds;
 
-        foreach (Vector2 point in texturePoints)
+        foreach (Vector2 texCoord in texturePoints)
         {
-            // ½«ÎÆÀí×ø±ê×ª»»ÎªÇ½Ãæ¾Ö²¿×ø±ê
-            Vector2 localPoint = new Vector2(
-                point.x / shadowRT.width * wallBounds.size.x - wallBounds.size.x * 0.5f,
-                point.y / shadowRT.height * wallBounds.size.y - wallBounds.size.y * 0.5f
+            Vector3 viewportPos = new Vector3(
+                texCoord.x / processedTexture.width,
+                texCoord.y / processedTexture.height,
+                shadowCamera.nearClipPlane
             );
 
-            worldPoints.Add(localPoint);
+            Vector3 worldPos = shadowCamera.ViewportToWorldPoint(viewportPos);
+            worldPoints.Add(new Vector2(worldPos.x, worldPos.y));
         }
 
         return worldPoints;
+    }
+
+    // è°ƒè¯•ï¼šæ˜¾ç¤ºè¾¹ç•Œç‚¹
+    void OnDrawGizmosSelected()
+    {
+        if (processedTexture == null) return;
+
+        Gizmos.color = Color.red;
+
+        // æ˜¾ç¤ºè¾¹ç•Œç‚¹
+        bool[,] grid = CreateBinaryGrid(processedTexture.width, processedTexture.height);
+        List<Vector2> boundaryPoints = FindBoundaryPoints(grid);
+
+        foreach (Vector2 point in boundaryPoints)
+        {
+            Vector3 viewportPos = new Vector3(
+                point.x / processedTexture.width,
+                point.y / processedTexture.height,
+                shadowCamera.nearClipPlane
+            );
+            Vector3 worldPos = shadowCamera.ViewportToWorldPoint(viewportPos);
+            Gizmos.DrawSphere(worldPos, 0.02f);
+        }
+
+        // æ˜¾ç¤ºç¢°æ’å™¨è½®å»“
+        if (polygonCollider != null && polygonCollider.pathCount > 0)
+        {
+            Gizmos.color = Color.green;
+            Vector2[] path = polygonCollider.GetPath(0);
+            for (int i = 0; i < path.Length; i++)
+            {
+                Vector3 start = path[i];
+                Vector3 end = path[(i + 1) % path.Length];
+                Gizmos.DrawLine(start, end);
+            }
+        }
     }
 }
