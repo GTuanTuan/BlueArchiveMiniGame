@@ -40,6 +40,6 @@ public class PatchWindow : MonoBehaviour
         {
             statusText.text = "更新失败";
         }
-        gameObject.SetActive(false);
+        //gameObject.SetActive(false);
     }
 }

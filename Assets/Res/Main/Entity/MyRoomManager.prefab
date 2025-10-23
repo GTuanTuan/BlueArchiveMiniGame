@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4760332684612964771}
   - component: {fileID: 9129947580518122996}
   - component: {fileID: 8079528307665621790}
+  - component: {fileID: 3285456311399013183}
   - component: {fileID: 1568052019122780073}
   m_Layer: 0
   m_Name: MyRoomManager
@@ -119,6 +120,27 @@ MonoBehaviour:
   debugLog: 0
   statisticsGUI: 0
   statisticsLog: 0
+--- !u!114 &3285456311399013183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7736143046250787917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c761308e733c51245b2e8bb4201f46dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableActiveDiscovery: 1
+  BroadcastAddress: 
+  serverBroadcastListenPort: 47777
+  ActiveDiscoveryInterval: 1
+  transport: {fileID: 8079528307665621790}
+  OnServerFound:
+    m_PersistentCalls:
+      m_Calls: []
+  secretHandshake: -8774184567070794674
 --- !u!114 &1568052019122780073
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -6,6 +6,7 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	public static readonly IReadOnlyList<string> PatchedAOTAssemblyList = new List<string>
 	{
 		"Cinemachine.dll",
+		"Mirror.Components.dll",
 		"Mirror.dll",
 		"MyScripts.Runtime.dll",
 		"System.Core.dll",
@@ -21,6 +22,7 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	// }} 
 
 	// {{ AOT generic types
+	// Mirror.Discovery.NetworkDiscoveryBase<Mirror.Discovery.ServerRequest,Mirror.Discovery.ServerResponse>
 	// Mirror.Reader<Mirror.AddPlayerMessage>
 	// Mirror.Reader<Mirror.ChangeOwnerMessage>
 	// Mirror.Reader<Mirror.CommandMessage>
@@ -177,6 +179,7 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	// Mirror.Writer<ulong>
 	// Mirror.Writer<ushort>
 	// SingletonMono<object>
+	// System.Action<int,int>
 	// System.Action<object,Mirror.AddPlayerMessage>
 	// System.Action<object,Mirror.ChangeOwnerMessage>
 	// System.Action<object,Mirror.CommandMessage>
@@ -255,28 +258,58 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	// System.Action<object,ulong>
 	// System.Action<object,ushort>
 	// System.Action<object>
+	// System.ArraySegment.Enumerator<byte>
+	// System.ArraySegment<byte>
 	// System.Collections.Generic.ArraySortHelper<object>
 	// System.Collections.Generic.Comparer<object>
+	// System.Collections.Generic.Dictionary.Enumerator<int,object>
+	// System.Collections.Generic.Dictionary.Enumerator<long,Mirror.Discovery.ServerResponse>
 	// System.Collections.Generic.Dictionary.Enumerator<object,object>
+	// System.Collections.Generic.Dictionary.KeyCollection.Enumerator<int,object>
+	// System.Collections.Generic.Dictionary.KeyCollection.Enumerator<long,Mirror.Discovery.ServerResponse>
 	// System.Collections.Generic.Dictionary.KeyCollection.Enumerator<object,object>
+	// System.Collections.Generic.Dictionary.KeyCollection<int,object>
+	// System.Collections.Generic.Dictionary.KeyCollection<long,Mirror.Discovery.ServerResponse>
 	// System.Collections.Generic.Dictionary.KeyCollection<object,object>
+	// System.Collections.Generic.Dictionary.ValueCollection.Enumerator<int,object>
+	// System.Collections.Generic.Dictionary.ValueCollection.Enumerator<long,Mirror.Discovery.ServerResponse>
 	// System.Collections.Generic.Dictionary.ValueCollection.Enumerator<object,object>
+	// System.Collections.Generic.Dictionary.ValueCollection<int,object>
+	// System.Collections.Generic.Dictionary.ValueCollection<long,Mirror.Discovery.ServerResponse>
 	// System.Collections.Generic.Dictionary.ValueCollection<object,object>
+	// System.Collections.Generic.Dictionary<int,object>
+	// System.Collections.Generic.Dictionary<long,Mirror.Discovery.ServerResponse>
 	// System.Collections.Generic.Dictionary<object,object>
+	// System.Collections.Generic.EqualityComparer<Mirror.Discovery.ServerResponse>
+	// System.Collections.Generic.EqualityComparer<int>
+	// System.Collections.Generic.EqualityComparer<long>
 	// System.Collections.Generic.EqualityComparer<object>
+	// System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<int,object>>
+	// System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<long,Mirror.Discovery.ServerResponse>>
 	// System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<object,object>>
 	// System.Collections.Generic.ICollection<object>
 	// System.Collections.Generic.IComparer<object>
+	// System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<int,object>>
+	// System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<long,Mirror.Discovery.ServerResponse>>
 	// System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<object,object>>
 	// System.Collections.Generic.IEnumerable<object>
+	// System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<int,object>>
+	// System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<long,Mirror.Discovery.ServerResponse>>
 	// System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<object,object>>
 	// System.Collections.Generic.IEnumerator<object>
+	// System.Collections.Generic.IEqualityComparer<int>
+	// System.Collections.Generic.IEqualityComparer<long>
 	// System.Collections.Generic.IEqualityComparer<object>
 	// System.Collections.Generic.IList<object>
+	// System.Collections.Generic.KeyValuePair<int,object>
+	// System.Collections.Generic.KeyValuePair<long,Mirror.Discovery.ServerResponse>
 	// System.Collections.Generic.KeyValuePair<object,object>
 	// System.Collections.Generic.List.Enumerator<object>
 	// System.Collections.Generic.List<object>
 	// System.Collections.Generic.ObjectComparer<object>
+	// System.Collections.Generic.ObjectEqualityComparer<Mirror.Discovery.ServerResponse>
+	// System.Collections.Generic.ObjectEqualityComparer<int>
+	// System.Collections.Generic.ObjectEqualityComparer<long>
 	// System.Collections.Generic.ObjectEqualityComparer<object>
 	// System.Collections.ObjectModel.ReadOnlyCollection<object>
 	// System.Comparison<object>
@@ -374,9 +407,13 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	public void RefMethods()
 	{
 		// object Cinemachine.CinemachineVirtualCamera.GetCinemachineComponent<object>()
+		// System.Void Mirror.NetworkBehaviour.GeneratedSyncVarDeserialize<int>(int&,System.Action<int,int>,int)
 		// System.Void Mirror.NetworkBehaviour.GeneratedSyncVarDeserialize<object>(object&,System.Action<object,object>,object)
+		// System.Void Mirror.NetworkBehaviour.GeneratedSyncVarSetter<int>(int,int&,ulong,System.Action<int,int>)
 		// System.Void Mirror.NetworkBehaviour.GeneratedSyncVarSetter<object>(object,object&,ulong,System.Action<object,object>)
+		// System.Void Mirror.NetworkBehaviour.SetSyncVar<int>(int,int&,ulong)
 		// System.Void Mirror.NetworkBehaviour.SetSyncVar<object>(object,object&,ulong)
+		// bool Mirror.NetworkBehaviour.SyncVarEqual<int>(int,int&)
 		// bool Mirror.NetworkBehaviour.SyncVarEqual<object>(object,object&)
 		// System.Collections.Generic.List<object> System.Linq.Enumerable.ToList<object>(System.Collections.Generic.IEnumerable<object>)
 		// System.Void* Unity.Collections.LowLevel.Unsafe.UnsafeUtility.AddressOf<UnityEngine.Vector2>(UnityEngine.Vector2&)
@@ -384,6 +421,7 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 		// int Unity.Collections.LowLevel.Unsafe.UnsafeUtility.SizeOf<UnityEngine.Vector2>()
 		// int Unity.Collections.LowLevel.Unsafe.UnsafeUtility.SizeOf<float>()
 		// object UnityEngine.Component.GetComponent<object>()
+		// object UnityEngine.GameObject.AddComponent<object>()
 		// object UnityEngine.GameObject.GetComponent<object>()
 		// object UnityEngine.GameObject.GetComponentInParent<object>()
 		// object UnityEngine.GameObject.GetComponentInParent<object>(bool)
@@ -395,6 +433,7 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 		// float UnityEngine.InputSystem.InputActionState.ReadValue<float>(int,int,bool)
 		// object UnityEngine.JsonUtility.FromJson<object>(string)
 		// object UnityEngine.Object.FindAnyObjectByType<object>()
+		// object UnityEngine.Object.FindObjectOfType<object>()
 		// object UnityEngine.Object.Instantiate<object>(object)
 		// object UnityEngine.Object.Instantiate<object>(object,UnityEngine.Transform)
 		// object UnityEngine.Object.Instantiate<object>(object,UnityEngine.Transform,bool)

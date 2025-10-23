@@ -5,7 +5,6 @@ using YooAsset;
 
 public class GameStart : MonoBehaviour
 {
-    SceneHandle sceneHandle;
 
     void Start()
     {
@@ -33,10 +32,15 @@ public class GameStart : MonoBehaviour
     }
     IEnumerator LoadMainScene()
     {
-        sceneHandle = YooAssets.LoadSceneAsync("MirrorRoomOffline");
-        //sceneHandle = YooAssets.LoadSceneAsync("Game");
+        SceneHandle sceneHandle = YooAssets.LoadSceneAsync("MirrorRoomOffline");
+        UIManager.Inst.ShowWindow<LoadingWindow>("LoadingWindow", window =>
+        {
+            window.TrackOperation(sceneHandle);
+            sceneHandle.UnSuspend();
+        });
         sceneHandle.Completed += (handle) =>
         {
+            GameManager.Inst.MainUICanvas.transform.Find("PatchWindow").gameObject.SetActive(false);
             handle.ActivateScene();
             StartCoroutine(LoadNetWorkHUD());
         };

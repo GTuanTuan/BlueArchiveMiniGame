@@ -1,11 +1,11 @@
 {
     "FileVersion": "1.0.0",
     "PackageName": "Preload",
-    "PackageVersion": "2025-10-10-876",
+    "PackageVersion": "2025-10-23-619",
     "Wrappers": [
         {
-            "BundleGUID": "e302da1c009b85048d83055f7dae31f4",
-            "FileName": "preload_assets_res_preload_hotupdatedll_e302da1c009b85048d83055f7dae31f4.bundle"
+            "BundleGUID": "2e42ccf99ea94f39f58b060fa3cf244a",
+            "FileName": "preload_assets_res_preload_hotupdatedll_2e42ccf99ea94f39f58b060fa3cf244a.bundle"
         },
         {
             "BundleGUID": "3af8985a0950e33249e822a39aa0ccc6",

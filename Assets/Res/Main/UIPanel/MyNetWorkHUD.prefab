@@ -764,6 +764,8 @@ MonoBehaviour:
   statusText: {fileID: 3082003562568471892}
   inputNetworkAddress: {fileID: 7429884203986320158}
   inputPort: {fileID: 552456287426945676}
+  alwaysAutoStart: 1
+  networkDiscovery: {fileID: 0}
 --- !u!1 &4216763349455153867
 GameObject:
   m_ObjectHideFlags: 0

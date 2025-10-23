@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Mirror;
+using Mirror.Discovery;
 
 public class MyNetworkManagerHUD : MonoBehaviour
 {
@@ -21,6 +22,13 @@ public class MyNetworkManagerHUD : MonoBehaviour
     [SerializeField] private InputField inputNetworkAddress;
     [SerializeField] private InputField inputPort;
 
+    // this will check for games to join, if non, start host.
+    public bool alwaysAutoStart = false;
+    public NetworkDiscovery networkDiscovery;
+    readonly Dictionary<long, ServerResponse> discoveredServers = new Dictionary<long, ServerResponse>();
+    private TouchScreenKeyboard keyboard;
+    private int keyboardStatus = 0;
+
     private void Start()
     {
         // Init the input field with Network Manager's network address.
@@ -32,6 +40,32 @@ public class MyNetworkManagerHUD : MonoBehaviour
         //RegisterClientEvents();
 
         CheckWebGLPlayer();
+
+        if (networkDiscovery == null)
+        { networkDiscovery = GameObject.FindObjectOfType<NetworkDiscovery>(); }
+
+        if (alwaysAutoStart)
+        {
+            StartCoroutine(Waiter());
+        }
+    }
+
+    public IEnumerator Waiter()
+    {
+        statusText.text = "Discovering servers..";
+        discoveredServers.Clear();
+        networkDiscovery.StartDiscovery();
+        // we have set this as 3.1 seconds, default discovery scan is 3 seconds, allows some time if host and client are started at same time
+        yield return new WaitForSeconds(1.1f);
+        if (discoveredServers == null || discoveredServers.Count <= 0)
+        {
+            statusText.text = "No Servers found, starting as Host.";
+            yield return new WaitForSeconds(0.1f);
+            discoveredServers.Clear();
+            // NetworkManager.singleton.onlineScene = SceneManager.GetActiveScene().name;
+            MyRoomManager.singleton.StartHost();
+            networkDiscovery.AdvertiseServer();
+        }
     }
 
     private void RegisterListeners()
