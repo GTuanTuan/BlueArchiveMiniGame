@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06f22c4c39e629a41a903910d1b5b479, type: 3}
+  m_Name: "\u624D\u7FBD\u6843\u4E95"
+  m_EditorClassIdentifier: 
+  displayName: "\u624D\u7FBD\u6843\u4E95"
+  portrait: {fileID: 2800000, guid: 1e3d0cf699433874584c6a1653a1c908, type: 3}
+  entranceClip: {fileID: 7400000, guid: 5f5ac5e816255b58a25c6f53c01dc228, type: 2}
+  idleClip: {fileID: 7400000, guid: 0e1149e9296f594e884177d782266aab, type: 2}
+  victoryStart: {fileID: 7400000, guid: aba00c3af7475665b4b5a7a4114efbc4, type: 2}
+  victoryEnd: {fileID: 7400000, guid: 2488e50589f05478954e353e1a650b46, type: 2}
+  defeatClip: {fileID: 7400000, guid: 8cd318a435de5297a9250d81b090d795, type: 2}
+  entranceVoices:
+  - {fileID: 8300000, guid: fe225ea1f01c525bb7d1f347473c6e83, type: 3}
+  - {fileID: 8300000, guid: 411ad5b717a85630901ac3502d15aad3, type: 3}
+  victoryVoice: {fileID: 8300000, guid: 81e7cfbfc5ba579d8e6f6c5d1506a5b5, type: 3}
+  pickupVoices:
+  - {fileID: 8300000, guid: c894bc4a2087eb14bbfbec80540d17cf, type: 3}
+  moveVoices:
+  - {fileID: 8300000, guid: d03cd06470dab1c4d8fec67686149162, type: 3}
+  - {fileID: 8300000, guid: ea05950fefbb9dd47950ec84a3b2b21e, type: 3}
+  exPiercingWidth: 0
+  exPiercingHeight: 0
+  hitPoints: 300
+  moveSpeed: 2.2
+  turnSpeed: 720
+  attackRange: 4.5
+  detectionRange: 16
+  maxChaseDistance: 20
+  damage: 7
+  magazineSize: 8
+  exDamage: 80
+  exRadius: 4
+  exCooldown: 12
+  exArea: 1
+  attackSeconds: 2.766667
+  reloadSeconds: 1.9333334
+  normalShotTimes:
+  - 0.6333334
+  - 0.73333335
+  - 0.8666667
+  exShotTimes:
+  - 1.1666666
+  - 1.6666666
+  - 2.1666667
+  - 2.3333333
+  exShotIndices: ffffffffffffffffffffffffffffffff
+  exDuration: 2.8333333
+  stopState: Base Layer.MoveStop

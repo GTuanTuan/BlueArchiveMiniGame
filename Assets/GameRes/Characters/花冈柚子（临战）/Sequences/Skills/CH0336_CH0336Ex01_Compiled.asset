@@ -1,0 +1,382 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-3790610306014121403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6fa2d92fc1b3f34da284357edf89c3b, type: 3}
+  m_Name: CH0336Ex01__PlayTargetEffect__2
+  m_EditorClassIdentifier: 
+--- !u!114 &-2268692262834213523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6fa2d92fc1b3f34da284357edf89c3b, type: 3}
+  m_Name: CH0336Ex01__RequestGameplayStage__0
+  m_EditorClassIdentifier: 
+--- !u!114 &-984332735484626320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6fa2d92fc1b3f34da284357edf89c3b, type: 3}
+  m_Name: CH0336Ex01__PlayTargetEffect__0
+  m_EditorClassIdentifier: 
+--- !u!114 &-901800423601511236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6fa2d92fc1b3f34da284357edf89c3b, type: 3}
+  m_Name: CH0336Ex01__PlayTargetEffect__1
+  m_EditorClassIdentifier: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830413168532f154c90cbb227c123805, type: 3}
+  m_Name: CH0336_CH0336Ex01_Compiled
+  m_EditorClassIdentifier: 
+  characterId: CH0336
+  skillId: CH0336Ex01
+  sourceHasNoNormalSkill: 1
+  fieldTimeline: {fileID: 11400000, guid: 48b502dc03e143d42b3ac84a974b44ce, type: 2}
+  shots: []
+  targetEffects:
+  - prefab: {fileID: 9130476009194228695, guid: 2ee57ddec2bcffb4e9448a3805d9351f,
+      type: 3}
+    targetSlot: 0
+    requiredConditionKey: 
+    anchorIndex: -1
+    anchor: 3
+    rotationMode: 6
+    offset: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    attach: 0
+    keepWorldRotation: 0
+    delay: 0
+    duration: 5
+    sounds: []
+    shakes: []
+  - prefab: {fileID: 4653428668003924248, guid: 37e29d6d2d20b144b9a039528936aefe,
+      type: 3}
+    targetSlot: 0
+    requiredConditionKey: 
+    anchorIndex: -1
+    anchor: 2
+    rotationMode: 3
+    offset: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    attach: 1
+    keepWorldRotation: 1
+    delay: 0
+    duration: 3.6
+    sounds:
+    - clips:
+      - {fileID: 8300000, guid: 539bcfdec3da550f838f8b0d7eeb9b43, type: 3}
+      localPosition: {x: 0, y: 0, z: 0}
+      delay: 0
+      volume: 1
+      pitch: 1
+      randomPitchMin: 0
+      randomPitchMax: 0
+      spatialBlend: 1
+      loop: 0
+    shakes: []
+  - prefab: {fileID: 6662341782497075010, guid: e8fc249523643c441bf5f993b4e64737,
+      type: 3}
+    targetSlot: 0
+    requiredConditionKey: 
+    anchorIndex: -1
+    anchor: 2
+    rotationMode: 3
+    offset: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    attach: 1
+    keepWorldRotation: 1
+    delay: 0
+    duration: 3.6
+    sounds:
+    - clips:
+      - {fileID: 8300000, guid: f747cea5a1bb598eb02843af6e73f42f, type: 3}
+      localPosition: {x: 0, y: 0, z: 0}
+      delay: 0
+      volume: 1
+      pitch: 1
+      randomPitchMin: 0
+      randomPitchMax: 0
+      spatialBlend: 1
+      loop: 0
+    shakes: []
+  - prefab: {fileID: 6506994354106548008, guid: dbbafcdcc91b5a845a4c5b9e8c0ab66a,
+      type: 3}
+    targetSlot: 0
+    requiredConditionKey: 
+    anchorIndex: -1
+    anchor: 2
+    rotationMode: 3
+    offset: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    attach: 1
+    keepWorldRotation: 1
+    delay: 0
+    duration: 2.4
+    sounds:
+    - clips:
+      - {fileID: 8300000, guid: 47697ccd52ba595fb474bde2b2ea65e1, type: 3}
+      localPosition: {x: 0, y: 0, z: 0}
+      delay: 0
+      volume: 1
+      pitch: 1
+      randomPitchMin: 0
+      randomPitchMax: 0
+      spatialBlend: 1
+      loop: 0
+    shakes: []
+  - prefab: {fileID: 6805150316478057570, guid: ecc316d3106f4604790e83721fcfcb71,
+      type: 3}
+    targetSlot: 0
+    requiredConditionKey: 
+    anchorIndex: -1
+    anchor: 2
+    rotationMode: 3
+    offset: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    attach: 1
+    keepWorldRotation: 1
+    delay: 0
+    duration: 3.6
+    sounds:
+    - clips:
+      - {fileID: 8300000, guid: f747cea5a1bb598eb02843af6e73f42f, type: 3}
+      localPosition: {x: 0, y: 0, z: 0}
+      delay: 0
+      volume: 1
+      pitch: 1
+      randomPitchMin: 0
+      randomPitchMax: 0
+      spatialBlend: 1
+      loop: 0
+    shakes: []
+  - prefab: {fileID: 3871977208251511757, guid: 203c3006a8c991349af642e52ac0ab44,
+      type: 3}
+    targetSlot: 0
+    requiredConditionKey: 
+    anchorIndex: -1
+    anchor: 2
+    rotationMode: 3
+    offset: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    attach: 1
+    keepWorldRotation: 1
+    delay: 0
+    duration: 2.4
+    sounds:
+    - clips:
+      - {fileID: 8300000, guid: 958d350e65bc55b28e13737a58abf28e, type: 3}
+      localPosition: {x: 0, y: 0, z: 0}
+      delay: 0
+      volume: 1
+      pitch: 1
+      randomPitchMin: 0
+      randomPitchMax: 0
+      spatialBlend: 1
+      loop: 0
+    shakes: []
+  - prefab: {fileID: 3586904685821233743, guid: 492a777eeb71ac24aa427c66c4d48803,
+      type: 3}
+    targetSlot: 0
+    requiredConditionKey: 
+    anchorIndex: -1
+    anchor: 2
+    rotationMode: 3
+    offset: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    attach: 1
+    keepWorldRotation: 1
+    delay: 0
+    duration: 3.6
+    sounds:
+    - clips:
+      - {fileID: 8300000, guid: f747cea5a1bb598eb02843af6e73f42f, type: 3}
+      localPosition: {x: 0, y: 0, z: 0}
+      delay: 0
+      volume: 1
+      pitch: 1
+      randomPitchMin: 0
+      randomPitchMax: 0
+      spatialBlend: 1
+      loop: 0
+    shakes: []
+  - prefab: {fileID: 5013389347761991452, guid: 7501735ecec87f247a5acf592d3e6ee6,
+      type: 3}
+    targetSlot: 0
+    requiredConditionKey: 
+    anchorIndex: -1
+    anchor: 2
+    rotationMode: 3
+    offset: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    attach: 1
+    keepWorldRotation: 1
+    delay: 0
+    duration: 1.9
+    sounds:
+    - clips:
+      - {fileID: 8300000, guid: a031d5ba382b578a83aa441856a9a01b, type: 3}
+      localPosition: {x: 0, y: 0, z: 0}
+      delay: 0
+      volume: 1
+      pitch: 1
+      randomPitchMin: 0
+      randomPitchMax: 0
+      spatialBlend: 1
+      loop: 0
+    shakes: []
+  - prefab: {fileID: 7534296275087412209, guid: 61f437493f3845a4d9065c0341a6a5ca,
+      type: 3}
+    targetSlot: 0
+    requiredConditionKey: 
+    anchorIndex: -1
+    anchor: 2
+    rotationMode: 3
+    offset: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    attach: 1
+    keepWorldRotation: 1
+    delay: 0
+    duration: 3.6
+    sounds:
+    - clips:
+      - {fileID: 8300000, guid: f747cea5a1bb598eb02843af6e73f42f, type: 3}
+      localPosition: {x: 0, y: 0, z: 0}
+      delay: 0
+      volume: 1
+      pitch: 1
+      randomPitchMin: 0
+      randomPitchMax: 0
+      spatialBlend: 1
+      loop: 0
+    shakes: []
+  outcomes: []
+  supportedEx:
+  - ordinal: 1
+    effectIndices: 0300000004000000
+  - ordinal: 2
+    effectIndices: 0500000006000000
+  - ordinal: 3
+    effectIndices: 0700000008000000
+  forms: []
+  gameplayStages:
+  - key: /EntityTimeline/0/Entity:spawn:0
+    eventKind: spawn
+    sourceTime: 0.033333335
+  - key: /EntityTimeline/0/Entity/EntityTimeline/1/Entity:spawn:0
+    eventKind: spawn
+    sourceTime: 2.1666667
+  baselineNormal:
+    normalSkillId: 
+    shotFrames: 
+    logicFramesPerSecond: 30
+    muzzleIndex: 0
+    pointTarget: 0
+    sameImpactForHitAndMiss: 0
+    muzzleEffect: {fileID: 0}
+    projectile: {fileID: 0}
+    hitEffect: {fileID: 0}
+    missEffect: {fileID: 0}
+    outcomes: []
+    speed: 0
+    destinationOffset: {x: 0, y: 0, z: 0}
+    destinationRandomMin: {x: 0, y: 0, z: 0}
+    destinationRandomMax: {x: 0, y: 0, z: 0}
+    forwardCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    rightCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    upCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  enhancedNormal:
+    normalSkillId: 
+    shotFrames: 
+    logicFramesPerSecond: 30
+    muzzleIndex: 0
+    pointTarget: 0
+    sameImpactForHitAndMiss: 0
+    muzzleEffect: {fileID: 0}
+    projectile: {fileID: 0}
+    hitEffect: {fileID: 0}
+    missEffect: {fileID: 0}
+    outcomes: []
+    speed: 0
+    destinationOffset: {x: 0, y: 0, z: 0}
+    destinationRandomMin: {x: 0, y: 0, z: 0}
+    destinationRandomMax: {x: 0, y: 0, z: 0}
+    forwardCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    rightCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    upCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  postAttackController: {fileID: 0}
+  postAttackRateParameter: 
+  normalAudio: []
+--- !u!114 &7231323047279115919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6fa2d92fc1b3f34da284357edf89c3b, type: 3}
+  m_Name: CH0336Ex01__RequestGameplayStage__1
+  m_EditorClassIdentifier: 

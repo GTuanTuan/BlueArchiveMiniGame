@@ -1,0 +1,18 @@
+{
+    "name": "BA.Bootstrap.Tests",
+    "rootNamespace": "BA.Bootstrap.Tests",
+    "references": [
+        "MyScripts.Runtime",
+        "YooAsset"
+    ],
+    "includePlatforms": ["Editor"],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false,
+    "optionalUnityReferences": ["TestAssemblies"]
+}

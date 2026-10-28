@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: FX_MAT_CH0334_Img_HUD_01a
+  m_Shader: {fileID: 4800000, guid: 5b67604b4c73e4f44b475efb6f5b0125, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - _ADD_TEX_CHANNEL_RGB
+  - _GDISTORT_UV_CHANNEL_UV1
+  - _MAIN_UV_CHANNEL_UV1
+  - _MASK_UV_CHANNEL_UV1
+  - _RDISTORT_UV_CHANNEL_UV1
+  - _STEP_TEX_CHANNEL_RGB
+  - _TEX_MAIN_DISTORT_RG
+  - _TEX_MASK_DISTORT_OFF
+  m_InvalidKeywords:
+  - _RGBRGBA_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Tex_DistortRG:
+        m_Texture: {fileID: 2800000, guid: 1f46f7af7e4b5374b819144607cc69b6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Tex_Main:
+        m_Texture: {fileID: 2800000, guid: aa1c99ec29595547b82044f6f41443bb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Tex_Mask:
+        m_Texture: {fileID: 2800000, guid: ab5b7dd8a4a15914ba3b776e852eb449, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Add_Speed_X: 0
+    - _Add_Speed_Y: 0
+    - _Add_Tex_Channel: 0
+    - _Add_Tex_Dithering: 1
+    - _Add_Tex_Multiply: 5
+    - _AlphaPremultiplyOn: 0
+    - _Cull: 0
+    - _DstBlend: 1
+    - _DstBlendAlpha: 10
+    - _GDistort_Power_X: 0
+    - _GDistort_Power_Y: 0
+    - _GDistort_Speed_X: 0
+    - _GDistort_Speed_Y: 0
+    - _GDistort_UV_Channel: 0
+    - _Main_Multiply: 1
+    - _Main_Speed_X: 0
+    - _Main_Speed_Y: 0
+    - _Main_Tex_Alpha_use: 0
+    - _Main_UV_Channel: 0
+    - _Mask_UV_Channel: 0
+    - _RDistort_Power_X: 0
+    - _RDistort_Power_Y: 0
+    - _RDistort_Speed_X: 0
+    - _RDistort_Speed_Y: 0
+    - _RDistort_UV_Channel: 0
+    - _RGBRGBA: 1
+    - _SrcBlend: 1
+    - _SrcBlendAlpha: 1
+    - _Step_Tex_Channel: 0
+    - _Step_Tex_Dithering: 0
+    - _Step_Tex_Multiply: 5
+    - _Tex_Main_Distort: 3
+    - _Tex_Mask_Distort: 0
+    - _ZOffsetFactor: 0
+    - _ZOffsetUnits: 0
+    - _ZTest: 4
+    - _ZWrite: 0
+    m_Colors:
+    - _Add_Color: {r: 0.6801343, g: 1.2227159, b: 5.3403134, a: 1}
+    - _CustomData_DistortOffsetG_CD1XYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_DistortOffsetG_CD2XYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_DistortOffsetR_CD1XYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_DistortOffsetR_CD2XYXY: {r: 1, g: 1, b: 0, a: 0}
+    - _CustomData_DistortPowerG_CD2XYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_DistortPowerR_CD2XYXY: {r: 0, g: 0, b: 1, a: 1}
+    - _CustomData_DistortTilingG_CD1XYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_DistortTilingG_CD2XYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_DistortTilingR_CD1XYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_DistortTilingR_CD2XYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_MainOffset_CD1XYXY: {r: 0, g: 0, b: -0.5, a: 0}
+    - _CustomData_MainOffset_CD2XYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_MainTiling_CD1XYXY: {r: 0, g: 0, b: 1, a: 0}
+    - _CustomData_MainTiling_CD2XYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_MaskOffset_CD1XYXY: {r: 0, g: 0, b: 0, a: 1}
+    - _CustomData_MaskOffset_CD2XYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_MaskTiling_CD1XYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_MaskTiling_CD2XYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_StepValue_CD1_GStepBStepXYXY: {r: 1, g: 1, b: 0, a: 0}
+    - _G_Tilingxy_Offsetzw: {r: 1, g: 1, b: 0, a: 0}
+    - _Main_Color: {r: 11.984314, g: 11.984314, b: 11.984314, a: 1}
+    - _R_Tilingxy_Offsetzw: {r: 0, g: 6, b: 0, a: 0}
+  m_BuildTextureStacks: []

@@ -1,0 +1,311 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-1578537614182299328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6fa2d92fc1b3f34da284357edf89c3b, type: 3}
+  m_Name: CH0201Ex01__ApplyForm__0
+  m_EditorClassIdentifier: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830413168532f154c90cbb227c123805, type: 3}
+  m_Name: CH0201_CH0201Ex01_Compiled
+  m_EditorClassIdentifier: 
+  characterId: CH0201
+  skillId: CH0201Ex01
+  sourceHasNoNormalSkill: 0
+  fieldTimeline: {fileID: 11400000, guid: 2566935ed390abb408fea72238062168, type: 2}
+  shots: []
+  targetEffects: []
+  outcomes: []
+  supportedEx: []
+  forms:
+  - formIndex: 1
+    transitionKind: post_attack_profile
+    dispelTemplates: []
+  gameplayStages: []
+  baselineNormal:
+    normalSkillId: CH0201Normal01
+    shotFrames: 010000000500000009000000
+    logicFramesPerSecond: 30
+    muzzleIndex: 1
+    pointTarget: 0
+    sameImpactForHitAndMiss: 0
+    muzzleEffect: {fileID: 67289540818102576, guid: 21c3a11efc855a0e82f81b6f2e593ccd,
+      type: 3}
+    projectile: {fileID: 5303226697802524649, guid: 77889edf2d5259ad902d39a6832c9a06,
+      type: 3}
+    hitEffect: {fileID: 0}
+    missEffect: {fileID: 0}
+    outcomes:
+    - hit: 1
+      material: 1
+      prefab: {fileID: 6600079346953470518, guid: a866dd4a6c2b56b4bf59f42e9974557a,
+        type: 3}
+      offset: {x: 0, y: 0, z: 0}
+      useContactPoint: 1
+      useHostRotation: 0
+    - hit: 1
+      material: 2
+      prefab: {fileID: 6638247800811313243, guid: 930e96051b265c37a7d7ae10f180540b,
+        type: 3}
+      offset: {x: 0, y: 0, z: 0}
+      useContactPoint: 1
+      useHostRotation: 0
+    - hit: 1
+      material: 3
+      prefab: {fileID: 1605050298169014060, guid: 0da0d31a0ef75f28af75f1c62cde9a99,
+        type: 3}
+      offset: {x: 0, y: 0, z: 0}
+      useContactPoint: 1
+      useHostRotation: 0
+    - hit: 1
+      material: 4
+      prefab: {fileID: 638276735743614900, guid: 9604f5ab931f52da85024ddfca723511,
+        type: 3}
+      offset: {x: 0, y: 0, z: 0}
+      useContactPoint: 1
+      useHostRotation: 0
+    - hit: 0
+      material: 0
+      prefab: {fileID: 6052175287698116540, guid: c5ee507000d15474a5fb40f7394d3fd8,
+        type: 3}
+      offset: {x: 0.2, y: 0, z: 0.05}
+      useContactPoint: 0
+      useHostRotation: 0
+    speed: 40
+    destinationOffset: {x: 0, y: 0, z: 0}
+    destinationRandomMin: {x: 0.05, y: -0.3, z: -0.3}
+    destinationRandomMax: {x: 0.1, y: 0.3, z: 0.3}
+    forwardCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    rightCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    upCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  enhancedNormal:
+    normalSkillId: CH0201Normal02
+    shotFrames: 010000000500000009000000
+    logicFramesPerSecond: 30
+    muzzleIndex: 1
+    pointTarget: 0
+    sameImpactForHitAndMiss: 1
+    muzzleEffect: {fileID: 1993732207861209428, guid: c4c92c1a3c825286a40c3a96ac1c0064,
+      type: 3}
+    projectile: {fileID: 5540222567572419201, guid: ee90c915e64310b4c84cf026323ce7df,
+      type: 3}
+    hitEffect: {fileID: 3943750191799939585, guid: 7b7097853df1561dbe85ad5cb2e01799,
+      type: 3}
+    missEffect: {fileID: 0}
+    outcomes:
+    - hit: 1
+      material: 1
+      prefab: {fileID: 6901768076155066998, guid: a29653bb0b1c529ba250d8b94cdfcb2d,
+        type: 3}
+      offset: {x: 0, y: 0, z: 0}
+      useContactPoint: 1
+      useHostRotation: 1
+    - hit: 1
+      material: 2
+      prefab: {fileID: 7786192978141242029, guid: 516605651abf502cb39c08c97c8d316d,
+        type: 3}
+      offset: {x: 0, y: 0, z: 0}
+      useContactPoint: 1
+      useHostRotation: 1
+    - hit: 1
+      material: 3
+      prefab: {fileID: 310494753506747445, guid: bb99586a60b35af6aadc10f5b868bffc,
+        type: 3}
+      offset: {x: 0, y: 0, z: 0}
+      useContactPoint: 1
+      useHostRotation: 1
+    - hit: 1
+      material: 4
+      prefab: {fileID: 5897981021251246189, guid: 7e4d9dc1b74d5a79a637788b3651200b,
+        type: 3}
+      offset: {x: 0, y: 0, z: 0}
+      useContactPoint: 1
+      useHostRotation: 1
+    - hit: 0
+      material: 0
+      prefab: {fileID: 5686989419266273479, guid: 3e7065477ec05c37b2565c3c618380eb,
+        type: 3}
+      offset: {x: 0, y: 0, z: 0}
+      useContactPoint: 1
+      useHostRotation: 1
+    speed: 40
+    destinationOffset: {x: 0, y: 0, z: 0}
+    destinationRandomMin: {x: -0.5, y: -0.5, z: -0.2}
+    destinationRandomMax: {x: 0.5, y: 0.5, z: 0.3}
+    forwardCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    rightCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    upCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.08900314
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.09900291
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  postAttackController: {fileID: 9100000, guid: 63e7086ce659594e98e5cf3ae7d40b96,
+    type: 2}
+  postAttackRateParameter: NativeAttackRate
+  normalAudio:
+  - phase: Ing
+    sourceStartSeconds: 0.09
+    volume: 0.57
+    clips:
+    - {fileID: 8300000, guid: 021c29ad8e44559d9a88790b7e707ace, type: 3}
+    - {fileID: 8300000, guid: 4c6510e3153f537d8803e0684b394241, type: 3}
+    - {fileID: 8300000, guid: 5b18d65129005ccda55df09077f04554, type: 3}
+    - {fileID: 8300000, guid: 095fed52b07b54ef994720adaa8f2baf, type: 3}
+    - {fileID: 8300000, guid: 2e118ee15fe05e65a2cbe16c1951abf1, type: 3}
+  - phase: Reload
+    sourceStartSeconds: 0.3
+    volume: 0.9
+    clips:
+    - {fileID: 8300000, guid: 5a4fa1845c5159df8aaf0726eaf54170, type: 3}
+    - {fileID: 8300000, guid: a183581fcd1e5863afb45a6377e569a7, type: 3}
+    - {fileID: 8300000, guid: 73ed44a3319153a1932e9f04f23dd5c7, type: 3}
+    - {fileID: 8300000, guid: 61a44ebed9d15e2499c4f55ae4800704, type: 3}

@@ -1,0 +1,10 @@
+2026-10-23
+Scope: editor compilation and representative integration checks; no standalone IL2CPP player build.
+Package: 3745 assets, 0 missing assets or GUID mismatches.
+Boot: EditorSimulateMode -> Preload -> Main -> GameDev scene; 10 student forms; update UI hidden; one active AudioListener.
+UI: double Show creates one window and two callbacks; Hide then Show reuses the instance; Clear then Show creates one fresh instance.
+Direct scene: battle and EX rendered; AudioListener.GetOutputData peak > 0.
+Compilation/runtime errors: none after latest fixes.
+Remaining pre-existing warning: title.mp4 color primaries metadata unsupported by WindowsMediaFoundation.
+HybridCLR: original Preload/Main GUID list preserved, BA.Resources.Runtime added as AOT dependency with link.xml. Server publishing and IL2CPP player hot update not tested.
+Legacy art and scenes: 303 files verified by SHA256 before removing 17 roots; backup under BAAssets/Recovery/LegacyBlueArchiveMiniGame_20261023.

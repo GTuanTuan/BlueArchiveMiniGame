@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: FX_MAT_Scroll_Distort_28b
+  m_Shader: {fileID: 4800000, guid: c14385d4e4e8c054b92127e95ce8b757, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - _RGBRGBA_RGBA
+  - _TEX_MAIN_DISTORT_R
+  - _TEX_MASK_DISTORT_OFF
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Tex_DistortRG:
+        m_Texture: {fileID: 2800000, guid: 8937e4fb22065b39942e1c5b300e25da, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Tex_Main:
+        m_Texture: {fileID: 2800000, guid: 9637d605a53255e38508e1c83c568058, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Tex_Mask:
+        m_Texture: {fileID: 2800000, guid: d95bfbf0e20a543d9ad640d3d81c3e48, type: 3}
+        m_Scale: {x: 6, y: 1}
+        m_Offset: {x: -5, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AlphaPremultiplyOn: 0
+    - _Alphaclip_Value: 0
+    - _Cull: 0
+    - _DstBlend: 10
+    - _DstBlendAlpha: 10
+    - _GDistort_Power_X: 0
+    - _GDistort_Power_Y: 0
+    - _GDistort_Speed_X: 0
+    - _GDistort_Speed_Y: 0
+    - _Main_Speed_X: 0
+    - _Main_Speed_Y: 0
+    - _Mask_Speed_X: 0
+    - _Mask_Speed_Y: 0
+    - _Multiply: 1
+    - _RDistort_Power_X: 0
+    - _RDistort_Power_Y: 0
+    - _RDistort_Speed_X: -2
+    - _RDistort_Speed_Y: 0
+    - _RGBRGBA: 1
+    - _SoftParticleFarFade: 1.04
+    - _SoftParticleNearFade: 0
+    - _SrcBlend: 5
+    - _SrcBlendAlpha: 1
+    - _Tex_Main_Distort: 1
+    - _Tex_Mask_Distort: 0
+    - _ZOffsetFactor: 0
+    - _ZOffsetUnits: 0
+    - _ZTest: 4
+    - _ZWrite: 0
+    m_Colors:
+    - _Color: {r: 5.992157, g: 5.992157, b: 5.992157, a: 1}
+    - _CustomData_DistortOffsetG_CD1XYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_DistortOffsetG_CD2XYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_DistortOffsetR_CD1XYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_DistortOffsetR_CD2XYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_DistortPowerG_CD2XYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_DistortPowerR_CD2XYXY: {r: 0, g: 0, b: 1, a: 1}
+    - _CustomData_DistortTilingG_CD1XYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_DistortTilingG_CD2XYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_DistortTilingR_CD1XYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_DistortTilingR_CD2XYXY: {r: 1, g: 1, b: 0, a: 0}
+    - _CustomData_MainOffset_CD1XYXY: {r: 0, g: 0, b: 1, a: 1}
+    - _CustomData_MainOffset_CD2XYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_MainTiling_CD1XYXY: {r: 1, g: 1, b: 0, a: 0}
+    - _CustomData_MainTiling_CD2XYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_MaskOffset_CD1XYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_MaskOffset_CD2XYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_MaskTiling_CD1XYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_MaskTiling_CD2XYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _GTilingxyOffsetzw: {r: 1, g: 1, b: 0, a: 0}
+    - _RTilingxyOffsetzw: {r: 1, g: 1, b: 0, a: 0}
+  m_BuildTextureStacks: []

@@ -1,0 +1,6 @@
+<linker>
+  <assembly fullname="YooAsset">
+    <type fullname="YooAsset.AsyncOperationSystem" preserve="fields" />
+    <type fullname="YooAsset.AsyncOperationScheduler" preserve="fields" />
+  </assembly>
+</linker>

@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: FX_MAT_Sea_09
+  m_Shader: {fileID: 4800000, guid: 74d70d368157b6e4eb854e352431d50e, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - _MAIN_DISTORT_USE_OFF
+  - _MASK_DISTORT_USE_USE
+  - _RGBRGBA_RGB
+  m_InvalidKeywords:
+  - _ADD_TEX_CHANNEL_RGB
+  - _ADD_TEX_USEB_ON
+  - _MAIN_UV_CHANNEL_UV1
+  - _MASK_UV_CHANNEL_UV1
+  - _STEP_TEX_CHANNEL_RGB
+  - _TEX_MAIN_DISTORT_OFF
+  - _TEX_MASK_DISTORT_OFF
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Tex_Distort:
+        m_Texture: {fileID: 2800000, guid: 02113f3333ce505797344d17798bc9bd, type: 3}
+        m_Scale: {x: 20, y: 20}
+        m_Offset: {x: 0, y: 0}
+    - _Tex_Main:
+        m_Texture: {fileID: 2800000, guid: bd0b15fe3fd75368b478ba4e92541f81, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Tex_Mask:
+        m_Texture: {fileID: 2800000, guid: 8d670b293a15567db87b53a5c10c8de8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AlphaPremultiplyOn: 0
+    - _Alphaclip_Value: 0
+    - _Cull: 2
+    - _Dis_Speed_X: 0.02
+    - _Dis_Speed_Y: 0
+    - _Distortion_Power_X: 0
+    - _Distortion_Power_Y: 0.02
+    - _DstBlend: 10
+    - _DstBlendAlpha: 10
+    - _Main_Distort_Use: 0
+    - _Main_Speed_X: 0.15
+    - _Main_Speed_Y: -0.01
+    - _Mask_Distort_Use: 1
+    - _Multiply: 1
+    - _RGBRGBA: 0
+    - _SrcBlend: 5
+    - _SrcBlendAlpha: 1
+    - _Tex_Mask_Speed_X: -0.1
+    - _Tex_Mask_Speed_Y: 0
+    - _ZOffsetFactor: 0
+    - _ZOffsetUnits: 0
+    - _ZTest: 4
+    - _ZWrite: 0
+    m_Colors:
+    - _Color: {r: 5.992157, g: 5.992157, b: 5.992157, a: 1}
+    - _CustomData_DistortOffset_CD1XYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_DistortOffset_CD2XYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_DistortPower_CD2XYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_DistortTiling_CD1XYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_DistortTiling_CD2XYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_MainOffset_CD1XYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_MainOffset_CD2XYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_MainTiling_CD1XYXY: {r: 1, g: 1, b: 0, a: 0}
+    - _CustomData_MainTiling_CD2XYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_MaskOffset_CD1XYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_MaskOffset_CD2XYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_MaskTiling_CD1XYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_MaskTiling_CD2XYXY: {r: 1, g: 1, b: 0, a: 0}
+  m_BuildTextureStacks: []

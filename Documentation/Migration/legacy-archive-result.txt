@@ -1,0 +1,5 @@
+Archive=C:\UnityProject\BAAssets\Recovery\LegacyBlueArchiveMiniGame_20261023
+Roots=17
+Files=303
+Bytes=158143961
+Errors=

@@ -1,0 +1,15 @@
+{
+    "name": "BA.UI.PlayMode.Tests",
+    "rootNamespace": "BA.UI.Tests",
+    "references": ["Main", "BA.Framework.Runtime", "YooAsset"],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false,
+    "optionalUnityReferences": ["TestAssemblies"]
+}

@@ -1,0 +1,625 @@
+{
+  "sourceBundle": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\BlueArchive\\BlueArchive_Data\\StreamingAssets\\PUB\\Resource\\Preload\\Windows\\prologdepengroup-assets-_mx-uis-atlas-_mxprolog-2024-11-18_assets_all_1735253868.bundle",
+  "sourceBundleSha256": "4b97391d3fb030980ed288938ca54a29675ee3f679354c243aef51f61137fb6f",
+  "sourceAtlas": "NGUI UIAtlas/Common",
+  "sourceAtlasPathId": -3795347814732361230,
+  "sourceTexturePathId": 1344723306576111821,
+  "sourceTextureDimensions": [
+    4096,
+    2048
+  ],
+  "sourceTextureRgbaSha256": "7dcb87552938d9186f88c9f62b36ebdefe21cf7f1b74ab42043d9650873794a3",
+  "sourceSpriteCount": 470,
+  "extraction": "Exact native RGBA32 Texture2D decoding and per-sprite crop using original NGUI top-left x/y/width/height. No rescaling, repainting, recoloring or guessed slicing. All selected original padding values are zero. UGUI borders use left,bottom,right,top; packing rotation will be disabled. Main and Preload sprites are separate copies to avoid cross-package dependencies.",
+  "sprites": [
+    {
+      "package": "Preload",
+      "name": "Loading_Arona",
+      "original": {
+        "name": "Loading_Arona",
+        "x": 981,
+        "y": 1192,
+        "width": 116,
+        "height": 136,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0
+      },
+      "unitySourceRect": {
+        "x": 981,
+        "y": 720,
+        "width": 116,
+        "height": 136
+      },
+      "output": "Assets/GameRes/UI/Preload/Art/OriginalCommon/Loading_Arona.png",
+      "guid": "f05538646ed5587ca2cce84f0595df4c",
+      "rgbaSha256": "829373add451efab0c2b399bb2f22a6ca2bbaa29f514760ee6433bc7a83fcf94",
+      "pngSha256": "f887cd5b989be91dd77738d27de05dd4f5f09365406b65960802c087576a009b"
+    },
+    {
+      "package": "Preload",
+      "name": "Loading_Halo",
+      "original": {
+        "name": "Loading_Halo",
+        "x": 1075,
+        "y": 922,
+        "width": 48,
+        "height": 26,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0
+      },
+      "unitySourceRect": {
+        "x": 1075,
+        "y": 1100,
+        "width": 48,
+        "height": 26
+      },
+      "output": "Assets/GameRes/UI/Preload/Art/OriginalCommon/Loading_Halo.png",
+      "guid": "c610e698af2e5fa09de367d76e3b3400",
+      "rgbaSha256": "2b011ed44eab320f263b658def95f4e87eebd78faa59a90a7231cd07437b82e5",
+      "pngSha256": "40c91a640bb9cc9f10f0774a27c9a517f6d40ddcc58fd663014ec45dcdf262a5"
+    },
+    {
+      "package": "Preload",
+      "name": "Common_Login_Loading",
+      "original": {
+        "name": "Common_Login_Loading",
+        "x": 2045,
+        "y": 1953,
+        "width": 49,
+        "height": 49,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0
+      },
+      "unitySourceRect": {
+        "x": 2045,
+        "y": 46,
+        "width": 49,
+        "height": 49
+      },
+      "output": "Assets/GameRes/UI/Preload/Art/OriginalCommon/Common_Login_Loading.png",
+      "guid": "f886ca97f8d3589e910f56b4e58fdcb2",
+      "rgbaSha256": "2a92244275657552f7f583093bf6fb2e7f50cb4901e1b2c66b0942fa9ded6ef6",
+      "pngSha256": "e6f485e1ff791cf7d385f837e558a7e2796f7b445e40d76e123c69dbc84aa98a"
+    },
+    {
+      "package": "Preload",
+      "name": "Common_Btn_BG",
+      "original": {
+        "name": "Common_Btn_BG",
+        "x": 1903,
+        "y": 829,
+        "width": 68,
+        "height": 70,
+        "borderLeft": 30,
+        "borderRight": 30,
+        "borderTop": 30,
+        "borderBottom": 35,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0
+      },
+      "unitySourceRect": {
+        "x": 1903,
+        "y": 1149,
+        "width": 68,
+        "height": 70
+      },
+      "output": "Assets/GameRes/UI/Preload/Art/OriginalCommon/Common_Btn_BG.png",
+      "guid": "2a7ee082b7a55132875343e672695eb5",
+      "rgbaSha256": "58333e76a4d02ec8dd1329f1ee97b79d5cb6128351cdb83828b081e11727d3a7",
+      "pngSha256": "2b73938cfb31c965641f5dd1e9e8aa6e7129148852908198c60b1c1a3339843e"
+    },
+    {
+      "package": "Preload",
+      "name": "Common_Sub_Btn",
+      "original": {
+        "name": "Common_Sub_Btn",
+        "x": 1903,
+        "y": 757,
+        "width": 67,
+        "height": 71,
+        "borderLeft": 25,
+        "borderRight": 25,
+        "borderTop": 25,
+        "borderBottom": 25,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0
+      },
+      "unitySourceRect": {
+        "x": 1903,
+        "y": 1220,
+        "width": 67,
+        "height": 71
+      },
+      "output": "Assets/GameRes/UI/Preload/Art/OriginalCommon/Common_Sub_Btn.png",
+      "guid": "c887d18088bb513592629356d09503d0",
+      "rgbaSha256": "7702f78962cad7ff7ed5fd4d487ae8bd29054dde9c8bae8655068c7a35edb06d",
+      "pngSha256": "5ac9b3945d0081d814e13b64312a23c16fb1b0249bded7107f23e28eaaa4bc64"
+    },
+    {
+      "package": "Preload",
+      "name": "Common_Bg_Raius10px",
+      "original": {
+        "name": "Common_Bg_Raius10px",
+        "x": 1443,
+        "y": 1535,
+        "width": 24,
+        "height": 24,
+        "borderLeft": 10,
+        "borderRight": 10,
+        "borderTop": 10,
+        "borderBottom": 10,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0
+      },
+      "unitySourceRect": {
+        "x": 1443,
+        "y": 489,
+        "width": 24,
+        "height": 24
+      },
+      "output": "Assets/GameRes/UI/Preload/Art/OriginalCommon/Common_Bg_Raius10px.png",
+      "guid": "0121002551065ed3b0890c8f4ee5c703",
+      "rgbaSha256": "65ca5a026b3aedd980280d72f562fdd8fb35e192850b8648e09441bcd9718e64",
+      "pngSha256": "3fb5f3943c91ccf64e55b5728ebbf06346338b942bd4fe58240205a602f975f0"
+    },
+    {
+      "package": "Preload",
+      "name": "Common_Bg_Raius10px_Shadow",
+      "original": {
+        "name": "Common_Bg_Raius10px_Shadow",
+        "x": 1271,
+        "y": 404,
+        "width": 34,
+        "height": 38,
+        "borderLeft": 16,
+        "borderRight": 16,
+        "borderTop": 8,
+        "borderBottom": 24,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0
+      },
+      "unitySourceRect": {
+        "x": 1271,
+        "y": 1606,
+        "width": 34,
+        "height": 38
+      },
+      "output": "Assets/GameRes/UI/Preload/Art/OriginalCommon/Common_Bg_Raius10px_Shadow.png",
+      "guid": "392046742e95551090e5c65a5889b9ea",
+      "rgbaSha256": "ae5159a9c7dfdc8f4a5d933f3dac0dc5eb09339a5208ecd63b7fc5ad4c813624",
+      "pngSha256": "0b4aaa2dc03e4c1d8dd7aed2b70be25d3b06553aab2d41b6ae9dc5984c96359e"
+    },
+    {
+      "package": "Preload",
+      "name": "Common_Square_Bg",
+      "original": {
+        "name": "Common_Square_Bg",
+        "x": 2564,
+        "y": 78,
+        "width": 4,
+        "height": 4,
+        "borderLeft": 2,
+        "borderRight": 2,
+        "borderTop": 2,
+        "borderBottom": 2,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0
+      },
+      "unitySourceRect": {
+        "x": 2564,
+        "y": 1966,
+        "width": 4,
+        "height": 4
+      },
+      "output": "Assets/GameRes/UI/Preload/Art/OriginalCommon/Common_Square_Bg.png",
+      "guid": "f5140f67ead3570a90f65fbbadc71129",
+      "rgbaSha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+      "pngSha256": "508e92238640e05034d4f6ac7d906a3288e82dbe047b7e8f55ff4d993a7523ef"
+    },
+    {
+      "package": "Preload",
+      "name": "Common_Icon_All_Download",
+      "original": {
+        "name": "Common_Icon_All_Download",
+        "x": 1672,
+        "y": 1961,
+        "width": 108,
+        "height": 87,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0
+      },
+      "unitySourceRect": {
+        "x": 1672,
+        "y": 0,
+        "width": 108,
+        "height": 87
+      },
+      "output": "Assets/GameRes/UI/Preload/Art/OriginalCommon/Common_Icon_All_Download.png",
+      "guid": "9e692f13cce459079da30030b1456d39",
+      "rgbaSha256": "d7ff539170b05a1a24a0f52e4910355ac008b7affbfb9113717405d6bb39f321",
+      "pngSha256": "f26d65eb032c0c15f307baab3e800186e69137e8273cf8fa16736ba8399754f9"
+    },
+    {
+      "package": "Main",
+      "name": "Common_Bg_Raius10px",
+      "original": {
+        "name": "Common_Bg_Raius10px",
+        "x": 1443,
+        "y": 1535,
+        "width": 24,
+        "height": 24,
+        "borderLeft": 10,
+        "borderRight": 10,
+        "borderTop": 10,
+        "borderBottom": 10,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0
+      },
+      "unitySourceRect": {
+        "x": 1443,
+        "y": 489,
+        "width": 24,
+        "height": 24
+      },
+      "output": "Assets/GameRes/UI/Main/Art/OriginalCommon/Common_Bg_Raius10px.png",
+      "guid": "f15627791f97500590212779a16ed51e",
+      "rgbaSha256": "65ca5a026b3aedd980280d72f562fdd8fb35e192850b8648e09441bcd9718e64",
+      "pngSha256": "3fb5f3943c91ccf64e55b5728ebbf06346338b942bd4fe58240205a602f975f0"
+    },
+    {
+      "package": "Main",
+      "name": "Common_Bg_Raius10px_Shadow",
+      "original": {
+        "name": "Common_Bg_Raius10px_Shadow",
+        "x": 1271,
+        "y": 404,
+        "width": 34,
+        "height": 38,
+        "borderLeft": 16,
+        "borderRight": 16,
+        "borderTop": 8,
+        "borderBottom": 24,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0
+      },
+      "unitySourceRect": {
+        "x": 1271,
+        "y": 1606,
+        "width": 34,
+        "height": 38
+      },
+      "output": "Assets/GameRes/UI/Main/Art/OriginalCommon/Common_Bg_Raius10px_Shadow.png",
+      "guid": "9ce25e4c7ca153e08066f56854b6d9fe",
+      "rgbaSha256": "ae5159a9c7dfdc8f4a5d933f3dac0dc5eb09339a5208ecd63b7fc5ad4c813624",
+      "pngSha256": "0b4aaa2dc03e4c1d8dd7aed2b70be25d3b06553aab2d41b6ae9dc5984c96359e"
+    },
+    {
+      "package": "Main",
+      "name": "Common_Btn_BG",
+      "original": {
+        "name": "Common_Btn_BG",
+        "x": 1903,
+        "y": 829,
+        "width": 68,
+        "height": 70,
+        "borderLeft": 30,
+        "borderRight": 30,
+        "borderTop": 30,
+        "borderBottom": 35,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0
+      },
+      "unitySourceRect": {
+        "x": 1903,
+        "y": 1149,
+        "width": 68,
+        "height": 70
+      },
+      "output": "Assets/GameRes/UI/Main/Art/OriginalCommon/Common_Btn_BG.png",
+      "guid": "5ae520828fec56eb9f22c9c092a9a68b",
+      "rgbaSha256": "58333e76a4d02ec8dd1329f1ee97b79d5cb6128351cdb83828b081e11727d3a7",
+      "pngSha256": "2b73938cfb31c965641f5dd1e9e8aa6e7129148852908198c60b1c1a3339843e"
+    },
+    {
+      "package": "Main",
+      "name": "Common_Sub_Btn",
+      "original": {
+        "name": "Common_Sub_Btn",
+        "x": 1903,
+        "y": 757,
+        "width": 67,
+        "height": 71,
+        "borderLeft": 25,
+        "borderRight": 25,
+        "borderTop": 25,
+        "borderBottom": 25,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0
+      },
+      "unitySourceRect": {
+        "x": 1903,
+        "y": 1220,
+        "width": 67,
+        "height": 71
+      },
+      "output": "Assets/GameRes/UI/Main/Art/OriginalCommon/Common_Sub_Btn.png",
+      "guid": "0639f0f614985ae18b74af6b211dec84",
+      "rgbaSha256": "7702f78962cad7ff7ed5fd4d487ae8bd29054dde9c8bae8655068c7a35edb06d",
+      "pngSha256": "5ac9b3945d0081d814e13b64312a23c16fb1b0249bded7107f23e28eaaa4bc64"
+    },
+    {
+      "package": "Main",
+      "name": "Common_Icon_Close",
+      "original": {
+        "name": "Common_Icon_Close",
+        "x": 2380,
+        "y": 444,
+        "width": 60,
+        "height": 60,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0
+      },
+      "unitySourceRect": {
+        "x": 2380,
+        "y": 1544,
+        "width": 60,
+        "height": 60
+      },
+      "output": "Assets/GameRes/UI/Main/Art/OriginalCommon/Common_Icon_Close.png",
+      "guid": "5608f4b57f6f584ea804d2f81d3911bb",
+      "rgbaSha256": "bb3d8d63487f30192a797d679a30ef296f8851d3ab41225deb2d6cb68b9e5f8e",
+      "pngSha256": "ed74cac890e9043b0384d6168926c33a0fb4b258213487220732875b58a90c9f"
+    },
+    {
+      "package": "Main",
+      "name": "Common_Icon_Setting_Account",
+      "original": {
+        "name": "Common_Icon_Setting_Account",
+        "x": 1417,
+        "y": 57,
+        "width": 126,
+        "height": 93,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0
+      },
+      "unitySourceRect": {
+        "x": 1417,
+        "y": 1898,
+        "width": 126,
+        "height": 93
+      },
+      "output": "Assets/GameRes/UI/Main/Art/OriginalCommon/Common_Icon_Setting_Account.png",
+      "guid": "26dcb096ba94552a8986ea823edc929c",
+      "rgbaSha256": "e0d9c79a37a9fae169de6649e6b50f0c2b60260c81b03689bf8f974744a60d10",
+      "pngSha256": "ab8ae1e756b507cd6584e84ef8d2131852f9db21cb586122bca5fc6e6da6c0e7"
+    },
+    {
+      "package": "Main",
+      "name": "Common_Icon_Setting_Game",
+      "original": {
+        "name": "Common_Icon_Setting_Game",
+        "x": 926,
+        "y": 922,
+        "width": 148,
+        "height": 110,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0
+      },
+      "unitySourceRect": {
+        "x": 926,
+        "y": 1016,
+        "width": 148,
+        "height": 110
+      },
+      "output": "Assets/GameRes/UI/Main/Art/OriginalCommon/Common_Icon_Setting_Game.png",
+      "guid": "cfd331b140eb5b98965033e0f80fb797",
+      "rgbaSha256": "a11328e7e484e21b593747737a7867d96b74e8a9ecc8e4e84f08a4a9292caf18",
+      "pngSha256": "5749973927102dcba6336bf574262890ef099dda46c1978b73a1074a37545e23"
+    },
+    {
+      "package": "Main",
+      "name": "Common_Icon_Check_B",
+      "original": {
+        "name": "Common_Icon_Check_B",
+        "x": 1655,
+        "y": 896,
+        "width": 82,
+        "height": 80,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0
+      },
+      "unitySourceRect": {
+        "x": 1655,
+        "y": 1072,
+        "width": 82,
+        "height": 80
+      },
+      "output": "Assets/GameRes/UI/Main/Art/OriginalCommon/Common_Icon_Check_B.png",
+      "guid": "5eb65212faba54ae8a3a16e65e5d19cb",
+      "rgbaSha256": "6cac9df67d9c973f765ab0bfcb1ffeba7976487224c2e27f12a1bfa81825518b",
+      "pngSha256": "33bc43563dab2010c9e54903ed8b83cd20355b080e7495cd7ba433d8c75efeb3"
+    },
+    {
+      "package": "Main",
+      "name": "Common_Btn_Radio_BG",
+      "original": {
+        "name": "Common_Btn_Radio_BG",
+        "x": 2428,
+        "y": 383,
+        "width": 60,
+        "height": 60,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0
+      },
+      "unitySourceRect": {
+        "x": 2428,
+        "y": 1605,
+        "width": 60,
+        "height": 60
+      },
+      "output": "Assets/GameRes/UI/Main/Art/OriginalCommon/Common_Btn_Radio_BG.png",
+      "guid": "d34f18ee87ad523b8f1c120673a3e8f9",
+      "rgbaSha256": "ae64eabf0944712da7842c66e7136f063c5a2784216ae220a786058bc4ee9036",
+      "pngSha256": "090b3e5a07144cb82670cc236fb9eb3feeb00f2828f89385156483b6e44dedd5"
+    },
+    {
+      "package": "Main",
+      "name": "Common_Btn_Radio_On",
+      "original": {
+        "name": "Common_Btn_Radio_On",
+        "x": 2481,
+        "y": 322,
+        "width": 60,
+        "height": 60,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0
+      },
+      "unitySourceRect": {
+        "x": 2481,
+        "y": 1666,
+        "width": 60,
+        "height": 60
+      },
+      "output": "Assets/GameRes/UI/Main/Art/OriginalCommon/Common_Btn_Radio_On.png",
+      "guid": "e994b154f45b5179b2e647cb6cc18aea",
+      "rgbaSha256": "51ae708c4b7cda56dcb107961dc947699e3028a00e4dbb3085aecfcde76a5d9f",
+      "pngSha256": "7423ef6a1d31c54081793717efb2ec82d26a77e39f9bdda743804e2305134548"
+    },
+    {
+      "package": "Main",
+      "name": "Common_Tab_Normal_Btn",
+      "original": {
+        "name": "Common_Tab_Normal_Btn",
+        "x": 1756,
+        "y": 816,
+        "width": 76,
+        "height": 79,
+        "borderLeft": 35,
+        "borderRight": 35,
+        "borderTop": 35,
+        "borderBottom": 35,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0
+      },
+      "unitySourceRect": {
+        "x": 1756,
+        "y": 1153,
+        "width": 76,
+        "height": 79
+      },
+      "output": "Assets/GameRes/UI/Main/Art/OriginalCommon/Common_Tab_Normal_Btn.png",
+      "guid": "0e012f2527045f8b9592333d095160fe",
+      "rgbaSha256": "28e55fd27e34d0c129fc688b849fd184e2658e33b3b44142e1c238194cb0aeac",
+      "pngSha256": "fef691eae470c37acd0a9ca7a0383bd568ea5ce62335154f2d890f1be3778e3e"
+    },
+    {
+      "package": "Main",
+      "name": "Common_Square_Bg",
+      "original": {
+        "name": "Common_Square_Bg",
+        "x": 2564,
+        "y": 78,
+        "width": 4,
+        "height": 4,
+        "borderLeft": 2,
+        "borderRight": 2,
+        "borderTop": 2,
+        "borderBottom": 2,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0
+      },
+      "unitySourceRect": {
+        "x": 2564,
+        "y": 1966,
+        "width": 4,
+        "height": 4
+      },
+      "output": "Assets/GameRes/UI/Main/Art/OriginalCommon/Common_Square_Bg.png",
+      "guid": "c3bb6f56aa60534ab4f0a6e2190773ed",
+      "rgbaSha256": "8667e718294e9e0df1d30600ba3eeb201f764aad2dad72748643e4a285e1d1f7",
+      "pngSha256": "508e92238640e05034d4f6ac7d906a3288e82dbe047b7e8f55ff4d993a7523ef"
+    }
+  ]
+}

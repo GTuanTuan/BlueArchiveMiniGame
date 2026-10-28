@@ -1,0 +1,2 @@
+# Git LFS policy: track only individual files larger than 100 MiB.
+# No currently tracked file exceeds this threshold.

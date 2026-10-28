@@ -1,0 +1,381 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-1743576416164259172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6fa2d92fc1b3f34da284357edf89c3b, type: 3}
+  m_Name: CH0334Ex04__PlayFieldSound__0
+  m_EditorClassIdentifier: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830413168532f154c90cbb227c123805, type: 3}
+  m_Name: CH0334_CH0334Ex04_Compiled
+  m_EditorClassIdentifier: 
+  characterId: CH0334
+  skillId: CH0334Ex04
+  sourceHasNoNormalSkill: 0
+  fieldTimeline: {fileID: 11400000, guid: 1bb7ec7dfb0919946a9a8b576cc97270, type: 2}
+  shots: []
+  targetEffects: []
+  outcomes: []
+  supportedEx: []
+  forms:
+  - formIndex: 1
+    transitionKind: original_form_effect_apply
+    dispelTemplates: []
+  gameplayStages: []
+  baselineNormal:
+    normalSkillId: CH0334Normal01
+    shotFrames: 070000000c0000001100000016000000
+    logicFramesPerSecond: 30
+    muzzleIndex: 1
+    pointTarget: 0
+    sameImpactForHitAndMiss: 1
+    muzzleEffect: {fileID: 2651487806654032861, guid: 4c00d08c2262583a9699b5c5f60de953,
+      type: 3}
+    projectile: {fileID: 6149350438988743814, guid: f48af1f959450494696cc6a6383185cd,
+      type: 3}
+    hitEffect: {fileID: 6701798531862804875, guid: f730b9e093875de0947e28332deb40ef,
+      type: 3}
+    missEffect: {fileID: 0}
+    outcomes:
+    - hit: 1
+      material: 1
+      prefab: {fileID: 6701798531862804875, guid: f730b9e093875de0947e28332deb40ef,
+        type: 3}
+      offset: {x: 0, y: 0, z: 0}
+      useContactPoint: 0
+      requiredBone: 2
+      rotationMode: 0
+      rotationOffset: {x: 0, y: 0, z: 0, w: 1}
+      sounds:
+      - timelineTime: 0
+        clips:
+        - {fileID: 8300000, guid: 63dd0cfcb0ef5d34a40bfd5744372004, type: 3}
+        - {fileID: 8300000, guid: e16bd4706f31558dbea344b3ec8e8db3, type: 3}
+        - {fileID: 8300000, guid: c3702f46efbc5c498879675a01dc176b, type: 3}
+        localPosition: {x: 0, y: 0, z: 0}
+        delay: 0
+        volume: 0.3
+        pitch: 1
+        randomPitchMin: -1
+        randomPitchMax: 1
+        spatialBlend: 1
+        minDistance: 1
+        maxDistance: 500
+        rolloffMode: 1
+        loop: 0
+    - hit: 1
+      material: 2
+      prefab: {fileID: 6701798531862804875, guid: f730b9e093875de0947e28332deb40ef,
+        type: 3}
+      offset: {x: 0, y: 0, z: 0}
+      useContactPoint: 0
+      requiredBone: 2
+      rotationMode: 0
+      rotationOffset: {x: 0, y: 0, z: 0, w: 1}
+      sounds:
+      - timelineTime: 0
+        clips:
+        - {fileID: 8300000, guid: 63dd0cfcb0ef5d34a40bfd5744372004, type: 3}
+        - {fileID: 8300000, guid: e16bd4706f31558dbea344b3ec8e8db3, type: 3}
+        - {fileID: 8300000, guid: c3702f46efbc5c498879675a01dc176b, type: 3}
+        localPosition: {x: 0, y: 0, z: 0}
+        delay: 0
+        volume: 0.3
+        pitch: 1
+        randomPitchMin: -1
+        randomPitchMax: 1
+        spatialBlend: 1
+        minDistance: 1
+        maxDistance: 500
+        rolloffMode: 1
+        loop: 0
+    - hit: 1
+      material: 3
+      prefab: {fileID: 6701798531862804875, guid: f730b9e093875de0947e28332deb40ef,
+        type: 3}
+      offset: {x: 0, y: 0, z: 0}
+      useContactPoint: 0
+      requiredBone: 2
+      rotationMode: 0
+      rotationOffset: {x: 0, y: 0, z: 0, w: 1}
+      sounds:
+      - timelineTime: 0
+        clips:
+        - {fileID: 8300000, guid: 63dd0cfcb0ef5d34a40bfd5744372004, type: 3}
+        - {fileID: 8300000, guid: e16bd4706f31558dbea344b3ec8e8db3, type: 3}
+        - {fileID: 8300000, guid: c3702f46efbc5c498879675a01dc176b, type: 3}
+        localPosition: {x: 0, y: 0, z: 0}
+        delay: 0
+        volume: 0.3
+        pitch: 1
+        randomPitchMin: -1
+        randomPitchMax: 1
+        spatialBlend: 1
+        minDistance: 1
+        maxDistance: 500
+        rolloffMode: 1
+        loop: 0
+    - hit: 1
+      material: 4
+      prefab: {fileID: 6701798531862804875, guid: f730b9e093875de0947e28332deb40ef,
+        type: 3}
+      offset: {x: 0, y: 0, z: 0}
+      useContactPoint: 0
+      requiredBone: 2
+      rotationMode: 0
+      rotationOffset: {x: 0, y: 0, z: 0, w: 1}
+      sounds:
+      - timelineTime: 0
+        clips:
+        - {fileID: 8300000, guid: 63dd0cfcb0ef5d34a40bfd5744372004, type: 3}
+        - {fileID: 8300000, guid: e16bd4706f31558dbea344b3ec8e8db3, type: 3}
+        - {fileID: 8300000, guid: c3702f46efbc5c498879675a01dc176b, type: 3}
+        localPosition: {x: 0, y: 0, z: 0}
+        delay: 0
+        volume: 0.3
+        pitch: 1
+        randomPitchMin: -1
+        randomPitchMax: 1
+        spatialBlend: 1
+        minDistance: 1
+        maxDistance: 500
+        rolloffMode: 1
+        loop: 0
+    - hit: 0
+      material: 0
+      prefab: {fileID: 6701798531862804875, guid: f730b9e093875de0947e28332deb40ef,
+        type: 3}
+      offset: {x: 0, y: 0, z: 0}
+      useContactPoint: 0
+      requiredBone: 2
+      rotationMode: 0
+      rotationOffset: {x: 0, y: 0, z: 0, w: 1}
+      sounds:
+      - timelineTime: 0
+        clips:
+        - {fileID: 8300000, guid: 63dd0cfcb0ef5d34a40bfd5744372004, type: 3}
+        - {fileID: 8300000, guid: e16bd4706f31558dbea344b3ec8e8db3, type: 3}
+        - {fileID: 8300000, guid: c3702f46efbc5c498879675a01dc176b, type: 3}
+        localPosition: {x: 0, y: 0, z: 0}
+        delay: 0
+        volume: 0.3
+        pitch: 1
+        randomPitchMin: -1
+        randomPitchMax: 1
+        spatialBlend: 1
+        minDistance: 1
+        maxDistance: 500
+        rolloffMode: 1
+        loop: 0
+    speed: 40
+    destinationOffset: {x: 0, y: 0, z: 0}
+    destinationRandomMin: {x: 0, y: 0, z: 0}
+    destinationRandomMax: {x: 0, y: 0, z: 0}
+    forwardCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    rightCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    upCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  enhancedNormal:
+    normalSkillId: 
+    shotFrames: 
+    logicFramesPerSecond: 30
+    muzzleIndex: 0
+    pointTarget: 0
+    sameImpactForHitAndMiss: 0
+    muzzleEffect: {fileID: 0}
+    projectile: {fileID: 0}
+    hitEffect: {fileID: 0}
+    missEffect: {fileID: 0}
+    outcomes: []
+    speed: 0
+    destinationOffset: {x: 0, y: 0, z: 0}
+    destinationRandomMin: {x: 0, y: 0, z: 0}
+    destinationRandomMax: {x: 0, y: 0, z: 0}
+    forwardCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    rightCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    upCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  postAttackController: {fileID: 0}
+  postAttackRateParameter: 
+  normalAudio:
+  - phase: Ing
+    sourceStartSeconds: 0.1
+    volume: 0.8
+    clips:
+    - {fileID: 8300000, guid: e1b842f096455c46b93ee2ec8ce5dba0, type: 3}
+    - {fileID: 8300000, guid: 1c0ec2d6ad515642bf7fd87804d9edf9, type: 3}
+    - {fileID: 8300000, guid: 4eeab13c90ea5fda90ddb686f51adf1a, type: 3}
+    - {fileID: 8300000, guid: c57e0cf0da795433b7318cf9df3a9b9b, type: 3}
+  - phase: Reload
+    sourceStartSeconds: 0
+    volume: 0.8
+    clips:
+    - {fileID: 8300000, guid: 65a011ba8a9854b9aaed3bfae0684ab6, type: 3}
+    - {fileID: 8300000, guid: 3787c3cb6f035cf6b34dbd92c9cda9b3, type: 3}
+  - phase: Start
+    sourceStartSeconds: 0
+    volume: 0.6
+    clips:
+    - {fileID: 8300000, guid: a37cf4761d2d5f6c85dcfada28f43edb, type: 3}
+    - {fileID: 8300000, guid: 45073defe8af5f1d90978ff2a30e1d23, type: 3}
+    - {fileID: 8300000, guid: 6f680a4dfa395d0893457f71146532a5, type: 3}
+  - phase: End
+    sourceStartSeconds: 0
+    volume: 0.6
+    clips:
+    - {fileID: 8300000, guid: 304bfa033b4c59fd8a96149e8ceb2139, type: 3}
+    - {fileID: 8300000, guid: 6404cb849b235702aab140554ef6c391, type: 3}
+    - {fileID: 8300000, guid: c67e10fdecda53e6ab7eb5d5e8baf2d7, type: 3}
+  fieldSounds:
+  - timelineTime: 0.033333335
+    clips:
+    - {fileID: 8300000, guid: 4b7614cc06ba59cbb914a97b2d4ef2cd, type: 3}
+    - {fileID: 8300000, guid: 9ef8668daa025836bd6ea2ef9313fa64, type: 3}
+    - {fileID: 8300000, guid: b407260594f95282a9c037149d9d116b, type: 3}
+    localPosition: {x: 0, y: 0, z: 0}
+    delay: 0
+    volume: 1
+    pitch: 1
+    randomPitchMin: 0
+    randomPitchMax: 0
+    spatialBlend: 0
+    minDistance: 1
+    maxDistance: 500
+    rolloffMode: 1
+    loop: 0
+  - timelineTime: 0.033333335
+    clips:
+    - {fileID: 8300000, guid: 353dc89e394a56af98168b815b8675cc, type: 3}
+    localPosition: {x: 0, y: 0, z: 0}
+    delay: 0
+    volume: 1
+    pitch: 1
+    randomPitchMin: 0
+    randomPitchMax: 0
+    spatialBlend: 1
+    minDistance: 1
+    maxDistance: 500
+    rolloffMode: 1
+    loop: 0
+  areaHits: []
+--- !u!114 &1644134523782634548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6fa2d92fc1b3f34da284357edf89c3b, type: 3}
+  m_Name: CH0334Ex04__ApplyForm__0
+  m_EditorClassIdentifier: 
+--- !u!114 &4981585195635817654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6fa2d92fc1b3f34da284357edf89c3b, type: 3}
+  m_Name: CH0334Ex04__PlayFieldSound__1
+  m_EditorClassIdentifier: 

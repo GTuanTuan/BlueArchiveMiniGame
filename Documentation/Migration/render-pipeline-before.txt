@@ -1,0 +1,4 @@
+Graphics=Assets/Settings/URP-HighFidelity.asset
+Performant=Assets/Settings/URP-Performant.asset
+Balanced=Assets/Settings/URP-Balanced.asset
+High Fidelity=Assets/Settings/URP-HighFidelity.asset

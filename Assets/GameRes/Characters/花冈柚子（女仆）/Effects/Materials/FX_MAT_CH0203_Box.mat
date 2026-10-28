@@ -1,0 +1,121 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: FX_MAT_CH0203_Box
+  m_Shader: {fileID: 4800000, guid: eb3e999ede2372b4580143cc813c9a1d, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _CUSTOM_DATA_OFFSET_USE1_ON
+  - _RGBRGBA1_ON
+  - _RGBRGBA_ON
+  - _SPECULAR_SETUP
+  - _ZWRITE_MODE_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Texture:
+        m_Texture: {fileID: 2800000, guid: a781c659683d59a596f82fb603177235, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _BaseBrightness: 0
+    - _Cull: 2
+    - _Cull_Mode: 2
+    - _Cull_Mode1: 2
+    - _Custom_Data_Offset_Use: 0
+    - _Custom_Data_Offset_Use1: 1
+    - _Cutoff: 0.2
+    - _DitherThreshold: 0
+    - _DstBlend: 0
+    - _DstBlendAlpha: 0
+    - _EmissionStrength: 0
+    - _GlowStrength: 0
+    - _GlowStrength0: 0
+    - _GlowStrictness0: 3
+    - _GrayBrightness: 1
+    - _InvViewPower: 2
+    - _InvViewStrength: 0
+    - _IsDither: 0
+    - _LightStrong: 10
+    - _LightValue: 0.5
+    - _Main_Texture_No: 0
+    - _Main_Texture_No1: 0
+    - _MaskGSensitivity: 2
+    - _Multiply: 1
+    - _Multiply1: 1
+    - _OutlineZCorrection: 0
+    - _RGBRGBA: 1
+    - _RGBRGBA1: 1
+    - _ReflectAnglePower: 2
+    - _ReflectBaseAmount: 0
+    - _ReflectStrength: 0
+    - _RimAreaLeveler: 2
+    - _RimAreaMultiplier: 3
+    - _RimStrength: 1
+    - _ShadowAttenRefl: 0
+    - _ShadowAttenSpec: 0.2
+    - _ShadowStrong: 10
+    - _ShadowThreshold: 0.55
+    - _SpecPower: 1
+    - _SpecStrong: 0.1
+    - _SrcBlend: 1
+    - _SrcBlendAlpha: 1
+    - _UseGlow: 0
+    - _ViewLightEdge: 0
+    - _ViewOffset: 0
+    - _ViewPower: 2
+    - _ViewStrength: 0
+    - _ZOffsetFactor: 0
+    - _ZOffsetUnits: 0
+    - _ZTest_Mode: 4
+    - _ZWrite: 1
+    - _ZWrite_Mode: 1
+    - _ZWrite_Mode1: 0
+    m_Colors:
+    - _BaseBrightness4: {r: 0, g: 0, b: 0, a: 0}
+    - _CodeAddColor: {r: 0, g: 0, b: 0, a: 0}
+    - _CodeAddRimColor: {r: 0, g: 0, b: 0, a: 0}
+    - _CodeMultiplyColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color1: {r: 1, g: 1, b: 1, a: 1}
+    - _FakeLightDir: {r: 0.1, g: 0.65, b: 0, a: 0}
+    - _GlowMaskColor0: {r: 1, g: 1, b: 1, a: 1}
+    - _GlowTint: {r: 0, g: 0, b: 0, a: 1}
+    - _GlowTint0: {r: 0, g: 0, b: 0, a: 1}
+    - _InvViewPower4: {r: 5, g: 4, b: 10, a: 1}
+    - _InvViewStrength4: {r: 0.2, g: 0.3, b: 0.3, a: 0}
+    - _Maincolor: {r: 0.9433962, g: 0.06674972, b: 0.5951934, a: 0}
+    - _OutlineTint: {r: 0.4, g: 0.4, b: 0.4, a: 1}
+    - _RimAreaMultiplier4: {r: 1, g: 2, b: 5, a: 3}
+    - _RimStrength4: {r: 0.2, g: 0.5, b: 1, a: 1}
+    - _ShadowThreshold4: {r: 0.55, g: 0.5, b: 0.5, a: 0}
+    - _ShadowTint: {r: 0.8962264, g: 0.8285867, b: 0.7905393, a: 1}
+    - _ShadowTintB4: {r: 0.5575828, g: 0.7075472, b: 0.6847149, a: 1}
+    - _ShadowTintG4: {r: 0.5575828, g: 0.6971069, b: 0.6886792, a: 1}
+    - _ShadowTintR4: {r: 0.6603774, g: 0.5039605, b: 0.6724368, a: 1}
+    - _SpecColor: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecLightColor: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecLightDir: {r: 0, g: 0.93973505, b: 0.34190363, a: 0}
+    - _Tint: {r: 1, g: 1, b: 1, a: 1}
+    - _TwoSideTint: {r: 1, g: 1, b: 1, a: 1}
+    - _ViewLightEdge4: {r: 0, g: 0, b: 1, a: 0}
+    - _ViewOffset4: {r: 2, g: 0, b: 0, a: 0}
+    - _ViewPower4: {r: 24, g: 5, b: 3, a: 1}
+    - _ViewStrength4: {r: 0.1, g: -0.2, b: 0.2, a: 0}
+  m_BuildTextureStacks: []

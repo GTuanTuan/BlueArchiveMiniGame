@@ -1,0 +1,346 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830413168532f154c90cbb227c123805, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterId: Midori
+  skillId: MidoriEx01
+  sourceHasNoNormalSkill: 0
+  fieldTimeline: {fileID: 0}
+  shots:
+  - sourceNodeIndex: 0
+    targetSlot: 0
+    targetBone: -1
+    muzzleIndex: 1
+    requiredConditionKey: 
+    projectile: {fileID: 4622686128100141120, guid: c4a9fcf9d92b874479d3becd073959fb,
+      type: 3}
+    arrivalEffect: {fileID: 2285273608959871030, guid: 88823c7825ddd9847903e23962bed7ba,
+      type: 3}
+    speed: 25
+    fixedForward: 0
+    simpleHoming: 1
+    range: 0
+    destinationVerticalOffset: 0
+    fireDelay: 0
+    useWorldPoint: 0
+    lockDestinationAtLaunch: 0
+    durationFromSpeed: 1
+    duration: 0
+    logicFramesPerSecond: 30
+    forwardCurves: []
+    rightCurves: []
+    upCurves: []
+    sounds: []
+    arrivalSounds:
+    - clips:
+      - {fileID: 8300000, guid: e8606bdaa14b487b86061b36d6c46e30, type: 3}
+      localPosition: {x: 0, y: 0, z: 0}
+      delay: 0
+      volume: 0.5
+      pitch: 3
+      randomPitchMin: 0
+      randomPitchMax: 0
+      spatialBlend: 0
+      loop: 0
+  - sourceNodeIndex: 1
+    targetSlot: 1
+    targetBone: -1
+    muzzleIndex: 1
+    requiredConditionKey: 
+    projectile: {fileID: 1282495212765649022, guid: 55f3c4af721c0b840b60ce1a93803fd2,
+      type: 3}
+    arrivalEffect: {fileID: 7944725527072243837, guid: 76dff2da617d57842a74128c4eaa237f,
+      type: 3}
+    speed: 25
+    fixedForward: 0
+    simpleHoming: 1
+    range: 0
+    destinationVerticalOffset: 0
+    fireDelay: 0
+    useWorldPoint: 0
+    lockDestinationAtLaunch: 0
+    durationFromSpeed: 1
+    duration: 0
+    logicFramesPerSecond: 30
+    forwardCurves: []
+    rightCurves: []
+    upCurves: []
+    sounds: []
+    arrivalSounds:
+    - clips:
+      - {fileID: 8300000, guid: e8606bdaa14b487b86061b36d6c46e30, type: 3}
+      localPosition: {x: 0, y: 0, z: 0}
+      delay: 0
+      volume: 0.5
+      pitch: 3
+      randomPitchMin: 0
+      randomPitchMax: 0
+      spatialBlend: 0
+      loop: 0
+  - sourceNodeIndex: 2
+    targetSlot: 2
+    targetBone: -1
+    muzzleIndex: 1
+    requiredConditionKey: 
+    projectile: {fileID: 3479610854182364662, guid: 25298009d79e5634189f3603e1f5d904,
+      type: 3}
+    arrivalEffect: {fileID: 4961203822176362538, guid: 9a5b39af9784f8e46ab3a9963ef206b6,
+      type: 3}
+    speed: 25
+    fixedForward: 0
+    simpleHoming: 1
+    range: 0
+    destinationVerticalOffset: 0
+    fireDelay: 0
+    useWorldPoint: 0
+    lockDestinationAtLaunch: 0
+    durationFromSpeed: 1
+    duration: 0
+    logicFramesPerSecond: 30
+    forwardCurves: []
+    rightCurves: []
+    upCurves: []
+    sounds: []
+    arrivalSounds:
+    - clips:
+      - {fileID: 8300000, guid: e8606bdaa14b487b86061b36d6c46e30, type: 3}
+      localPosition: {x: 0, y: 0, z: 0}
+      delay: 0
+      volume: 0.5
+      pitch: 3
+      randomPitchMin: 0
+      randomPitchMax: 0
+      spatialBlend: 0
+      loop: 0
+  - sourceNodeIndex: 3
+    targetSlot: 3
+    targetBone: -1
+    muzzleIndex: 1
+    requiredConditionKey: 
+    projectile: {fileID: 2427589326003541486, guid: 887f0f5f8ab95a147a75f08f639f1076,
+      type: 3}
+    arrivalEffect: {fileID: 2096868138799294917, guid: 1b93f3b9418819240a36b60181222740,
+      type: 3}
+    speed: 25
+    fixedForward: 0
+    simpleHoming: 1
+    range: 0
+    destinationVerticalOffset: 0
+    fireDelay: 0
+    useWorldPoint: 0
+    lockDestinationAtLaunch: 0
+    durationFromSpeed: 1
+    duration: 0
+    logicFramesPerSecond: 30
+    forwardCurves: []
+    rightCurves: []
+    upCurves: []
+    sounds: []
+    arrivalSounds:
+    - clips:
+      - {fileID: 8300000, guid: e8606bdaa14b487b86061b36d6c46e30, type: 3}
+      localPosition: {x: 0, y: 0, z: 0}
+      delay: 0
+      volume: 0.5
+      pitch: 3
+      randomPitchMin: 0
+      randomPitchMax: 0
+      spatialBlend: 0
+      loop: 0
+  - sourceNodeIndex: 4
+    targetSlot: 4
+    targetBone: -1
+    muzzleIndex: 1
+    requiredConditionKey: 
+    projectile: {fileID: 3674927012542292517, guid: d8c6456ed1b3f7345916f5273e6fb3c3,
+      type: 3}
+    arrivalEffect: {fileID: 3559336230567283579, guid: c298ede93f1605444962ef87623abf6a,
+      type: 3}
+    speed: 25
+    fixedForward: 0
+    simpleHoming: 1
+    range: 0
+    destinationVerticalOffset: 0
+    fireDelay: 0
+    useWorldPoint: 0
+    lockDestinationAtLaunch: 0
+    durationFromSpeed: 1
+    duration: 0
+    logicFramesPerSecond: 30
+    forwardCurves: []
+    rightCurves: []
+    upCurves: []
+    sounds: []
+    arrivalSounds:
+    - clips:
+      - {fileID: 8300000, guid: e8606bdaa14b487b86061b36d6c46e30, type: 3}
+      localPosition: {x: 0, y: 0, z: 0}
+      delay: 0
+      volume: 0.5
+      pitch: 3
+      randomPitchMin: 0
+      randomPitchMax: 0
+      spatialBlend: 0
+      loop: 0
+  targetEffects: []
+  outcomes: []
+  supportedEx: []
+  forms: []
+  gameplayStages: []
+  baselineNormal:
+    normalSkillId: MidoriNormal01
+    shotFrames: 1c000000
+    logicFramesPerSecond: 30
+    muzzleIndex: 1
+    pointTarget: 0
+    sameImpactForHitAndMiss: 0
+    muzzleEffect: {fileID: 1709254077376921, guid: 8832b6cafada6a54780676af059dd733,
+      type: 3}
+    projectile: {fileID: 1709254077376921, guid: c4c662ecc42a11f408a47d2fb4e8d4bf,
+      type: 3}
+    hitEffect: {fileID: 1709254077376921, guid: f404758d347421742a47f29b4d413412,
+      type: 3}
+    missEffect: {fileID: 0}
+    outcomes:
+    - hit: 1
+      material: 3
+      prefab: {fileID: 1709254077376921, guid: f404758d347421742a47f29b4d413412, type: 3}
+      offset: {x: 0, y: 0, z: 0}
+      useContactPoint: 1
+      requiredBone: 0
+      rotationMode: 4
+      rotationOffset: {x: 0, y: 0, z: 0, w: 1}
+      sounds: []
+    - hit: 0
+      material: 0
+      prefab: {fileID: 1709254077376921, guid: c3c8e4342b3cdcf4dbcb171900b6f040, type: 3}
+      offset: {x: 0.2, y: 0, z: 0.05}
+      useContactPoint: 0
+      requiredBone: 0
+      rotationMode: 4
+      rotationOffset: {x: 0, y: 0, z: 0, w: 1}
+      sounds: []
+    speed: 40
+    destinationOffset: {x: 0, y: 0, z: 0}
+    destinationRandomMin: {x: 0.025, y: -0.15, z: -0.15}
+    destinationRandomMax: {x: 0.05, y: 0.15, z: 0.15}
+    forwardCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    rightCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    upCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  enhancedNormal:
+    normalSkillId: 
+    shotFrames: 
+    logicFramesPerSecond: 30
+    muzzleIndex: 0
+    pointTarget: 0
+    sameImpactForHitAndMiss: 0
+    muzzleEffect: {fileID: 0}
+    projectile: {fileID: 0}
+    hitEffect: {fileID: 0}
+    missEffect: {fileID: 0}
+    outcomes: []
+    speed: 0
+    destinationOffset: {x: 0, y: 0, z: 0}
+    destinationRandomMin: {x: 0, y: 0, z: 0}
+    destinationRandomMax: {x: 0, y: 0, z: 0}
+    forwardCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    rightCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    upCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  postAttackController: {fileID: 0}
+  postAttackRateParameter: 
+  normalAudio: []
+  areaHits: []

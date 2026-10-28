@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: FX_MAT_Pattern_47a
+  m_Shader: {fileID: 4800000, guid: 7f5ebf2d9c99b584ca504f7ab81a2e18, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Tex_Main:
+        m_Texture: {fileID: 2800000, guid: 4425b2c5449a5a95a2b0a33efbb636d3, type: 3}
+        m_Scale: {x: 3, y: 12}
+        m_Offset: {x: 0, y: 0}
+    - _Tex_Mask:
+        m_Texture: {fileID: 2800000, guid: 1c75ef16b3055d778ed3788fd4ca5cdc, type: 3}
+        m_Scale: {x: 0.2, y: 6}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Cull_Mode: 0
+    - _Custom_Data_MainMask_Offset_Use: 0
+    - _Main_Speed_X: -0.2
+    - _Main_Speed_Y: 0
+    - _Mask_Speed_X: -0.1
+    - _Mask_Speed_Y: -0.02
+    - _Multiply: 1
+    - _RGBRGBA: 0
+    - _ZOffsetFactor: 0
+    - _ZOffsetUnits: 0
+    - _ZTest_Mode: 4
+    - _ZWrite_Mode: 0
+    m_Colors:
+    - _Color: {r: 5.992157, g: 5.992157, b: 5.992157, a: 1}
+  m_BuildTextureStacks: []

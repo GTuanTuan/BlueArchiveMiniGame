@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: FX_MAT_Matcap_Glass_10
+  m_Shader: {fileID: 4800000, guid: 505706f09a6489345b5bc870bd354d39, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _GLOW_0
+  - _RGBRGBA_ON
+  - _ZWRITE_MODE_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Main_Tex:
+        m_Texture: {fileID: 2800000, guid: 32e1d9273fab4fbb86989e0ae40928ee, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Matcap_Tex:
+        m_Texture: {fileID: 2800000, guid: fdbccf3c529f5ef691184aaa1c92376b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 2800000, guid: 32e1d9273fab4fbb86989e0ae40928ee, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Cull_Mode: 2
+    - _DitherThreshold: 0
+    - _Float0: 0.9
+    - _GlowStrength0: 4
+    - _GlowStrictness0: 7
+    - _LightStrong: 10
+    - _LightValue: 0.466
+    - _ShadowStrong: 10
+    - _ShadowThreshold: 1
+    - _SpecStrong: 0.179
+    - _Twinkle: 0.9
+    - _Twinkle_Value: 0.9
+    - _UseGlow: 1
+    - _ZWrite_Mode: 1
+    m_Colors:
+    - _CodeAddColor: {r: 0, g: 0, b: 0, a: 0}
+    - _CodeAddRimColor: {r: 0, g: 0, b: 0, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color0: {r: 12.377359, g: 12.2022085, b: 12.2022085, a: 1}
+    - _FakeLightDir: {r: 0.1, g: 0.65, b: 0, a: 0}
+    - _GlowMaskColor0: {r: 1, g: 1, b: 1, a: 1}
+    - _GlowTint0: {r: 0, g: 0.64145994, b: 1, a: 1}
+    - _Main_Color: {r: 2.9960785, g: 2.964706, b: 2.964706, a: 1}
+    - _OutlineTint: {r: 1, g: 1, b: 1, a: 1}
+    - _ShadowTint: {r: 0, g: 0, b: 0, a: 1}
+    - _SpecColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []

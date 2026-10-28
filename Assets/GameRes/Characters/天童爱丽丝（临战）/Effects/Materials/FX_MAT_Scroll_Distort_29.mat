@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: FX_MAT_Scroll_Distort_29
+  m_Shader: {fileID: 4800000, guid: 5fb3a6d0202ea2c4eb3789afd31cb1ee, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - _VERTEX_ALPHA_COLOR_OFF
+  - _VERTEX_ALPHA_USE_OFF
+  m_InvalidKeywords:
+  - _CUSTOM_DATA_MAINMASK_OFFSET_USE_ON
+  - _GRA_CHANNEL_U
+  - _GRA_WRAP_CLAMP
+  - _MAIN_DISTORT_USE_OFF
+  - _MASK_DISTORT_USE_OFF
+  - _RGBRGBA_RGB
+  - _STEP_VERTEX_COLOR_USE_STEP_CUSTOMDATA
+  - _UV_ADD_USE_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses:
+  - SHADOWCASTER
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Tex_Distort:
+        m_Texture: {fileID: 2800000, guid: 32e1d9273fab4fbb86989e0ae40928ee, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Tex_Main:
+        m_Texture: {fileID: 2800000, guid: fd856b811cf3586185b7ad246017526c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AlphaPremultiplyOn: 0
+    - _Alphaclip_Value: 0
+    - _BStep_Glow_Value: 5
+    - _BStep_Value: 0
+    - _Cull: 2
+    - _Dis_Speed_X: 0
+    - _Dis_Speed_Y: 0
+    - _Distortion_Power_X: 0
+    - _Distortion_Power_Y: 0
+    - _DstBlend: 10
+    - _DstBlendAlpha: 10
+    - _GColor_Glow_Value: 1
+    - _GColor_Offset_X: 0
+    - _GColor_Offset_Y: 0
+    - _GColor_Power: 0
+    - _GStep_Value: 0
+    - _Main_Speed_X: 0
+    - _Main_Speed_Y: 0
+    - _Mutiply: 1
+    - _Shadow_Color_Multiply: 1
+    - _Shadow_Glow_Value: 5
+    - _Shadow_Offset_X: 0
+    - _Shadow_Offset_Y: 0
+    - _Shadow_Power: 0
+    - _SrcBlend: 5
+    - _SrcBlendAlpha: 1
+    - _Vertex_Alpha_Color: 0
+    - _Vertex_Alpha_Use: 0
+    - _ZOffsetFactor: 0
+    - _ZOffsetUnits: 0
+    - _ZTest: 4
+    - _ZWrite: 0
+    m_Colors:
+    - _CustomData_DistortOffset_CD1XYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_DistortOffset_CD2XYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_DistortPower_CD2XYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_DistortTiling_CD1XYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_DistortTiling_CD2XYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_MainOffset_CD1XYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_MainOffset_CD2XYXY: {r: 1, g: 1, b: 0, a: 0}
+    - _CustomData_MainTiling_CD1XYXY: {r: 0, g: 0, b: 1, a: 1}
+    - _CustomData_MainTiling_CD2XYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_ShadingOffset_CD2_GColorOffsetXYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_ShadingOffset_CD2_ShadowOffsetXYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_ShadingPower_CD1_GColorShadowXYXY: {r: 0, g: 0, b: 0, a: 0}
+    - _CustomData_StepValue_CD1XYXY: {r: 1, g: 1, b: 0, a: 0}
+    - _GColor: {r: 1, g: 1, b: 1, a: 1}
+    - _RColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []

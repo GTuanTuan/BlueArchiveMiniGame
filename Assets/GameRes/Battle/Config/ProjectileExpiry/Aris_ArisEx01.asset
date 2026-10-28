@@ -1,0 +1,223 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830413168532f154c90cbb227c123805, type: 3}
+  m_Name: Aris_ArisEx01
+  m_EditorClassIdentifier: 
+  characterId: Aris
+  skillId: ArisEx01
+  sourceHasNoNormalSkill: 0
+  fieldTimeline: {fileID: 0}
+  shots:
+  - sourceNodeIndex: 0
+    targetSlot: -1
+    targetBone: -1
+    muzzleIndex: 1
+    requiredConditionKey: 
+    projectile: {fileID: 731664769877596113, guid: f90783f31701c6b41a8cc3c21a61b40a,
+      type: 3}
+    arrivalEffect: {fileID: 0}
+    speed: 30
+    fixedForward: 1
+    simpleHoming: 0
+    range: 20
+    destinationVerticalOffset: 0
+    fireDelay: 0
+    useWorldPoint: 0
+    lockDestinationAtLaunch: 0
+    durationFromSpeed: 1
+    duration: 0
+    logicFramesPerSecond: 30
+    forwardCurves: []
+    rightCurves: []
+    upCurves: []
+    sounds: []
+    arrivalSounds: []
+  - sourceNodeIndex: 1
+    targetSlot: -1
+    targetBone: -1
+    muzzleIndex: 1
+    requiredConditionKey: 
+    projectile: {fileID: 5708311433243793200, guid: 5bac1520fb484f84eab5846963ff0636,
+      type: 3}
+    arrivalEffect: {fileID: 0}
+    speed: 15
+    fixedForward: 1
+    simpleHoming: 0
+    range: 20
+    destinationVerticalOffset: 0
+    fireDelay: 0
+    useWorldPoint: 0
+    lockDestinationAtLaunch: 0
+    durationFromSpeed: 1
+    duration: 0
+    logicFramesPerSecond: 30
+    forwardCurves: []
+    rightCurves: []
+    upCurves: []
+    sounds: []
+    arrivalSounds: []
+  targetEffects:
+  - prefab: {fileID: 1709254077376921, guid: 9105b320f18f06841a3d1f5215ad7590, type: 3}
+    targetSlot: 0
+    requiredConditionKey: 
+    anchorIndex: 0
+    anchor: 2
+    rotationMode: 2
+    offset: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    attach: 0
+    keepWorldRotation: 0
+    delay: 0
+    duration: 0
+    sounds:
+    - timelineTime: 0
+      clips:
+      - {fileID: 8300000, guid: f53d53043d0e5ccf8884f9c7f7c71091, type: 3}
+      localPosition: {x: 0, y: 0, z: 0}
+      delay: 0
+      volume: 0.3
+      pitch: 1.5
+      randomPitchMin: 0
+      randomPitchMax: 0
+      spatialBlend: 1
+      minDistance: 1
+      maxDistance: 500
+      rolloffMode: 1
+      loop: 0
+    - timelineTime: 0
+      clips:
+      - {fileID: 8300000, guid: c39dfb0421f15611aa1f41cbe283b459, type: 3}
+      - {fileID: 8300000, guid: c6eb0d48f20d5058853d7ffbf117e991, type: 3}
+      - {fileID: 8300000, guid: e7c0afb9a8b356a89f80be4c207e4dee, type: 3}
+      localPosition: {x: 0, y: 0, z: 0}
+      delay: 0
+      volume: 0.4
+      pitch: 1
+      randomPitchMin: 0
+      randomPitchMax: 0
+      spatialBlend: 1
+      minDistance: 1
+      maxDistance: 500
+      rolloffMode: 1
+      loop: 0
+    shakes: []
+  outcomes:
+  - sourceNodeIndex: 1
+    occurrence: 0
+    hit: 1
+    material: 0
+    effectIndices: 00000000
+  supportedEx: []
+  forms: []
+  gameplayStages: []
+  baselineNormal:
+    normalSkillId: ArisNormal01
+    shotFrames: 1c000000
+    logicFramesPerSecond: 30
+    muzzleIndex: 1
+    pointTarget: 0
+    sameImpactForHitAndMiss: 0
+    muzzleEffect: {fileID: 0}
+    projectile: {fileID: 731664769877596113, guid: f90783f31701c6b41a8cc3c21a61b40a,
+      type: 3}
+    hitEffect: {fileID: 1709254077376921, guid: 509f096e0199e454cb277f4e588dd255,
+      type: 3}
+    missEffect: {fileID: 0}
+    outcomes:
+    - hit: 1
+      material: 3
+      prefab: {fileID: 1709254077376921, guid: 509f096e0199e454cb277f4e588dd255, type: 3}
+      offset: {x: 0, y: 0, z: 0.3}
+      useContactPoint: 0
+      requiredBone: 2
+      rotationMode: 2
+      rotationOffset: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+      sounds: []
+    speed: 30
+    destinationOffset: {x: 0, y: 0, z: 0}
+    destinationRandomMin: {x: 0, y: 0, z: 0}
+    destinationRandomMax: {x: 0, y: 0, z: 0}
+    forwardCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    rightCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    upCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  enhancedNormal:
+    normalSkillId: 
+    shotFrames: 
+    logicFramesPerSecond: 30
+    muzzleIndex: 0
+    pointTarget: 0
+    sameImpactForHitAndMiss: 0
+    muzzleEffect: {fileID: 0}
+    projectile: {fileID: 0}
+    hitEffect: {fileID: 0}
+    missEffect: {fileID: 0}
+    outcomes: []
+    speed: 0
+    destinationOffset: {x: 0, y: 0, z: 0}
+    destinationRandomMin: {x: 0, y: 0, z: 0}
+    destinationRandomMax: {x: 0, y: 0, z: 0}
+    forwardCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    rightCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    upCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  postAttackController: {fileID: 0}
+  postAttackRateParameter: 
+  normalAudio: []
+  fieldSounds: []
+  areaHits: []

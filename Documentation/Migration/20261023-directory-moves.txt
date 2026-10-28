@@ -1,0 +1,9 @@
+Assets/Scripts/Runtime -> Assets/GameFramework/Runtime
+Assets/Scripts/Editor -> Assets/GameFramework/Editor
+Assets/Scripts/HotUpdate -> Assets/GameScript/HotUpdate
+Assets/Scripts/Test -> Assets/GameScript/Tests
+Assets/Plugins/IngameDebugConsole -> Assets/ThirdParty/IngameDebugConsole
+OK Assets/GameScript/Tests/ForTest.cs
+OK Assets/GameScript/Bootstrap/Boot.cs
+OK Assets/GameFramework/HotUpdate/UI/Base
+OK Assets/GameFramework/HotUpdate/UI/UIManager.cs

@@ -1,0 +1,130 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: FX_MAT_Grid_02
+  m_Shader: {fileID: 4800000, guid: 7f5ebf2d9c99b584ca504f7ab81a2e18, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _BCUSTOM_DATA_USE_ON
+  - _COLOR_CUSTOM_DATA_USE_ON
+  - _CUSTOM_DATA_DISTORT_POWER_USE_ON
+  - _CUSTOM_DATA_MAINMASK_OFFSET_USE_ON
+  - _CUSTOM_DATA_MAIN_OFFSET_USE_ON
+  - _CUSTOM_DATA_MASK_OFFSET_USE_ON
+  - _CUSTOM_DATA_OFFSET_USE_ON
+  - _CUSTOM_DATA_USE_ON
+  - _GCUSTOM_DATA_USE_ON
+  - _MAIN_DISTORTION_USE_ON
+  - _MASK_DISTORTION_USE_ON
+  - _STEP_SCROLL_USE_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+      _Tex_Main:
+        m_Texture: {fileID: 2800000, guid: 4b68a596ac1d5df29c02d7b7824a2436, type: 3}
+        m_Scale: {x: 7, y: 5}
+        m_Offset: {x: -0.4, y: -0.2}
+      _Tex_Mask:
+        m_Texture: {fileID: 2800000, guid: bb70fcc50da058cd8e65995c56dec825, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: {}
+    m_Floats:
+      _AlphaClip: 0
+      _AlphaClip_Value: 0.1
+      _BCustom_Data_Use: 1
+      _BDisappear_Offset: 0
+      _Blend: 0
+      _BumpScale: 1
+      _Color_Custom_Data_Use: 1
+      _Cull: 1
+      _Cull_Mode: 0
+      _Custom_Data_Distort_Power_Use: 1
+      _Custom_Data_MainMask_Offset_Use: 1
+      _Custom_Data_Main_Offset_Use: 1
+      _Custom_Data_Mask_Offset_Use: 1
+      _Custom_Data_Mask_Offset_Usecustom78: 0
+      _Custom_Data_Offset_Use: 1
+      _Custom_Data_Use: 1
+      _Cutoff: 0.5
+      _Dis_Speed_X: 0
+      _Dis_Speed_Y: 0
+      _Distortion_Power_X: 0
+      _Distortion_Power_Y: 0
+      _DitherThreshold: 0
+      _DstBlend: 0
+      _EnvironmentReflections: 1
+      _GColor_Sharpness: 20
+      _GCustom_Data_Use: 1
+      _GDisappear_Offset: 0
+      _GlossMapScale: 0
+      _Glossiness: 0
+      _GlossyReflections: 0
+      _GrayBrightness: 1
+      _Main_Distortion_Use: 1
+      _Main_Speed_X: 0
+      _Main_Speed_Y: 0
+      _Main_Texture_No: 0
+      _Mask_Distortion_Use: 1
+      _Mask_Speed_X: 0
+      _Mask_Speed_Y: 0
+      _Metallic: 0
+      _Multiply: 1
+      _Mutiply: 1
+      _OcclusionStrength: 1
+      _QueueOffset: 0
+      _RGBRGBA: 0
+      _ReceiveShadows: 1
+      _RimAreaMultiplier: 3.44
+      _RimStrength: 0
+      _ShadowThreshold: -0.03
+      _Shadow_Color_Multiply: 1
+      _Shadow_Value: 0.95
+      _Smoothness: 0.5
+      _SmoothnessTextureChannel: 0
+      _SpecularHighlights: 1
+      _SrcBlend: 1
+      _Step_Custom_DataVertex_color_Use: 0
+      _Step_Power: 0
+      _Step_Scroll_Use: 1
+      _Surface: 0
+      _UV_Add_Use: 0
+      _VertexNormal_Speed_X: 0
+      _VertexNormal_Speed_Y: 0
+      _Vertex_Alpha_Use: 0
+      _WorkflowMode: 1
+      _ZOffsetFactor: 0
+      _ZOffsetUnits: 0
+      _ZTest_Mode: 4
+      _ZWrite: 1
+      _ZWrite_Mode: 0
+    m_Colors:
+      _BackFacesColor: {r: 8, g: 8, b: 8, a: 0}
+      _BaseColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+      _CodeAddColor: {r: 0, g: 0, b: 0, a: 0}
+      _CodeAddRimColor: {r: 0, g: 0, b: 0, a: 0}
+      _CodeMultiplyColor: {r: 1, g: 1, b: 1, a: 1}
+      _Color: {r: 11.984314, g: 11.984314, b: 11.984314, a: 1}
+      _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+      _FrontFacesColor: {r: 10.680627, g: 10.680627, b: 10.680627, a: 0}
+      _GColor: {r: 4, g: 1.2451941, b: 0.509434, a: 0}
+      _MainColor: {r: 59.017693, g: 15.449657, b: 15.449657, a: 1}
+      _Main_Color: {r: 8, g: 8, b: 8, a: 1}
+      _ShadowTint: {r: 0.6792453, g: 0.6792453, b: 0.6792453, a: 1}
+      _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+      _Tint: {r: 1.2170172, g: 0.9281358, b: 4.799142, a: 1}
+      _UV_Add_TilingOffset: {r: 0, g: 0, b: 0, a: 0}
+      _VertexNormal_Offset: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []

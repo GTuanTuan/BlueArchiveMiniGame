@@ -1,0 +1,1009 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!200 &20000000
+ShaderVariantCollection:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ReconstructedShaderVariants
+  m_Shaders:
+  - first: {fileID: 4800000, guid: a7736a1ca0b2d614f8394a52252253b8, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 8
+      - keywords: _DITHER_HORIZONTAL_LINES
+        passType: 8
+      - keywords: 
+        passType: 13
+      - keywords: FOG_EXP
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_POINT
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_POINT _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_POINT _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_POINT _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_SPOT
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_SPOT _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_SPOT _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_SPOT _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP _ADDITIONAL_LIGHTS
+        passType: 13
+      - keywords: FOG_EXP _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_EXP _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP _ADDITIONAL_LIGHTS _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_EXP _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_POINT
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_POINT _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_POINT _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_POINT _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_SPOT
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_SPOT _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_SPOT _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_SPOT _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR _ADDITIONAL_LIGHTS
+        passType: 13
+      - keywords: FOG_LINEAR _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_LINEAR _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR _ADDITIONAL_LIGHTS _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_LINEAR _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR _GRAYSCALE_MODE
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_POINT
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_POINT _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_POINT _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_POINT _GRAYSCALE_MODE
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_SPOT
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_SPOT _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_SPOT _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_SPOT _GRAYSCALE_MODE
+        passType: 13
+      - keywords: _ADDITIONAL_LIGHTS
+        passType: 13
+      - keywords: _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: _ADDITIONAL_LIGHTS _GRAYSCALE_MODE
+        passType: 13
+      - keywords: _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: _GRAYSCALE_MODE
+        passType: 13
+  - first: {fileID: 4800000, guid: 2ffdf8daf90496b47bb5f7c67549cfa4, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 8
+      - keywords: INSTANCING_ON
+        passType: 8
+      - keywords: 
+        passType: 13
+      - keywords: INSTANCING_ON
+        passType: 13
+  - first: {fileID: 4800000, guid: 1367910502527024e8f1913c2db28f2c, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 8
+      - keywords: INSTANCING_ON
+        passType: 8
+      - keywords: 
+        passType: 13
+      - keywords: INSTANCING_ON
+        passType: 13
+  - first: {fileID: 4800000, guid: c9f8a3e1523cc6d41a1162f154b94fad, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 8
+      - keywords: INSTANCING_ON
+        passType: 8
+      - keywords: 
+        passType: 13
+      - keywords: INSTANCING_ON
+        passType: 13
+  - first: {fileID: 4800000, guid: bcae11677fbc88f4b871185b3c92836b, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 13
+      - keywords: INSTANCING_ON
+        passType: 13
+  - first: {fileID: 4800000, guid: 6af325e35f2875f4393d583b9db73bbb, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 8
+      - keywords: INSTANCING_ON
+        passType: 8
+      - keywords: 
+        passType: 13
+      - keywords: INSTANCING_ON
+        passType: 13
+  - first: {fileID: 4800000, guid: 32a905e249a876f44afbb727b93352e2, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 8
+      - keywords: INSTANCING_ON
+        passType: 8
+      - keywords: 
+        passType: 13
+      - keywords: INSTANCING_ON
+        passType: 13
+  - first: {fileID: 4800000, guid: 764074b452032b1449130fe08679fc75, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 8
+      - keywords: INSTANCING_ON
+        passType: 8
+      - keywords: 
+        passType: 13
+      - keywords: INSTANCING_ON
+        passType: 13
+  - first: {fileID: 4800000, guid: 3300dc58195ab294e9f4a6155e3af9c0, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 8
+      - keywords: INSTANCING_ON
+        passType: 8
+      - keywords: 
+        passType: 13
+      - keywords: INSTANCING_ON
+        passType: 13
+  - first: {fileID: 4800000, guid: eacd9b3d3716cb44282bbce4a4e9e3a8, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 13
+  - first: {fileID: 4800000, guid: 5e82a9881410a6745bcb11562fd460ec, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 8
+      - keywords: 
+        passType: 13
+  - first: {fileID: 4800000, guid: 2d397408e5ab4b347893267b658644ac, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 8
+      - keywords: INSTANCING_ON
+        passType: 8
+      - keywords: 
+        passType: 13
+      - keywords: INSTANCING_ON
+        passType: 13
+  - first: {fileID: 4800000, guid: bc632e41fa2e2bd4c9a98869f824f986, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 8
+      - keywords: 
+        passType: 13
+  - first: {fileID: 4800000, guid: 7f3684b8c5f1bba4bbd6b84bd7342b3e, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 8
+      - keywords: INSTANCING_ON
+        passType: 8
+      - keywords: 
+        passType: 13
+      - keywords: INSTANCING_ON
+        passType: 13
+  - first: {fileID: 4800000, guid: 4f884730f7aa5104cbf3b9b15174bb5b, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 13
+      - keywords: FOG_EXP
+        passType: 13
+      - keywords: FOG_EXP _ADDITIONAL_LIGHTS
+        passType: 13
+      - keywords: FOG_EXP _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_EXP _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP _ADDITIONAL_LIGHTS _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_EXP _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR
+        passType: 13
+      - keywords: FOG_LINEAR _ADDITIONAL_LIGHTS
+        passType: 13
+      - keywords: FOG_LINEAR _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_LINEAR _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR _ADDITIONAL_LIGHTS _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_LINEAR _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR _GRAYSCALE_MODE
+        passType: 13
+      - keywords: _ADDITIONAL_LIGHTS
+        passType: 13
+      - keywords: _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: _ADDITIONAL_LIGHTS _GRAYSCALE_MODE
+        passType: 13
+      - keywords: _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: _GRAYSCALE_MODE
+        passType: 13
+  - first: {fileID: 4800000, guid: 083a7c1913a114a488240a386ddbf7ec, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 13
+      - keywords: FOG_EXP
+        passType: 13
+      - keywords: FOG_EXP _ADDITIONAL_LIGHTS
+        passType: 13
+      - keywords: FOG_EXP _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_EXP _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP _ADDITIONAL_LIGHTS _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_EXP _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR
+        passType: 13
+      - keywords: FOG_LINEAR _ADDITIONAL_LIGHTS
+        passType: 13
+      - keywords: FOG_LINEAR _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_LINEAR _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR _ADDITIONAL_LIGHTS _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_LINEAR _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR _GRAYSCALE_MODE
+        passType: 13
+      - keywords: _ADDITIONAL_LIGHTS
+        passType: 13
+      - keywords: _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: _ADDITIONAL_LIGHTS _GRAYSCALE_MODE
+        passType: 13
+      - keywords: _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: _GRAYSCALE_MODE
+        passType: 13
+  - first: {fileID: 4800000, guid: 5f2d114dd6fc8a141be904d81dcf2929, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 8
+      - keywords: _CHAR_CUTOUT_MODE
+        passType: 8
+      - keywords: _CHAR_CUTOUT_MODE _DITHER_HORIZONTAL_LINES
+        passType: 8
+      - keywords: _DITHER_HORIZONTAL_LINES
+        passType: 8
+      - keywords: 
+        passType: 13
+      - keywords: FOG_EXP
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_POINT
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_POINT _ADDITIONAL_LIGHTS
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_POINT _ADDITIONAL_LIGHTS _CHAR_CUTOUT_MODE
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_POINT _ADDITIONAL_LIGHTS _CHAR_CUTOUT_MODE
+          _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_POINT _ADDITIONAL_LIGHTS _CHAR_CUTOUT_MODE
+          _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_POINT _ADDITIONAL_LIGHTS _CHAR_CUTOUT_MODE
+          _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_POINT _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_POINT _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES
+          _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_POINT _ADDITIONAL_LIGHTS _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_POINT _CHAR_CUTOUT_MODE
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_POINT _CHAR_CUTOUT_MODE _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_POINT _CHAR_CUTOUT_MODE _DITHER_HORIZONTAL_LINES
+          _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_POINT _CHAR_CUTOUT_MODE _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_POINT _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_POINT _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_POINT _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_SPOT
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_SPOT _ADDITIONAL_LIGHTS
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_SPOT _ADDITIONAL_LIGHTS _CHAR_CUTOUT_MODE
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_SPOT _ADDITIONAL_LIGHTS _CHAR_CUTOUT_MODE
+          _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_SPOT _ADDITIONAL_LIGHTS _CHAR_CUTOUT_MODE
+          _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_SPOT _ADDITIONAL_LIGHTS _CHAR_CUTOUT_MODE
+          _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_SPOT _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_SPOT _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES
+          _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_SPOT _ADDITIONAL_LIGHTS _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_SPOT _CHAR_CUTOUT_MODE
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_SPOT _CHAR_CUTOUT_MODE _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_SPOT _CHAR_CUTOUT_MODE _DITHER_HORIZONTAL_LINES
+          _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_SPOT _CHAR_CUTOUT_MODE _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_SPOT _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_SPOT _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_SPOT _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP _ADDITIONAL_LIGHTS
+        passType: 13
+      - keywords: FOG_EXP _ADDITIONAL_LIGHTS _CHAR_CUTOUT_MODE
+        passType: 13
+      - keywords: FOG_EXP _ADDITIONAL_LIGHTS _CHAR_CUTOUT_MODE _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_EXP _ADDITIONAL_LIGHTS _CHAR_CUTOUT_MODE _DITHER_HORIZONTAL_LINES
+          _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP _ADDITIONAL_LIGHTS _CHAR_CUTOUT_MODE _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_EXP _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP _ADDITIONAL_LIGHTS _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP _CHAR_CUTOUT_MODE
+        passType: 13
+      - keywords: FOG_EXP _CHAR_CUTOUT_MODE _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_EXP _CHAR_CUTOUT_MODE _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP _CHAR_CUTOUT_MODE _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_EXP _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_POINT
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_POINT _ADDITIONAL_LIGHTS
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_POINT _ADDITIONAL_LIGHTS _CHAR_CUTOUT_MODE
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_POINT _ADDITIONAL_LIGHTS _CHAR_CUTOUT_MODE
+          _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_POINT _ADDITIONAL_LIGHTS _CHAR_CUTOUT_MODE
+          _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_POINT _ADDITIONAL_LIGHTS _CHAR_CUTOUT_MODE
+          _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_POINT _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_POINT _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES
+          _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_POINT _ADDITIONAL_LIGHTS _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_POINT _CHAR_CUTOUT_MODE
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_POINT _CHAR_CUTOUT_MODE _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_POINT _CHAR_CUTOUT_MODE _DITHER_HORIZONTAL_LINES
+          _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_POINT _CHAR_CUTOUT_MODE _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_POINT _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_POINT _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_POINT _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_SPOT
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_SPOT _ADDITIONAL_LIGHTS
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_SPOT _ADDITIONAL_LIGHTS _CHAR_CUTOUT_MODE
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_SPOT _ADDITIONAL_LIGHTS _CHAR_CUTOUT_MODE
+          _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_SPOT _ADDITIONAL_LIGHTS _CHAR_CUTOUT_MODE
+          _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_SPOT _ADDITIONAL_LIGHTS _CHAR_CUTOUT_MODE
+          _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_SPOT _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_SPOT _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES
+          _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_SPOT _ADDITIONAL_LIGHTS _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_SPOT _CHAR_CUTOUT_MODE
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_SPOT _CHAR_CUTOUT_MODE _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_SPOT _CHAR_CUTOUT_MODE _DITHER_HORIZONTAL_LINES
+          _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_SPOT _CHAR_CUTOUT_MODE _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_SPOT _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_SPOT _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_SPOT _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR _ADDITIONAL_LIGHTS
+        passType: 13
+      - keywords: FOG_LINEAR _ADDITIONAL_LIGHTS _CHAR_CUTOUT_MODE
+        passType: 13
+      - keywords: FOG_LINEAR _ADDITIONAL_LIGHTS _CHAR_CUTOUT_MODE _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_LINEAR _ADDITIONAL_LIGHTS _CHAR_CUTOUT_MODE _DITHER_HORIZONTAL_LINES
+          _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR _ADDITIONAL_LIGHTS _CHAR_CUTOUT_MODE _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_LINEAR _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR _ADDITIONAL_LIGHTS _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR _CHAR_CUTOUT_MODE
+        passType: 13
+      - keywords: FOG_LINEAR _CHAR_CUTOUT_MODE _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_LINEAR _CHAR_CUTOUT_MODE _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR _CHAR_CUTOUT_MODE _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_LINEAR _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR _GRAYSCALE_MODE
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_POINT
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_POINT _ADDITIONAL_LIGHTS
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_POINT _ADDITIONAL_LIGHTS _CHAR_CUTOUT_MODE
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_POINT _ADDITIONAL_LIGHTS _CHAR_CUTOUT_MODE _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_POINT _ADDITIONAL_LIGHTS _CHAR_CUTOUT_MODE _DITHER_HORIZONTAL_LINES
+          _GRAYSCALE_MODE
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_POINT _ADDITIONAL_LIGHTS _CHAR_CUTOUT_MODE _GRAYSCALE_MODE
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_POINT _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_POINT _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES
+          _GRAYSCALE_MODE
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_POINT _ADDITIONAL_LIGHTS _GRAYSCALE_MODE
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_POINT _CHAR_CUTOUT_MODE
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_POINT _CHAR_CUTOUT_MODE _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_POINT _CHAR_CUTOUT_MODE _DITHER_HORIZONTAL_LINES
+          _GRAYSCALE_MODE
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_POINT _CHAR_CUTOUT_MODE _GRAYSCALE_MODE
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_POINT _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_POINT _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_POINT _GRAYSCALE_MODE
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_SPOT
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_SPOT _ADDITIONAL_LIGHTS
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_SPOT _ADDITIONAL_LIGHTS _CHAR_CUTOUT_MODE
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_SPOT _ADDITIONAL_LIGHTS _CHAR_CUTOUT_MODE _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_SPOT _ADDITIONAL_LIGHTS _CHAR_CUTOUT_MODE _DITHER_HORIZONTAL_LINES
+          _GRAYSCALE_MODE
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_SPOT _ADDITIONAL_LIGHTS _CHAR_CUTOUT_MODE _GRAYSCALE_MODE
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_SPOT _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_SPOT _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES
+          _GRAYSCALE_MODE
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_SPOT _ADDITIONAL_LIGHTS _GRAYSCALE_MODE
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_SPOT _CHAR_CUTOUT_MODE
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_SPOT _CHAR_CUTOUT_MODE _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_SPOT _CHAR_CUTOUT_MODE _DITHER_HORIZONTAL_LINES
+          _GRAYSCALE_MODE
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_SPOT _CHAR_CUTOUT_MODE _GRAYSCALE_MODE
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_SPOT _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_SPOT _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_SPOT _GRAYSCALE_MODE
+        passType: 13
+      - keywords: _ADDITIONAL_LIGHTS
+        passType: 13
+      - keywords: _ADDITIONAL_LIGHTS _CHAR_CUTOUT_MODE
+        passType: 13
+      - keywords: _ADDITIONAL_LIGHTS _CHAR_CUTOUT_MODE _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: _ADDITIONAL_LIGHTS _CHAR_CUTOUT_MODE _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: _ADDITIONAL_LIGHTS _CHAR_CUTOUT_MODE _GRAYSCALE_MODE
+        passType: 13
+      - keywords: _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: _ADDITIONAL_LIGHTS _GRAYSCALE_MODE
+        passType: 13
+      - keywords: _CHAR_CUTOUT_MODE
+        passType: 13
+      - keywords: _CHAR_CUTOUT_MODE _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: _CHAR_CUTOUT_MODE _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: _CHAR_CUTOUT_MODE _GRAYSCALE_MODE
+        passType: 13
+      - keywords: _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: _GRAYSCALE_MODE
+        passType: 13
+  - first: {fileID: 4800000, guid: 6da02ed3badc6664f8d49d957f303652, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 8
+      - keywords: _DITHER_HORIZONTAL_LINES
+        passType: 8
+      - keywords: 
+        passType: 13
+      - keywords: FOG_EXP
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_POINT
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_POINT _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_POINT _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_POINT _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_SPOT
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_SPOT _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_SPOT _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_SPOT _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP _ADDITIONAL_LIGHTS
+        passType: 13
+      - keywords: FOG_EXP _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_EXP _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP _ADDITIONAL_LIGHTS _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_EXP _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_POINT
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_POINT _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_POINT _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_POINT _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_SPOT
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_SPOT _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_SPOT _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_SPOT _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR _ADDITIONAL_LIGHTS
+        passType: 13
+      - keywords: FOG_LINEAR _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_LINEAR _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR _ADDITIONAL_LIGHTS _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_LINEAR _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR _GRAYSCALE_MODE
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_POINT
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_POINT _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_POINT _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_POINT _GRAYSCALE_MODE
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_SPOT
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_SPOT _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_SPOT _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_SPOT _GRAYSCALE_MODE
+        passType: 13
+      - keywords: _ADDITIONAL_LIGHTS
+        passType: 13
+      - keywords: _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: _ADDITIONAL_LIGHTS _GRAYSCALE_MODE
+        passType: 13
+      - keywords: _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: _GRAYSCALE_MODE
+        passType: 13
+  - first: {fileID: 4800000, guid: 89803b392ac9e404d86fa67e095a59f4, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: FOG_EXP
+        passType: 0
+      - keywords: FOG_EXP _DITHER_HORIZONTAL_LINES
+        passType: 0
+      - keywords: FOG_EXP _DITHER_HORIZONTAL_LINES _GLOW_0
+        passType: 0
+      - keywords: FOG_EXP _DITHER_HORIZONTAL_LINES _GLOW_0 _GRAYSCALE_MODE
+        passType: 0
+      - keywords: FOG_EXP _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 0
+      - keywords: FOG_EXP _GLOW_0
+        passType: 0
+      - keywords: FOG_EXP _GLOW_0 _GRAYSCALE_MODE
+        passType: 0
+      - keywords: FOG_EXP _GRAYSCALE_MODE
+        passType: 0
+      - keywords: FOG_LINEAR
+        passType: 0
+      - keywords: FOG_LINEAR _DITHER_HORIZONTAL_LINES
+        passType: 0
+      - keywords: FOG_LINEAR _DITHER_HORIZONTAL_LINES _GLOW_0
+        passType: 0
+      - keywords: FOG_LINEAR _DITHER_HORIZONTAL_LINES _GLOW_0 _GRAYSCALE_MODE
+        passType: 0
+      - keywords: FOG_LINEAR _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 0
+      - keywords: FOG_LINEAR _GLOW_0
+        passType: 0
+      - keywords: FOG_LINEAR _GLOW_0 _GRAYSCALE_MODE
+        passType: 0
+      - keywords: FOG_LINEAR _GRAYSCALE_MODE
+        passType: 0
+      - keywords: _DITHER_HORIZONTAL_LINES
+        passType: 0
+      - keywords: _DITHER_HORIZONTAL_LINES _GLOW_0
+        passType: 0
+      - keywords: _DITHER_HORIZONTAL_LINES _GLOW_0 _GRAYSCALE_MODE
+        passType: 0
+      - keywords: _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 0
+      - keywords: _GLOW_0
+        passType: 0
+      - keywords: _GLOW_0 _GRAYSCALE_MODE
+        passType: 0
+      - keywords: _GRAYSCALE_MODE
+        passType: 0
+      - keywords: 
+        passType: 13
+  - first: {fileID: 4800000, guid: 4e02615a9d7478240aaef72ae03c5d74, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 6e7cef0b84ebb284ab03cf71be8de1af, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 24bda8f8ff185d1469efd4d563ed454d, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 8
+      - keywords: _DITHER_HORIZONTAL_LINES
+        passType: 8
+      - keywords: 
+        passType: 13
+      - keywords: FOG_EXP
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_POINT
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_POINT _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_POINT _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_POINT _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_SPOT
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_SPOT _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_SPOT _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP OUTLINE_RIM_LIGHT_SPOT _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP _ADDITIONAL_LIGHTS
+        passType: 13
+      - keywords: FOG_EXP _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_EXP _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES _GLOW_0
+        passType: 13
+      - keywords: FOG_EXP _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES _GLOW_0 _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP _ADDITIONAL_LIGHTS _GLOW_0
+        passType: 13
+      - keywords: FOG_EXP _ADDITIONAL_LIGHTS _GLOW_0 _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP _ADDITIONAL_LIGHTS _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP _CHAR_CUTOUT_MODE
+        passType: 13
+      - keywords: FOG_EXP _CHAR_CUTOUT_MODE _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_EXP _CHAR_CUTOUT_MODE _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP _CHAR_CUTOUT_MODE _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_EXP _DITHER_HORIZONTAL_LINES _GLOW_0
+        passType: 13
+      - keywords: FOG_EXP _DITHER_HORIZONTAL_LINES _GLOW_0 _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP _GLOW_0
+        passType: 13
+      - keywords: FOG_EXP _GLOW_0 _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_EXP _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_POINT
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_POINT _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_POINT _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_POINT _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_SPOT
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_SPOT _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_SPOT _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR OUTLINE_RIM_LIGHT_SPOT _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR _ADDITIONAL_LIGHTS
+        passType: 13
+      - keywords: FOG_LINEAR _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_LINEAR _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES _GLOW_0
+        passType: 13
+      - keywords: FOG_LINEAR _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES _GLOW_0
+          _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR _ADDITIONAL_LIGHTS _GLOW_0
+        passType: 13
+      - keywords: FOG_LINEAR _ADDITIONAL_LIGHTS _GLOW_0 _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR _ADDITIONAL_LIGHTS _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR _CHAR_CUTOUT_MODE
+        passType: 13
+      - keywords: FOG_LINEAR _CHAR_CUTOUT_MODE _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_LINEAR _CHAR_CUTOUT_MODE _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR _CHAR_CUTOUT_MODE _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: FOG_LINEAR _DITHER_HORIZONTAL_LINES _GLOW_0
+        passType: 13
+      - keywords: FOG_LINEAR _DITHER_HORIZONTAL_LINES _GLOW_0 _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR _GLOW_0
+        passType: 13
+      - keywords: FOG_LINEAR _GLOW_0 _GRAYSCALE_MODE
+        passType: 13
+      - keywords: FOG_LINEAR _GRAYSCALE_MODE
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_POINT
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_POINT _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_POINT _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_POINT _GRAYSCALE_MODE
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_SPOT
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_SPOT _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_SPOT _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: OUTLINE_RIM_LIGHT_SPOT _GRAYSCALE_MODE
+        passType: 13
+      - keywords: _ADDITIONAL_LIGHTS
+        passType: 13
+      - keywords: _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES _GLOW_0
+        passType: 13
+      - keywords: _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES _GLOW_0 _GRAYSCALE_MODE
+        passType: 13
+      - keywords: _ADDITIONAL_LIGHTS _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: _ADDITIONAL_LIGHTS _GLOW_0
+        passType: 13
+      - keywords: _ADDITIONAL_LIGHTS _GLOW_0 _GRAYSCALE_MODE
+        passType: 13
+      - keywords: _ADDITIONAL_LIGHTS _GRAYSCALE_MODE
+        passType: 13
+      - keywords: _CHAR_CUTOUT_MODE
+        passType: 13
+      - keywords: _CHAR_CUTOUT_MODE _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: _CHAR_CUTOUT_MODE _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: _CHAR_CUTOUT_MODE _GRAYSCALE_MODE
+        passType: 13
+      - keywords: _DITHER_HORIZONTAL_LINES
+        passType: 13
+      - keywords: _DITHER_HORIZONTAL_LINES _GLOW_0
+        passType: 13
+      - keywords: _DITHER_HORIZONTAL_LINES _GLOW_0 _GRAYSCALE_MODE
+        passType: 13
+      - keywords: _DITHER_HORIZONTAL_LINES _GRAYSCALE_MODE
+        passType: 13
+      - keywords: _GLOW_0
+        passType: 13
+      - keywords: _GLOW_0 _GRAYSCALE_MODE
+        passType: 13
+      - keywords: _GRAYSCALE_MODE
+        passType: 13

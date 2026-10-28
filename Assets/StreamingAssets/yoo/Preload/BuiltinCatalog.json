@@ -1,0 +1,31 @@
+{
+    "FileVersion": 1,
+    "PackageName": "Preload",
+    "PackageVersion": "2026-10-25-1196",
+    "Entries": [
+        {
+            "BundleGuid": "755891b91c421c569c0f5f711b868e54",
+            "FileName": "preload_assets_gameres_packages_preload_hotupdatedll.bundle"
+        },
+        {
+            "BundleGuid": "4ed1967d62f7c035d58445cf7f35e317",
+            "FileName": "preload_assets_gameres_ui_preload_atlases_preloadoriginalatlas.bundle"
+        },
+        {
+            "BundleGuid": "15669f67481ba3f8d970fa4ea5b5064e",
+            "FileName": "preload_assets_gameres_ui_preload_prefabs.bundle"
+        },
+        {
+            "BundleGuid": "3c3692905a56dccf674f3a185f6afb99",
+            "FileName": "preload_share_assets_gameres_ui_preload_art_originalcommon.bundle"
+        },
+        {
+            "BundleGuid": "a5ee46b1748e0cf6d4b0ad8e870e1cb7",
+            "FileName": "preload_share_assets_gameres_ui_shared_fonts_minigame.bundle"
+        },
+        {
+            "BundleGuid": "679c1cd9690506f9cf37485e0bb9130c",
+            "FileName": "preload_unityshaders.bundle"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+Assets/Res/Main/EntityArt
+Assets/Res/Main/Scene
+Assets/Res/Main/Shader
+Assets/Res/Main/SceneArt
+Assets/Res/Main/SpriteBakerOutput
+Assets/Res/Main/InputAction
+Assets/Res/Main/Entity/Built.prefab
+Assets/Res/Main/Entity/Character
+Assets/Res/Main/Entity/Hit_electric.prefab
+Assets/Res/Main/Entity/MyNetWorkPlayer.prefab
+Assets/Res/Main/Entity/MyRoomManager.prefab
+Assets/Res/Main/Entity/MyRoomPlayer.prefab
+Assets/Res/Main/Entity/MyTypewriter.prefab
+Assets/Res/Main/Entity/Player.prefab
+Assets/Res/Main/Entity/UIManager.prefab
+Assets/Res/Main/UIPanel/MyNetWorkHUD.prefab
+Assets/Res/Main/UIPanel/MoveCtrlPanel.prefab

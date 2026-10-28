@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: MainOriginalAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 1024
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 0
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_IgnorePlatformSupport: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 21300000, guid: f15627791f97500590212779a16ed51e, type: 3}
+    - {fileID: 21300000, guid: 9ce25e4c7ca153e08066f56854b6d9fe, type: 3}
+    - {fileID: 21300000, guid: 5ae520828fec56eb9f22c9c092a9a68b, type: 3}
+    - {fileID: 21300000, guid: d34f18ee87ad523b8f1c120673a3e8f9, type: 3}
+    - {fileID: 21300000, guid: e994b154f45b5179b2e647cb6cc18aea, type: 3}
+    - {fileID: 21300000, guid: 5eb65212faba54ae8a3a16e65e5d19cb, type: 3}
+    - {fileID: 21300000, guid: 5608f4b57f6f584ea804d2f81d3911bb, type: 3}
+    - {fileID: 21300000, guid: 26dcb096ba94552a8986ea823edc929c, type: 3}
+    - {fileID: 21300000, guid: cfd331b140eb5b98965033e0f80fb797, type: 3}
+    - {fileID: 21300000, guid: c3bb6f56aa60534ab4f0a6e2190773ed, type: 3}
+    - {fileID: 21300000, guid: 0639f0f614985ae18b74af6b211dec84, type: 3}
+    - {fileID: 21300000, guid: 0e012f2527045f8b9592333d095160fe, type: 3}
+    bindAsDefault: 0
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - cfd331b140eb5b98965033e0f80fb797: 21300000
+    - 5eb65212faba54ae8a3a16e65e5d19cb: 21300000
+    - 5ae520828fec56eb9f22c9c092a9a68b: 21300000
+    - e994b154f45b5179b2e647cb6cc18aea: 21300000
+    - 0e012f2527045f8b9592333d095160fe: 21300000
+    - 5608f4b57f6f584ea804d2f81d3911bb: 21300000
+    - c3bb6f56aa60534ab4f0a6e2190773ed: 21300000
+    - 26dcb096ba94552a8986ea823edc929c: 21300000
+    - 0639f0f614985ae18b74af6b211dec84: 21300000
+    - f15627791f97500590212779a16ed51e: 21300000
+    - 9ce25e4c7ca153e08066f56854b6d9fe: 21300000
+    - d34f18ee87ad523b8f1c120673a3e8f9: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: cfd331b140eb5b98965033e0f80fb797, type: 3}
+  - {fileID: 21300000, guid: 5eb65212faba54ae8a3a16e65e5d19cb, type: 3}
+  - {fileID: 21300000, guid: 5ae520828fec56eb9f22c9c092a9a68b, type: 3}
+  - {fileID: 21300000, guid: e994b154f45b5179b2e647cb6cc18aea, type: 3}
+  - {fileID: 21300000, guid: 0e012f2527045f8b9592333d095160fe, type: 3}
+  - {fileID: 21300000, guid: 5608f4b57f6f584ea804d2f81d3911bb, type: 3}
+  - {fileID: 21300000, guid: c3bb6f56aa60534ab4f0a6e2190773ed, type: 3}
+  - {fileID: 21300000, guid: 26dcb096ba94552a8986ea823edc929c, type: 3}
+  - {fileID: 21300000, guid: 0639f0f614985ae18b74af6b211dec84, type: 3}
+  - {fileID: 21300000, guid: f15627791f97500590212779a16ed51e, type: 3}
+  - {fileID: 21300000, guid: 9ce25e4c7ca153e08066f56854b6d9fe, type: 3}
+  - {fileID: 21300000, guid: d34f18ee87ad523b8f1c120673a3e8f9, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Common_Icon_Setting_Game
+  - Common_Icon_Check_B
+  - Common_Btn_BG
+  - Common_Btn_Radio_On
+  - Common_Tab_Normal_Btn
+  - Common_Icon_Close
+  - Common_Square_Bg
+  - Common_Icon_Setting_Account
+  - Common_Sub_Btn
+  - Common_Bg_Raius10px
+  - Common_Bg_Raius10px_Shadow
+  - Common_Btn_Radio_BG
+  m_RenderDataMap: {}
+  m_Tag: MainOriginalAtlas
+  m_IsVariant: 0

@@ -1,0 +1,328 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830413168532f154c90cbb227c123805, type: 3}
+  m_Name: Yuzu_Original_YuzuEx01_Compiled
+  m_EditorClassIdentifier: 
+  characterId: Yuzu_Original
+  skillId: YuzuEx01
+  sourceHasNoNormalSkill: 0
+  fieldTimeline: {fileID: 11400000, guid: ecbd73afbcfc72e498b8d918b025cb4f, type: 2}
+  shots:
+  - sourceNodeIndex: 0
+    targetSlot: 0
+    muzzleIndex: 1
+    requiredConditionKey: 
+    projectile: {fileID: 763518797232032589, guid: 4db48bcc69ac0264da6b424ad639c190,
+      type: 3}
+    arrivalEffect: {fileID: 0}
+    speed: 5
+    fixedForward: 0
+    simpleHoming: 0
+    range: 0
+    destinationVerticalOffset: 0
+    fireDelay: 0
+    useWorldPoint: 0
+    lockDestinationAtLaunch: 0
+    durationFromSpeed: 1
+    duration: 0
+    logicFramesPerSecond: 30
+    forwardCurves:
+    - serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0.7142534
+        outSlope: 0.7142534
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.08627841
+      - serializedVersion: 3
+        time: 0.7
+        value: 0.2772778
+        inSlope: 0.62853485
+        outSlope: 0.62853485
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.0791439
+        outWeight: 0.21409193
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 3.6743882
+        outSlope: 3.6743882
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.1316301
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    rightCurves:
+    - serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    upCurves:
+    - serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 10.968502
+        outSlope: 10.968502
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.268875
+      - serializedVersion: 3
+        time: 0.4751591
+        value: 1.905793
+        inSlope: -0.28784466
+        outSlope: -0.28784466
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.14462061
+        outWeight: 0.12367659
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: -8.97885
+        outSlope: -8.97885
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.09515649
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    sounds:
+    - clips:
+      - {fileID: 8300000, guid: c561ee70239c4db2b0859a4502a21fb7, type: 3}
+      localPosition: {x: 0, y: 0, z: 0}
+      delay: 0
+      volume: 0.8
+      pitch: 2
+      randomPitchMin: 0
+      randomPitchMax: 0
+      spatialBlend: 1
+      loop: 0
+    arrivalSounds: []
+  targetEffects:
+  - prefab: {fileID: 609868201338526072, guid: fd03572b254007b40872f2c8162bbc1f, type: 3}
+    targetSlot: 0
+    requiredConditionKey: 
+    anchorIndex: -1
+    anchor: 3
+    rotationMode: 0
+    offset: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    attach: 0
+    keepWorldRotation: 0
+    delay: 0
+    duration: 0
+    sounds:
+    - clips:
+      - {fileID: 8300000, guid: 229d8825ab084707a7d34510d4bef479, type: 3}
+      localPosition: {x: 0, y: 0, z: 0}
+      delay: 0
+      volume: 1
+      pitch: 1
+      randomPitchMin: 0
+      randomPitchMax: 0
+      spatialBlend: 1
+      loop: 0
+    shakes: []
+  outcomes:
+  - sourceNodeIndex: 0
+    occurrence: 0
+    hit: 1
+    material: 0
+    effectIndices: 00000000
+  supportedEx: []
+  forms: []
+  gameplayStages: []
+  baselineNormal:
+    normalSkillId: YuzuNormal01
+    shotFrames: 03000000
+    logicFramesPerSecond: 30
+    muzzleIndex: 1
+    pointTarget: 1
+    sameImpactForHitAndMiss: 0
+    muzzleEffect: {fileID: 1709254077376921, guid: 6fbf26ba1c25a6b4787cf540ffc8f3cd,
+      type: 3}
+    projectile: {fileID: 1709254077376921, guid: 13d6e19436bcbe84da23fac3627ea879,
+      type: 3}
+    hitEffect: {fileID: 1709254077376921, guid: 67f300d201d1d4a43b261b77cc88685d,
+      type: 3}
+    missEffect: {fileID: 0}
+    outcomes:
+    - hit: 0
+      material: 0
+      prefab: {fileID: 1709254077376921, guid: 67f300d201d1d4a43b261b77cc88685d, type: 3}
+      offset: {x: 0, y: 0, z: 0}
+      useContactPoint: 1
+      useHostRotation: 0
+    speed: 5
+    destinationOffset: {x: 0, y: 0, z: 0}
+    destinationRandomMin: {x: 0, y: 0, z: 0}
+    destinationRandomMax: {x: 0, y: 0, z: 0}
+    forwardCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    rightCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    upCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 1.1632191
+        outSlope: 1.1632191
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.6016025
+        value: 0.6997955
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.27524316
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: -2.9500892
+        outSlope: -2.9500892
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.0653103
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  enhancedNormal:
+    normalSkillId: 
+    shotFrames: 
+    logicFramesPerSecond: 30
+    muzzleIndex: 0
+    pointTarget: 0
+    sameImpactForHitAndMiss: 0
+    muzzleEffect: {fileID: 0}
+    projectile: {fileID: 0}
+    hitEffect: {fileID: 0}
+    missEffect: {fileID: 0}
+    outcomes: []
+    speed: 0
+    destinationOffset: {x: 0, y: 0, z: 0}
+    destinationRandomMin: {x: 0, y: 0, z: 0}
+    destinationRandomMax: {x: 0, y: 0, z: 0}
+    forwardCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    rightCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    upCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  postAttackController: {fileID: 0}
+  postAttackRateParameter: 
+  normalAudio: []
+--- !u!114 &3857433694471683896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6fa2d92fc1b3f34da284357edf89c3b, type: 3}
+  m_Name: YuzuEx01__Fire__0
+  m_EditorClassIdentifier: 

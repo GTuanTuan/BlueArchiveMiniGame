@@ -1,0 +1,174 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830413168532f154c90cbb227c123805, type: 3}
+  m_Name: Momoi_MomoiEx01_Compiled
+  m_EditorClassIdentifier: 
+  characterId: Momoi
+  skillId: MomoiEx01
+  sourceHasNoNormalSkill: 0
+  fieldTimeline: {fileID: 0}
+  shots: []
+  targetEffects: []
+  outcomes: []
+  supportedEx: []
+  forms: []
+  gameplayStages: []
+  baselineNormal:
+    normalSkillId: MomoiNormal01
+    shotFrames: 06000000090000000d000000
+    logicFramesPerSecond: 30
+    muzzleIndex: 1
+    pointTarget: 0
+    sameImpactForHitAndMiss: 0
+    muzzleEffect: {fileID: 1709254077376921, guid: 4991fa2688737d140810a0ab8fa205fa,
+      type: 3}
+    projectile: {fileID: 1709254077376921, guid: 5d0620ce7f7f5ac4ba145a2154010b0f,
+      type: 3}
+    hitEffect: {fileID: 1709254077376921, guid: 114a3dea8c1afa341b9346904c832a66,
+      type: 3}
+    missEffect: {fileID: 0}
+    outcomes:
+    - hit: 1
+      material: 3
+      prefab: {fileID: 1709254077376921, guid: 114a3dea8c1afa341b9346904c832a66, type: 3}
+      offset: {x: 0, y: 0, z: 0}
+      useContactPoint: 1
+      requiredBone: 0
+      rotationMode: 0
+      rotationOffset: {x: 0, y: 0, z: 0, w: 1}
+      sounds: []
+    - hit: 0
+      material: 0
+      prefab: {fileID: 1709254077376921, guid: 30899d6e713df904382b12823a74635a, type: 3}
+      offset: {x: 0.2, y: 0, z: 0.05}
+      useContactPoint: 0
+      requiredBone: 0
+      rotationMode: 0
+      rotationOffset: {x: 0, y: 0, z: 0, w: 1}
+      sounds: []
+    speed: 40
+    destinationOffset: {x: 0, y: 0, z: 0}
+    destinationRandomMin: {x: 0.05, y: -0.3, z: -0.3}
+    destinationRandomMax: {x: 0.1, y: 0.3, z: 0.3}
+    forwardCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    rightCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    upCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  enhancedNormal:
+    normalSkillId: 
+    shotFrames: 
+    logicFramesPerSecond: 30
+    muzzleIndex: 0
+    pointTarget: 0
+    sameImpactForHitAndMiss: 0
+    muzzleEffect: {fileID: 0}
+    projectile: {fileID: 0}
+    hitEffect: {fileID: 0}
+    missEffect: {fileID: 0}
+    outcomes: []
+    speed: 0
+    destinationOffset: {x: 0, y: 0, z: 0}
+    destinationRandomMin: {x: 0, y: 0, z: 0}
+    destinationRandomMax: {x: 0, y: 0, z: 0}
+    forwardCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    rightCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    upCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  postAttackController: {fileID: 0}
+  postAttackRateParameter: 
+  normalAudio: []
+  areaHits:
+  - prefab: {fileID: 1709254077376921, guid: 1e2af5d960d94534c9ee214f26cf03c1, type: 3}
+    range: 8.5
+    coneDegrees: 45

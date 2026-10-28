@@ -1,0 +1,1 @@
+Assets/Res/Main/ShaderVariants/MyShaderVariants.shadervariants -> Assets/Res/Main/Shader/SimpleURPToonLitOutlineExample.shader

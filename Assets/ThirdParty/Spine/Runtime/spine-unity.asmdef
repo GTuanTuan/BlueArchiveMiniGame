@@ -1,0 +1,5 @@
+﻿{
+	"name": "spine-unity",
+	"references": [ "spine-csharp", "UnityEngine.UI" ],
+    "allowUnsafeCode": true
+}

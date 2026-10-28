@@ -1,0 +1,844 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8689797512283196742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6fa2d92fc1b3f34da284357edf89c3b, type: 3}
+  m_Name: CH0200Ex01__PlayTargetEffect__5
+  m_EditorClassIdentifier: 
+--- !u!114 &-8269617906766753736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6fa2d92fc1b3f34da284357edf89c3b, type: 3}
+  m_Name: CH0200Ex01__PlayFieldSound__0
+  m_EditorClassIdentifier: 
+--- !u!114 &-6975140051155360662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6fa2d92fc1b3f34da284357edf89c3b, type: 3}
+  m_Name: CH0200Ex01__PlayFieldSound__1
+  m_EditorClassIdentifier: 
+--- !u!114 &-6898065788493950307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6fa2d92fc1b3f34da284357edf89c3b, type: 3}
+  m_Name: CH0200Ex01__PlayFieldSound__4
+  m_EditorClassIdentifier: 
+--- !u!114 &-6870943364537831605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6fa2d92fc1b3f34da284357edf89c3b, type: 3}
+  m_Name: CH0200Ex01__Fire__0
+  m_EditorClassIdentifier: 
+--- !u!114 &-413196235649109691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6fa2d92fc1b3f34da284357edf89c3b, type: 3}
+  m_Name: CH0200Ex01__PlayFieldSound__2
+  m_EditorClassIdentifier: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830413168532f154c90cbb227c123805, type: 3}
+  m_Name: CH0200_CH0200Ex01_Compiled
+  m_EditorClassIdentifier: 
+  characterId: CH0200
+  skillId: CH0200Ex01
+  sourceHasNoNormalSkill: 0
+  fieldTimeline: {fileID: 11400000, guid: 1de38835bd738524593776ed32204cc9, type: 2}
+  shots:
+  - sourceNodeIndex: 1
+    targetSlot: 0
+    targetBone: -1
+    muzzleIndex: 1
+    requiredConditionKey: 
+    projectile: {fileID: 8450494051267651331, guid: b6e139df6dd1e7c4da3420bf6536e535,
+      type: 3}
+    arrivalEffect: {fileID: 0}
+    speed: 15
+    fixedForward: 0
+    simpleHoming: 0
+    range: 0
+    destinationVerticalOffset: 0
+    fireDelay: 0
+    useWorldPoint: 0
+    lockDestinationAtLaunch: 0
+    durationFromSpeed: 1
+    duration: 0
+    logicFramesPerSecond: 30
+    forwardCurves:
+    - serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    rightCurves:
+    - serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    upCurves:
+    - serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    sounds: []
+    arrivalSounds: []
+  targetEffects:
+  - prefab: {fileID: 7192707958137818766, guid: 1d077ac3224443b43b6ca72eb61a5d27,
+      type: 3}
+    targetSlot: 0
+    requiredConditionKey: 
+    anchorIndex: -1
+    anchor: 5
+    rotationMode: 5
+    offset: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    attach: 0
+    keepWorldRotation: 0
+    delay: 0
+    duration: 0
+    sounds:
+    - timelineTime: 0
+      clips:
+      - {fileID: 8300000, guid: 3e27dd1659e6515894e1b681137043f7, type: 3}
+      localPosition: {x: 0, y: 0, z: 0}
+      delay: 0
+      volume: 1
+      pitch: 1
+      randomPitchMin: 0
+      randomPitchMax: 0
+      spatialBlend: 1
+      minDistance: 0
+      maxDistance: 0
+      rolloffMode: 0
+      loop: 0
+    shakes:
+    - startDelay: 0
+      duration: 0.7
+      intensity: {x: 0.06, y: 0.06, z: 0.06}
+      yawPitchRoll: {x: 0, y: 0, z: 0}
+      curve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0.098869324
+          inSlope: 5.950446
+          outSlope: 5.950446
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 0.15199178
+          value: 1.0032883
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 0.7124939
+          value: 0.103775024
+          inSlope: -1.8989608
+          outSlope: -1.8989608
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.13494377
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+  - prefab: {fileID: 5204442782371513404, guid: 7e1a090024568a24f8a9b6e8d9f51ed7,
+      type: 3}
+    targetSlot: 0
+    requiredConditionKey: 
+    anchorIndex: -1
+    anchor: 5
+    rotationMode: 5
+    offset: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    attach: 0
+    keepWorldRotation: 0
+    delay: 0
+    duration: 0
+    sounds:
+    - timelineTime: 0
+      clips:
+      - {fileID: 8300000, guid: 3e27dd1659e6515894e1b681137043f7, type: 3}
+      localPosition: {x: 0, y: 0, z: 0}
+      delay: 0
+      volume: 1
+      pitch: 1
+      randomPitchMin: 0
+      randomPitchMax: 0
+      spatialBlend: 1
+      minDistance: 0
+      maxDistance: 0
+      rolloffMode: 0
+      loop: 0
+    shakes:
+    - startDelay: 0
+      duration: 0.7
+      intensity: {x: 0.06, y: 0.06, z: 0.06}
+      yawPitchRoll: {x: 0, y: 0, z: 0}
+      curve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0.098869324
+          inSlope: 5.950446
+          outSlope: 5.950446
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 0.15199178
+          value: 1.0032883
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 0.7124939
+          value: 0.103775024
+          inSlope: -1.8989608
+          outSlope: -1.8989608
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.13494377
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+  - prefab: {fileID: 2889631030608010151, guid: f4968efe35504ab4fa5fd675d79325e2,
+      type: 3}
+    targetSlot: 0
+    requiredConditionKey: 
+    anchorIndex: -1
+    anchor: 5
+    rotationMode: 5
+    offset: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    attach: 0
+    keepWorldRotation: 0
+    delay: 0
+    duration: 0
+    sounds:
+    - timelineTime: 0
+      clips:
+      - {fileID: 8300000, guid: 3e27dd1659e6515894e1b681137043f7, type: 3}
+      localPosition: {x: 0, y: 0, z: 0}
+      delay: 0
+      volume: 1
+      pitch: 1
+      randomPitchMin: 0
+      randomPitchMax: 0
+      spatialBlend: 1
+      minDistance: 0
+      maxDistance: 0
+      rolloffMode: 0
+      loop: 0
+    shakes:
+    - startDelay: 0
+      duration: 0.7
+      intensity: {x: 0.06, y: 0.06, z: 0.06}
+      yawPitchRoll: {x: 0, y: 0, z: 0}
+      curve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0.098869324
+          inSlope: 5.950446
+          outSlope: 5.950446
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 0.15199178
+          value: 1.0032883
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 0.7124939
+          value: 0.103775024
+          inSlope: -1.8989608
+          outSlope: -1.8989608
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.13494377
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+  - prefab: {fileID: 8926014414755636290, guid: 2980f4f302bc1e74cbb8ffef0de02957,
+      type: 3}
+    targetSlot: 0
+    requiredConditionKey: 
+    anchorIndex: -1
+    anchor: 5
+    rotationMode: 5
+    offset: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    attach: 0
+    keepWorldRotation: 0
+    delay: 0
+    duration: 0
+    sounds:
+    - timelineTime: 0
+      clips:
+      - {fileID: 8300000, guid: 3e27dd1659e6515894e1b681137043f7, type: 3}
+      localPosition: {x: 0, y: 0, z: 0}
+      delay: 0
+      volume: 1
+      pitch: 1
+      randomPitchMin: 0
+      randomPitchMax: 0
+      spatialBlend: 1
+      minDistance: 0
+      maxDistance: 0
+      rolloffMode: 0
+      loop: 0
+    shakes:
+    - startDelay: 0
+      duration: 0.7
+      intensity: {x: 0.06, y: 0.06, z: 0.06}
+      yawPitchRoll: {x: 0, y: 0, z: 0}
+      curve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0.098869324
+          inSlope: 5.950446
+          outSlope: 5.950446
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 0.15199178
+          value: 1.0032883
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 0.7124939
+          value: 0.103775024
+          inSlope: -1.8989608
+          outSlope: -1.8989608
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.13494377
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+  - prefab: {fileID: 9091854204458854826, guid: 440b7dd71f835914eafc21be2240c995,
+      type: 3}
+    targetSlot: 0
+    requiredConditionKey: 
+    anchorIndex: -1
+    anchor: 5
+    rotationMode: 5
+    offset: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    attach: 0
+    keepWorldRotation: 0
+    delay: 0
+    duration: 0
+    sounds:
+    - timelineTime: 0
+      clips:
+      - {fileID: 8300000, guid: 3e27dd1659e6515894e1b681137043f7, type: 3}
+      localPosition: {x: 0, y: 0, z: 0}
+      delay: 0
+      volume: 1
+      pitch: 1
+      randomPitchMin: 0
+      randomPitchMax: 0
+      spatialBlend: 1
+      minDistance: 0
+      maxDistance: 0
+      rolloffMode: 0
+      loop: 0
+    shakes:
+    - startDelay: 0
+      duration: 0.7
+      intensity: {x: 0.06, y: 0.06, z: 0.06}
+      yawPitchRoll: {x: 0, y: 0, z: 0}
+      curve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0.098869324
+          inSlope: 5.950446
+          outSlope: 5.950446
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 0.15199178
+          value: 1.0032883
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 0.7124939
+          value: 0.103775024
+          inSlope: -1.8989608
+          outSlope: -1.8989608
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.13494377
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+  - prefab: {fileID: 5747713673290470723, guid: 6a0c79d4cbc53ed4e9fe3dc5ad3c4551,
+      type: 3}
+    targetSlot: 0
+    requiredConditionKey: 
+    anchorIndex: -1
+    anchor: 2
+    rotationMode: 4
+    offset: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+    attach: 1
+    keepWorldRotation: 0
+    delay: 0
+    duration: 0
+    sounds:
+    - timelineTime: 0
+      clips:
+      - {fileID: 8300000, guid: 47f6def765195197851a0ee7bb31e50c, type: 3}
+      localPosition: {x: 0, y: 0, z: 0}
+      delay: 0.23
+      volume: 1
+      pitch: 1
+      randomPitchMin: 0
+      randomPitchMax: 0
+      spatialBlend: 1
+      minDistance: 0
+      maxDistance: 0
+      rolloffMode: 0
+      loop: 0
+    shakes: []
+  outcomes:
+  - sourceNodeIndex: 1
+    occurrence: 0
+    hit: 1
+    material: 1
+    effectIndices: 00000000
+  - sourceNodeIndex: 1
+    occurrence: 0
+    hit: 1
+    material: 2
+    effectIndices: 01000000
+  - sourceNodeIndex: 1
+    occurrence: 0
+    hit: 1
+    material: 3
+    effectIndices: 02000000
+  - sourceNodeIndex: 1
+    occurrence: 0
+    hit: 1
+    material: 4
+    effectIndices: 03000000
+  - sourceNodeIndex: 1
+    occurrence: 0
+    hit: 0
+    material: 0
+    effectIndices: 04000000
+  supportedEx: []
+  forms: []
+  gameplayStages: []
+  baselineNormal:
+    normalSkillId: CH0200Normal01
+    shotFrames: 1f000000
+    logicFramesPerSecond: 30
+    muzzleIndex: 1
+    pointTarget: 0
+    sameImpactForHitAndMiss: 0
+    muzzleEffect: {fileID: 1709254077376921, guid: 21a7033ba390fbe4d9a2e397fb5ed162,
+      type: 3}
+    projectile: {fileID: 1709254077376921, guid: 913eec495ca6b174ead5c3025bbe608e,
+      type: 3}
+    hitEffect: {fileID: 1709254077376921, guid: 509f096e0199e454cb277f4e588dd255,
+      type: 3}
+    missEffect: {fileID: 0}
+    outcomes:
+    - hit: 1
+      material: 3
+      prefab: {fileID: 1709254077376921, guid: 509f096e0199e454cb277f4e588dd255, type: 3}
+      offset: {x: 0, y: 0, z: 0.3}
+      useContactPoint: 1
+      requiredBone: 0
+      rotationMode: 5
+      rotationOffset: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+      sounds: []
+    - hit: 0
+      material: 0
+      prefab: {fileID: 1709254077376921, guid: 96b55ef08ce840444843de9303d98bad, type: 3}
+      offset: {x: 0, y: -1, z: 0.5}
+      useContactPoint: 1
+      requiredBone: 0
+      rotationMode: 5
+      rotationOffset: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+      sounds: []
+    speed: 30
+    destinationOffset: {x: 0, y: 0.5, z: 0}
+    destinationRandomMin: {x: 0, y: 0, z: 0}
+    destinationRandomMax: {x: 0, y: 0, z: 0}
+    forwardCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    rightCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    upCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  enhancedNormal:
+    normalSkillId: 
+    shotFrames: 
+    logicFramesPerSecond: 30
+    muzzleIndex: 0
+    pointTarget: 0
+    sameImpactForHitAndMiss: 0
+    muzzleEffect: {fileID: 0}
+    projectile: {fileID: 0}
+    hitEffect: {fileID: 0}
+    missEffect: {fileID: 0}
+    outcomes: []
+    speed: 0
+    destinationOffset: {x: 0, y: 0, z: 0}
+    destinationRandomMin: {x: 0, y: 0, z: 0}
+    destinationRandomMax: {x: 0, y: 0, z: 0}
+    forwardCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    rightCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    upCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  postAttackController: {fileID: 0}
+  postAttackRateParameter: 
+  normalAudio:
+  - phase: Ing
+    sourceStartSeconds: 0.7
+    volume: 0.8
+    clips:
+    - {fileID: 8300000, guid: 91bbde6a11c35f1f8fafb1b2f1d635ba, type: 3}
+  - phase: Reload
+    sourceStartSeconds: 0
+    volume: 0.5
+    clips:
+    - {fileID: 8300000, guid: bf62e9de1a3e580e9f4251c13717cca6, type: 3}
+  - phase: Delay
+    sourceStartSeconds: 0
+    volume: 0.8
+    clips:
+    - {fileID: 8300000, guid: b045e15b8847528496e1a35465b77c59, type: 3}
+  fieldSounds:
+  - timelineTime: 0.43333334
+    clips:
+    - {fileID: 8300000, guid: 24325912f49d538baf4c75ff91213d1b, type: 3}
+    localPosition: {x: 0, y: 0, z: 0}
+    delay: 0
+    volume: 1
+    pitch: 1
+    randomPitchMin: 0
+    randomPitchMax: 0
+    spatialBlend: 1
+    minDistance: 1
+    maxDistance: 500
+    rolloffMode: 1
+    loop: 0
+  - timelineTime: 2.2
+    clips:
+    - {fileID: 8300000, guid: b58904ff1557533a903ccd7685b4d147, type: 3}
+    localPosition: {x: 0, y: 0, z: 0}
+    delay: 0
+    volume: 1
+    pitch: 1
+    randomPitchMin: 0
+    randomPitchMax: 0
+    spatialBlend: 1
+    minDistance: 1
+    maxDistance: 500
+    rolloffMode: 1
+    loop: 0
+  - timelineTime: 0.13333334
+    clips:
+    - {fileID: 8300000, guid: bf62e9de1a3e580e9f4251c13717cca6, type: 3}
+    localPosition: {x: 0, y: 0, z: 0}
+    delay: 0
+    volume: 0.7
+    pitch: 1
+    randomPitchMin: 0
+    randomPitchMax: 0
+    spatialBlend: 1
+    minDistance: 1
+    maxDistance: 500
+    rolloffMode: 1
+    loop: 0
+  - timelineTime: 2.8333333
+    clips:
+    - {fileID: 8300000, guid: b045e15b8847528496e1a35465b77c59, type: 3}
+    localPosition: {x: 0, y: 0, z: 0}
+    delay: 0
+    volume: 1
+    pitch: 1
+    randomPitchMin: 0
+    randomPitchMax: 0
+    spatialBlend: 1
+    minDistance: 1
+    maxDistance: 500
+    rolloffMode: 1
+    loop: 0
+  - timelineTime: 2.2
+    clips:
+    - {fileID: 8300000, guid: 91bbde6a11c35f1f8fafb1b2f1d635ba, type: 3}
+    localPosition: {x: 0, y: 0, z: 0}
+    delay: 0
+    volume: 0.5
+    pitch: 1
+    randomPitchMin: 0
+    randomPitchMax: 0
+    spatialBlend: 1
+    minDistance: 1
+    maxDistance: 500
+    rolloffMode: 1
+    loop: 0
+  - timelineTime: 2.2
+    clips:
+    - {fileID: 8300000, guid: 34b30297da70552dab55a6c99dff7d75, type: 3}
+    localPosition: {x: 0, y: 0, z: 0}
+    delay: 0
+    volume: 0.7
+    pitch: 1
+    randomPitchMin: 0
+    randomPitchMax: 0
+    spatialBlend: 1
+    minDistance: 1
+    maxDistance: 500
+    rolloffMode: 1
+    loop: 0
+  areaHits: []
+--- !u!114 &5582297727855747429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6fa2d92fc1b3f34da284357edf89c3b, type: 3}
+  m_Name: CH0200Ex01__PlayFieldSound__3
+  m_EditorClassIdentifier: 
+--- !u!114 &5781715078869060975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6fa2d92fc1b3f34da284357edf89c3b, type: 3}
+  m_Name: CH0200Ex01__PlayFieldSound__5
+  m_EditorClassIdentifier: 
